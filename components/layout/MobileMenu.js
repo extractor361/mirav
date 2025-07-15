@@ -34,7 +34,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
 
           <div className="mobile-nav-search-box">
             <form className="search-form" action="#">
-              <input placeholder="Keyword" type="text" />
+              <input placeholder="Pretraži..." type="text" />
               <button type="submit">
                 <i className="fa fa-search"></i>
               </button>
