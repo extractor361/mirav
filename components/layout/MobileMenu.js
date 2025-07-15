@@ -28,7 +28,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
 
           <div className="logo-box">
             <Link href="/" aria-label="logo image">
-              <img src="assets/images/resources/mobile-nav-logo.png" alt="Logo" />
+              <img src="assets/images/resources/Logo slova - main plavi.png" alt="Logo" />
             </Link>
           </div>
 
