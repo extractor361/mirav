@@ -60,7 +60,7 @@ export default function Blog() {
 
                                 <div className="single-blog-style1__title">
                                     <h3><Link href="/">5 najčešćih grešaka koje 
-kandidati prave.</Link></h3>
+                                            kandidati prave.</Link></h3>
                                     <div className="btn-box">
                                         <Link className="thm-btn3" href="/">
                                             <i className="icon-next"></i>Pročitaj više
@@ -168,7 +168,7 @@ kandidati prave.</Link></h3>
                                 </div>
                                 <div className="single-blog-style1__title">
                                     <h3><Link href="/">Automatski ili manuelni mjenjač 
-– šta je bolje za početnike?</Link></h3>
+                                                    – šta je bolje za početnike?</Link></h3>
                                     <div className="btn-box">
                                         <Link className="thm-btn3" href="/">
                                             <i className="icon-next"></i>Pročitaj više

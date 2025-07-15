@@ -3,7 +3,5 @@
   "/blog/page": "app/blog/page.js",
   "/services-1/page": "app/services-1/page.js",
   "/testimonials/page": "app/testimonials/page.js",
-  "/kontakt/page": "app/kontakt/page.js",
-  "/not-found": "app/not-found.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/kontakt/page": "app/kontakt/page.js"
 }

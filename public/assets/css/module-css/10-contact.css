@@ -802,55 +802,55 @@
 
 
 .contact-form form input[type="text"]::-webkit-input-placeholder {
-    color: #97a69e;
+    color: #979ba6;
 }
 
 .contact-form form input[type="text"]:-moz-placeholder {
-    color: #97a69e;
+    color: #9799a6;
 }
 
 .contact-form form input[type="text"]::-moz-placeholder {
-    color: #97a69e;
+    color: #979da6;
 }
 
 .contact-form form input[type="text"]:-ms-input-placeholder {
-    color: #97a69e;
+    color: #979ca6;
 }
 
 
 
 .contact-form form input[type="email"]::-webkit-input-placeholder {
-    color: #97a69e;
+    color: #979ca6;
 }
 
 .contact-form form input[type="email"]:-moz-placeholder {
-    color: #97a69e;
+    color: #979ca6;
 }
 
 .contact-form form input[type="email"]::-moz-placeholder {
-    color: #97a69e;
+    color: #979ba6;
 }
 
 .contact-form form input[type="email"]:-ms-input-placeholder {
-    color: #97a69e;
+    color: #979ba6;
 }
 
 
 
 .contact-form form textarea::-webkit-input-placeholder {
-    color: #97a69e;
+    color: #979ca6;
 }
 
 .contact-form form textarea:-moz-placeholder {
-    color: #97a69e;
+    color: #979da6;
 }
 
 .contact-form form textarea::-moz-placeholder {
-    color: #97a69e;
+    color: #979ba6;
 }
 
 .contact-form form textarea:-ms-input-placeholder {
-    color: #97a69e;
+    color: #979da6;
 }
 
 .contact-form form .button-box {
