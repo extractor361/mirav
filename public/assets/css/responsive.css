@@ -3637,9 +3637,19 @@
 
 
     .breadcrumb-style1 .inner-content {
-        padding: 280px 0px 163px;
+        padding: 130px 0px 163px;
     }
+.blog-style1, .about-style1, .project-page-two, .contact-info-style3, .main-contact-form, .testimonial-style1, .service-style1 , .process-style1 , .team-style1 , .about-style3 , .statement-style1,.choose-style2, .certification-style1 ,.intro-style1, .training-car-style1  {
+    padding: 60px 0 !important;
+}
 
+.test{width:100% !important;
+    padding: 60px 30px !important;
+justify-content: center;}
+.single-team-style1-img img {
+   
+    height: 265px !important;
+}
     .breadcrumb-style1 .title h2 {
         font-size: 40px;
     }

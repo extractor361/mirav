@@ -26,7 +26,7 @@ export default function Gallery_Page_Two() {
             <div className="page-wrapper boxed_wrapper">
       <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Teorijski test 1">
         <div style={{display:'flex',justifyContent:'center'}}>
-        <div style={{ display: 'flex',width:'70%', flexDirection: 'row', gap: '30px', padding: '30px', flexWrap: 'wrap' }}>
+        <div className='test' style={{ display: 'flex',width:'70%', flexDirection: 'row', gap: '30px', padding: '30px', flexWrap: 'wrap' }}>
           
           {/* Glavni blok */}
           <div style={{

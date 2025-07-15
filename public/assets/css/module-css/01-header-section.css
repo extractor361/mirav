@@ -254,7 +254,7 @@
 .mobile-nav__content .main-menu__list>li>ul>li>ul>li> .dropdown-btn {
     width: 30px;
     height: 30px;
-    background: rgba(var(--thm-primary-color-rgb), 0.3);
+    background: rgba(#468FFB, 0.3);
     border: none;
     outline: none;
     color: #fff;
