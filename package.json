@@ -1,0 +1,33 @@
+{
+  "name": "start-app-dir",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sass": "sass --watch public/assets/scss/main.scss:public/assets/css/main.css"
+  },
+  "dependencies": {
+    "@fontsource/onest": "^5.2.7",
+    "@fontsource/pathway-extreme": "^5.2.5",
+    "aos": "^2.3.4",
+    "bootstrap-touchspin": "^4.7.3",
+    "isotope-layout": "^3.0.6",
+    "lightgallery": "^2.7.2",
+    "next": "^13.5.11",
+    "owl.carousel": "^2.3.4",
+    "react": "18.2.0",
+    "react-circular-progressbar": "^2.2.0",
+    "react-curved-text": "^2.0.2",
+    "react-dom": "18.2.0",
+    "react-fast-marquee": "^1.6.5",
+    "react-modal-video": "^2.0.1",
+    "react-owl-carousel": "^2.3.3",
+    "react-scroll-parallax": "^3.4.5",
+    "sass": "^1.66.1",
+    "swiper": "^10.2.0",
+    "wowjs": "^1.1.3"
+  }
+}

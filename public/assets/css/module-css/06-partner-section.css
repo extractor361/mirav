@@ -1,0 +1,44 @@
+/*** 
+========================
+    Partner Style1 Css
+========================
+***/
+.partner-style1 {
+    background-color: var(--thm-white);
+    padding: 120px 0px 120px;
+}
+
+.partner-style1 .container {
+    max-width: 1710px;
+}
+
+.partner-style1__single {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--thm-border-color);
+    padding: 5px 0;
+}
+
+.partner-style1__single a {
+    position: relative;
+    display: inline-block;
+}
+
+.partner-style1__single a img {
+    opacity: 1;
+    transition: all 0.2s ease-in-out 0.1s;
+    filter: grayscale(0%);
+    width: auto !important;
+}
+
+.partner-style1__single a:hover img {
+    opacity: 0.6;
+    filter: grayscale(0%);
+    transition: all 0.8s ease-in-out 0.1s;
+}
+
+.partner-style1-carousel {
+    position: relative;
+}

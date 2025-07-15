@@ -1,0 +1,292 @@
+/*** 
+=============================================
+    Fact Counter style1 Css
+=============================================
+***/
+.fact-counter-style1 {
+    padding: 120px 0px 120px;
+    background-color: var(--thm-black-bg);
+}
+
+.fact-counter-style1__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    mix-blend-mode: luminosity;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    z-index: 1;
+}
+
+.fact-counter-style1__bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.95;
+    background-color: var(--thm-black-bg);
+    z-index: -1;
+}
+
+.fact-counter-style1 .container {
+    max-width: 1785px;
+}
+
+.single-fact-counter-style1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+
+.single-fact-counter-style1__category {
+    position: relative;
+    display: block;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.single-fact-counter-style1__category h6 {
+    color: var(--thm-white);
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.single-fact-counter-style1__content {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    margin-left: 14px;
+}
+
+.single-fact-counter-style1__content::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    bottom: 5px;
+    width: 1px;
+    background-color: #3b536b;
+}
+
+.single-fact-counter-style1__content .count-outer {
+    position: relative;
+    display: block;
+}
+
+.single-fact-counter-style1__content .count-outer span {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--thm-white);
+    font-size: 72px;
+    line-height: 72px;
+    font-family: var(--thm-font-2);
+    font-weight: 700;
+}
+
+.single-fact-counter-style1__content .count-outer .icon-plus-sign {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--thm-white);
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 400;
+    margin-left: -13px;
+}
+
+.single-fact-counter-style1__content .count-outer .k {
+    position: relative;
+    top: -3px;
+    margin-left: -5px;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--thm-white);
+    font-size: 60px;
+    line-height: 70px;
+    font-family: var(--thm-font-2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.single-fact-counter-style1__content .text {
+    position: relative;
+    display: block;
+    padding-top: 10px;
+}
+
+.single-fact-counter-style1__content .text p {
+    color: #a1aab4;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: var(--thm-font-2);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.single-fact-counter-style1__content .icon {
+    position: relative;
+    display: block;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 23px;
+}
+
+.single-fact-counter-style1__content .icon .icon-steering-wheel-1 .path1:before {
+    color: var(--thm-primary-color);
+}
+
+.single-fact-counter-style1__content .icon .icon-steering-wheel-1 .path2:before {
+    color: var(--thm-white);
+}
+
+.single-fact-counter-style1__content .icon .icon-celebrity .path1:before {
+    color: var(--thm-white);
+}
+
+.single-fact-counter-style1__content .icon .icon-celebrity .path2:before {
+    color: var(--thm-primary-color);
+}
+
+.single-fact-counter-style1__content .icon .icon-map .path1:before {
+    color: var(--thm-white);
+}
+
+.single-fact-counter-style1__content .icon .icon-map .path2:before {
+    color: var(--thm-white);
+}
+
+.single-fact-counter-style1__content .icon .icon-map .path3:before {
+    color: var(--thm-white);
+}
+
+.single-fact-counter-style1__content .icon .icon-map .path4:before {
+    color: var(--thm-primary-color);
+}
+
+.single-fact-counter-style1__content .icon .icon-taxi-driver .path1:before {
+    color: var(--thm-white);
+}
+
+.single-fact-counter-style1__content .icon .icon-taxi-driver .path2:before {
+    color: var(--thm-white);
+}
+
+.single-fact-counter-style1__content .icon .icon-taxi-driver .path3:before {
+    color: var(--thm-primary-color);
+}
+
+
+
+
+/*** 
+=============================================
+    Fact Counter style2 Css
+=============================================
+***/
+.fact-counter-style2 {
+    background-color: var(--thm-primary-color);
+}
+
+.fact-counter-style2__bg::before {
+    background-color: var(--thm-primary-color);
+}
+
+.single-fact-counter-style2__content::before {
+    background-color: rgb(255, 255, 255, 0.25);
+}
+
+.single-fact-counter-style2__content .text p {
+    color: var(--thm-white);
+}
+
+.single-fact-counter-style2__content .icon .icon-steering-wheel-1 .path1:before {
+    color: var(--thm-white);
+}
+
+
+
+.single-fact-counter-style2__content .icon .icon-celebrity .path2:before {
+    color: var(--thm-white);
+}
+
+
+
+.single-fact-counter-style2__content .icon .icon-map .path4:before {
+    color: var(--thm-white);
+}
+
+
+
+.single-fact-counter-style2__content .icon .icon-taxi-driver .path3:before {
+    color: var(--thm-white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============== End Crgb(255, 255, 255)==========*/
