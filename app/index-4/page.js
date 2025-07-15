@@ -1,4 +1,3 @@
-import "app/favicon-3.ico"
 import "public/assets/css/color-3.css"
 import Layout from "@/components/layout/Layout"
 import Banner from "@/components/sections/home4/Banner"
