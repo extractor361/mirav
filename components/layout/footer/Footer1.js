@@ -69,7 +69,7 @@ export default function Footer1() {
                                 <div className="our-company-info-box">
                                     <div className="footer-logo-style1">
                                         <Link href="/">
-                                            <img style={{height:300}} src="assets/images/resources/mirav_horizontal_bijeli.svg" alt="Awesome Logo"
+                                            <img style={{height:100}} src="assets/images/resources/mirav_horizontal_bijeli.svg" alt="Awesome Logo"
                                                 title=""/>
                                         </Link>
                                     </div>

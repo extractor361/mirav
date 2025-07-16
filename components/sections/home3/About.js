@@ -89,13 +89,7 @@ export default function About() {
                                             </div>
                                         </li>
                                     </ul>
-                                    <div className="btn-box">
-                                        <Link className="btn-one" href="/about">
-                                            <span className="txt">
-                                                Saznaj više
-                                            </span>
-                                        </Link>
-                                    </div>
+                                    
                                 </div>
 
                             </div>
