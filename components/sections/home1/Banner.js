@@ -3,6 +3,8 @@ import React from 'react'
 import Link from "next/link"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { useEffect } from 'react'
+import { useState } from 'react'
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
     slidesPerView: 1,
@@ -46,7 +48,18 @@ const swiperOptions = {
         },
     }
 }
+const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth <= 760);
+    };
+
+    checkScreen(); // inicijalno
+
+    window.addEventListener("resize", checkScreen);
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
 export default function Banner() {
     return (
         <> 
@@ -55,7 +68,14 @@ export default function Banner() {
                 <Swiper {...swiperOptions} className="swiper-container thm-swiper__slider">
                     <SwiperSlide>
                         <div className="swiper-slide">
-                            <div className="image-layer" style={{ backgroundImage: "url(assets/images/resources/Naslovna.jpg)" }}></div>
+                            <div className="image-layer" style={{
+        backgroundImage: isMobile
+          ? "url(assets/images/resources/mission.jpg)"
+          : "url((assets/images/resources/Naslovna.jpg))",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}></div>
                             <div className="image-layer__left-gradient"></div>
                             <div className="container">
                                 <div className="row">
