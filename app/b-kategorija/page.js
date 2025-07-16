@@ -476,7 +476,7 @@ export default function Course_Details() {
                                                         
                                                         <div className="slider-slide">
                                                             <div className="vertical-slider-style1__thumb-single">
-                                                                <img src="assets/images/resources/fabia.jpg"
+                                                                <img src="assets/images/resources/fabiaa.jpg"
                                                                     alt=""/>
                                                             </div>
                                                         </div>
