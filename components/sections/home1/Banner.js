@@ -72,7 +72,7 @@ const [isMobile, setIsMobile] = useState(false);
                         <div className="swiper-slide">
                             <div className="image-layer" style={{
         backgroundImage: isMobile
-          ? "url(assets/images/resources/mission.jpg)"
+          ? "url(assets/images/resources/Mirav-2062_compressed.webp)"
           : "url((assets/images/resources/Naslovna.jpg))",
         backgroundSize: "cover",
         backgroundPosition: "center",
