@@ -48,6 +48,8 @@ const swiperOptions = {
         },
     }
 }
+
+export default function Banner() {
 const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -60,7 +62,7 @@ const [isMobile, setIsMobile] = useState(false);
     window.addEventListener("resize", checkScreen);
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
-export default function Banner() {
+
     return (
         <> 
 
