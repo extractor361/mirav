@@ -200,7 +200,7 @@ export default function Course_Details() {
                                         </div>
                                         <div className="btn-box">
                                             <Link className="btn-one"
-                                                href="https://nt.gov.au/__data/assets/pdf_file/0004/229216/learner-drivers-guide-section-3-basic-driving-procedures.pdf">
+                                                href="/kontakt">
                                                 <span className="txt">
                                                     Postani vozač
                                                 </span>

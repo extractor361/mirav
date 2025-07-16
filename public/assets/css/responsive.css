@@ -1926,9 +1926,7 @@
         position: relative;
         writing-mode: lr-tb;
         transform: translateY(0%) rotate(0deg);
-        background-image: -moz-linear-gradient(0deg, rgb(238, 246, 242) 0%, rgb(255, 255, 255) 100%);
-        background-image: -webkit-linear-gradient(0deg, rgb(238, 246, 242) 0%, rgb(255, 255, 255) 100%);
-        background-image: -ms-linear-gradient(0deg, rgb(238, 246, 242) 0%, rgb(255, 255, 255) 100%);
+        background: #E6F0FF;
         padding: 22px 40px 22px;
         padding-right: 40px;
         max-width: 400px;
@@ -2654,7 +2652,7 @@
     }
 
     .about-style3__img .logo-box {
-        top: 20px;
+        top: 350px;
         right: 20px;
     }
 
