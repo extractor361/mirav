@@ -11,7 +11,12 @@ export default function Menu() {
                 <li><Link href="/o-nama">O nama</Link>
                     
                 </li>
-                <li ><Link href="/b-kategorija">B Kategorija</Link>
+                <li className="dropdown"><Link href="/b-kategorija">B kategorija</Link>
+                <ul>
+                    <li><Link href="/cjenovnik">Cjenovnik</Link></li>
+                </ul>
+                    
+                </li> 
                   
                 </li>
                 <li className="dropdown"><Link href="#">Testovi</Link>
@@ -20,9 +25,7 @@ export default function Menu() {
                 </ul>
                     
                 </li> 
-                <li ><Link href="/cjenovnik">Cjenovnik</Link>
-                    
-                </li> 
+                
                 <li ><Link href="/blog">Blog</Link>
                     
                 </li> 
