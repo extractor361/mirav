@@ -73,7 +73,7 @@ const [isMobile, setIsMobile] = useState(false);
                             <div className="image-layer" style={{
         backgroundImage: isMobile
           ? "url(assets/images/resources/Mirav-2055_compressedd.webp)"
-          : "url((assets/images/resources/Naslovna.jpg))",
+          : "url((assets/images/resources/Naslovnaa.jpg))",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
