@@ -61,14 +61,17 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                 <ul style={{ display: isActive.key === "testovi" ? "block" : "none" }}>
                   <li><Link href="/test" onClick={handleMobileMenu}>Teorijski test 1</Link></li>
                 </ul>
-                <div
+                <span
                   className={isActive.key === "testovi" ? "dropdown-btn open" : "dropdown-btn"}
                   onClick={() => handleToggle("testovi")}
+                  role="button"
+                  tabIndex={0}
                 >
                   <span className="fa fa-angle-down" />
-                </div>
+                </span>
               </li>
 
+              {/* Cjenovnik */}
               <li><Link href="/cjenovnik" onClick={handleMobileMenu}>Cjenovnik</Link></li>
 
               {/* Blog */}
