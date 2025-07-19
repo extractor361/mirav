@@ -20,6 +20,9 @@ export default function Menu() {
                 </ul>
                     
                 </li> 
+                <li ><Link href="/cjenovnik">Cjenovnik</Link>
+                    
+                </li> 
                 <li ><Link href="/blog">Blog</Link>
                     
                 </li> 

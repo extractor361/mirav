@@ -68,6 +68,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                   <span className="fa fa-angle-down" />
                 </div>
               </li>
+                <li ><Link href="/cjenovnik">Cjenovnik</Link>
 
               {/* Blog */}
               <li><Link href="/blog" onClick={handleMobileMenu}>Blog</Link></li>
