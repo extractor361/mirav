@@ -8,14 +8,10 @@ export default function Menu() {
             <ul className="main-menu__list">
                 <li><Link href="/">Naslovna</Link></li>
 
-                <li><Link href="/o-nama">O nama</Link>
-                    
-                </li>
+                <li><Link href="/o-nama">O nama</Link></li>
+
                 <li className="dropdown"><Link href="/b-kategorija">B kategorija</Link>
-                <ul>
-                    <li><Link href="/cjenovnik">Cjenovnik</Link></li>
-                </ul>
-                    
+                <ul><li><Link href="/cjenovnik">Cjenovnik</Link></li></ul>
                 </li> 
                   
                 
