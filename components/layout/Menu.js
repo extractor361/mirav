@@ -18,14 +18,14 @@ export default function Menu() {
                     
                 </li> 
                   
-                </li>
+                
                 <li className="dropdown"><Link href="#">Testovi</Link>
                 <ul>
                     <li><Link href="/test">Teorijski test 1</Link></li>
                 </ul>
                     
                 </li> 
-                
+               
                 <li ><Link href="/blog">Blog</Link>
                     
                 </li> 
