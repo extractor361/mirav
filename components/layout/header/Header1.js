@@ -44,7 +44,7 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup, handleS
                                     </div>
                                     <div className="select-box clearfix">
                                         <select className="wide">
-                                            <option data-display="7.00 to 11.00">7.00 to 15.00</option>
+                                            <option data-display="07:00 do 11:00">07:00 do 15:00</option>
                                             
                                         </select>
                                     </div>
