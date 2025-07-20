@@ -116,7 +116,7 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup, handleS
                                     </li>
                                 </ul>
                                 <div className="header-button-style1">
-                                    <Link className="btn-one" href="/courses-details">
+                                    <Link className="btn-one" href="/kontakt">
                                         <span className="txt">
                                             Želim vozačku dozvolu
                                         </span>
