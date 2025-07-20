@@ -508,7 +508,7 @@ export default function PortfolioFilter2() {
                         <div className="col-xl-4 col-lg-6 col-md-6 filter-item  team ">
                             <div className="single-project-style1">
                                 <div className="single-project-style1__img">
-                                    <img src="assets/images/resources/Mirav-2055_compressed.webp" alt="Awesome Image"/>
+                                    <img src="assets/images/resources/Mirav-2055_compressedd.webp" alt="Awesome Image"/>
                                     <div className="single-project-style1__img-overlay-content">
                                         <div className="category">
                                             <h6>Tim</h6>

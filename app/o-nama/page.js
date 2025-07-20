@@ -167,7 +167,7 @@ export default function About_Page() {
 
                                                     <div className="col-xl-4 col-lg-5 col-md-5">
                                                         <div className="img-box">
-                                                            <img src="assets/images/resources/Mirav-2055_compressed.webp" alt="Image"/>
+                                                            <img src="assets/images/resources/Mirav-2055_compressedd.webp" alt="Image"/>
                                                         </div>
                                                     </div>
 
