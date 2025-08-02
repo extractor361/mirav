@@ -19,78 +19,109 @@ export default function Cjenovnik_Page() {
               <div className="row">
                 <div className="col-xl-12">
                   <div className="row">
-                    {/* Obuka za vozače */}
+
+                    {/* Žuti Golf 8 */}
                     <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
                       <div className="single-service-style1">
                         <div className="single-service-style1__title">
                           <h3>Obuka za vozače</h3>
-                          <h6>Osnovna cijena</h6>
+                          <h6>Osnovna obuka</h6>
                         </div>
                         <div className="service-style1__shape1">
                           <img src="/assets/images/shapes/service-v1-shape2.png" alt="shape" />
                         </div>
                         <div className="single-service-style1__img">
                           <div className="single-service-style1__inner">
-                            <img src="/assets/images/resources/Mirav-2102_compressed.webp" alt="Obuka" />
+                            <img src="/assets/images/resources/golf 8.jpg" alt="Žuti Golf 8" />
                           </div>
                           <div className="single-service-style1__text">
                             <ul className="price-list">
-                              <li>640 €</li>
-                              <li>700 €</li>
-                              <li>740 € <span className="text-gray-500">(strana lica)</span></li>
+                              <li>870 €</li>
+                              <li>Na rate: 890 €</li>
+                              <li>Teorijski i praktični dio uključeni</li>
                             </ul>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Plaćanje na rate */}
+                    {/* Mirjana + Žuti Golf 8 */}
                     <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
                       <div className="single-service-style1">
                         <div className="single-service-style1__title">
-                          <h3>Plaćanje na rate</h3>
-                          <h6>Fleksibilne opcije</h6>
+                          <h3>Obuka za vozače</h3>
+                          <h6>Prošireni paket</h6>
                         </div>
                         <div className="service-style1__shape1">
                           <img src="/assets/images/shapes/service-v1-shape2.png" alt="shape" />
                         </div>
                         <div className="single-service-style1__img">
                           <div className="single-service-style1__inner">
-                            <img src="/assets/images/resources/teorijaa.webp" alt="Rate" />
+                            <img src="/assets/images/resources/Mirav-2102_compressed.webp" alt="Mirjana sa Golfom" />
                           </div>
                           <div className="single-service-style1__text">
                             <ul className="price-list">
-                              <li>660 €</li>
-                              <li>720 €</li>
-                              <li>760 € <span className="text-gray-500">(strana lica)</span></li>
+                              <li>930 €</li>
+                              <li>Na rate: 950 €</li>
+                              <li>Teorijski i praktični dio uključeni</li>
                             </ul>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Ljekarsko uvjerenje */}
+                    {/* Crveni Golf 8 */}
                     <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
                       <div className="single-service-style1">
                         <div className="single-service-style1__title">
-                          <h3>Ljekarsko uvjerenje</h3>
-                          <h6>Obavezna provjera</h6>
+                          <h3>Obuka za vozače</h3>
+                          <h6>Za strana lica</h6>
                         </div>
                         <div className="service-style1__shape1">
                           <img src="/assets/images/shapes/service-v1-shape2.png" alt="shape" />
                         </div>
                         <div className="single-service-style1__img">
                           <div className="single-service-style1__inner">
-                            <img src="/assets/images/resources/Mirav-2094_compressed.webp" alt="Ljekarsko" />
+                            <img src="/assets/images/resources/Mirav-2096_compressed.webp" alt="Crveni Golf 8" />
                           </div>
                           <div className="single-service-style1__text">
                             <ul className="price-list">
-                              <li>20 €</li>
+                              <li>970 €</li>
+                              <li>Na rate: 990 €</li>
+                              <li>Testovi i praktični dio uključeni</li>
                             </ul>
                           </div>
                         </div>
                       </div>
                     </div>
+
+                    {/* Dodatne usluge */}
+                    <div className="col-xl-12 mt-60">
+                      <div className="single-service-style1">
+                        <div className="single-service-style1__title">
+                          <h3>Dodatne usluge</h3>
+                          <h6>Cjenovnik dodatnih usluga</h6>
+                        </div>
+                        <div >
+                          <img src="/assets/images/shapes/service-v1-shape2.png" alt="shape" />
+                        </div>
+                        <div className="single-service-style1__img">
+                          <div className="single-service-style1__inner">
+                            <img src="/assets/images/resources/teorijaa.webp" alt="Crveni Golf 8" />
+                          </div>
+                          <div className="single-service-style1__text">
+                            <ul className="price-list">
+                              <li>Teoretski dio – polaganje: 25 €</li>
+                              <li>Praktični dio – polaganje: 25 €</li>
+                              <li>Svjedočanstvo: 10 €</li>
+                              <li>Ispisnica: 10 €</li>
+                              <li>Dopunski čas: 30 €</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
 
                   </div>
                 </div>
