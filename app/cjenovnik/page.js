@@ -37,8 +37,7 @@ export default function Cjenovnik_Page() {
                           <div className="single-service-style1__text">
                             <ul className="price-list">
                               <li>870 €</li>
-                              <li>Na rate: 890 €</li>
-                              <li>Teorijski i praktični dio uključeni</li>
+                              <li>Na rate: 900 €</li>
                             </ul>
                           </div>
                         </div>
@@ -57,13 +56,12 @@ export default function Cjenovnik_Page() {
                         </div>
                         <div className="single-service-style1__img">
                           <div className="single-service-style1__inner">
-                            <img src="/assets/images/resources/Mirav-2102_compressed.webp" alt="Mirjana sa Golfom" />
+                            <img src="/assets/images/resources/Mirav-2098_compressed.webp" alt="Mirjana sa Golfom" />
                           </div>
                           <div className="single-service-style1__text">
                             <ul className="price-list">
                               <li>930 €</li>
                               <li>Na rate: 950 €</li>
-                              <li>Teorijski i praktični dio uključeni</li>
                             </ul>
                           </div>
                         </div>
@@ -88,7 +86,6 @@ export default function Cjenovnik_Page() {
                             <ul className="price-list">
                               <li>970 €</li>
                               <li>Na rate: 990 €</li>
-                              <li>Testovi i praktični dio uključeni</li>
                             </ul>
                           </div>
                         </div>
