@@ -82,7 +82,7 @@ export default function Cjenovnik_Page() {
                         </div>
                         <div className="single-service-style1__img">
                           <div className="single-service-style1__inner">
-                            <img src="/assets/images/resources/Mirav-2096_compressed.webp" alt="Crveni Golf 8" />
+                            <img src="/assets/images/resources/crveni-golf.jpg" alt="Crveni Golf 8" />
                           </div>
                           <div className="single-service-style1__text">
                             <ul className="price-list">
