@@ -118,7 +118,6 @@ a {
 
 
 @media (min-width: 1200px) {
-    .single-team-style1-text p{width:60% !important;}
     .container {
         max-width: 1200px;
     }
