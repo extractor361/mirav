@@ -32,7 +32,7 @@ export default function Cjenovnik_Page() {
                         </div>
                         <div className="single-service-style1__img">
                           <div className="single-service-style1__inner">
-                            <img src="/assets/images/resources/golf 8.jpg" alt="Žuti Golf 8" />
+                            <img src="/assets/images/Mirav-2008.jp" alt="Žuti Golf 8" />
                           </div>
                           <div className="single-service-style1__text">
                             <ul className="price-list">
@@ -56,7 +56,7 @@ export default function Cjenovnik_Page() {
                         </div>
                         <div className="single-service-style1__img">
                           <div className="single-service-style1__inner">
-                            <img src="/assets/images/resources/Mirav-2098_compressed.webp" alt="Mirjana sa Golfom" />
+                            <img src="/assets/images/Mirav-2010.jpg" alt="Mirjana sa Golfom" />
                           </div>
                           <div className="single-service-style1__text">
                             <ul className="price-list">
@@ -80,7 +80,7 @@ export default function Cjenovnik_Page() {
                         </div>
                         <div className="single-service-style1__img">
                           <div className="single-service-style1__inner">
-                            <img src="/assets/images/resources/crveni-golf.jpg" alt="Crveni Golf 8" />
+                            <img src="/assets/images/Mirav-2003.jpg" alt="Crveni Golf 8" />
                           </div>
                           <div className="single-service-style1__text">
                             <ul className="price-list">
