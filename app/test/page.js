@@ -28,7 +28,7 @@ export default function Gallery_Page_Two() {
 
   // Fetch pitanja
   useEffect(() => {
-    fetch('/nasumicna-pitanja')
+    fetch('https://miravapibackend.online/api/nasumicna-pitanja')
       .then(res => res.json())
       .then(data => setPitanja(data))
       .catch(err => console.error("Greška:", err))
