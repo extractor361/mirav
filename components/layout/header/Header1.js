@@ -64,7 +64,7 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup, handleS
                             <div className="main-header-style1__bottom-left">
                                 <div className="logo-box-style1">
                                     <Link href="/">
-                                        <img src="assets/images/resources/Logo slova - main plavi.png" alt="Logo Auto škola Mirav" title=""/>
+                                        <img src="../assets/images/resources/Logo slova - main plavi.png" alt="Logo Auto škola Mirav" title=""/>
                                     </Link>
                                 </div>
                                 
@@ -73,7 +73,7 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup, handleS
                                         <div className="main-menu__wrapper-inner">
                                             <div className="sticky-logo-box-style1">
                                                 <Link href="/">
-                                                    <img  src="assets/images/resources/Logo slova - main plavi.png" alt="Logo auto škola Mirav"
+                                                    <img  src="../assets/images/resources/Logo slova - main plavi.png" alt="Logo auto škola Mirav"
                                                         title=""/>
                                                 </Link>
                                             </div>
@@ -135,7 +135,7 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup, handleS
                         <div className="main-menu__wrapper-inner">
                             <div className="sticky-logo-box-style1">
                                 <Link href="/">
-                                    <img src="assets/images/resources/Logo slova - main plavi.png" alt="Awesome Logo"/>
+                                    <img src="../assets/images/resources/Logo slova - main plavi.png" alt="Awesome Logo"/>
                                 </Link>
                             </div>
                             <div className="main-menu-style1__left">
