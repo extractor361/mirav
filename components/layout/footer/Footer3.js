@@ -181,7 +181,7 @@ export default function Footer3() {
                             <div className="footer-social-links-style3">
                                 <ul>
                                     <li>
-                                        <Link href="https://www.facebook.com/">
+                                        <Link href="https://www.facebook.com/as.mirav/">
                                             <span className="icon-facebook"></span>
                                         </Link>
                                     </li>

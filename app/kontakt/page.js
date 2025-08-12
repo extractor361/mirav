@@ -164,11 +164,9 @@ export default function Contact_Page() {
                                 <h3>Društvene mreže</h3>
                             </div>
                             <ul className="clearfix">
-                                <li><Link href="https://www.facebook.com/"><span className="icon-facebook"></span></Link></li>
-                                <li><Link href="https://x.com/"><i className="icon-twitter"></i></Link></li>
-                                <li><Link href="https://www.instagram.com/"><span className="icon-instagram-logo"></span></Link></li>
-                                <li><Link href="https://www.youtube.com/"><span className="icon-youtube"></span></Link></li>
-                                <li><Link href="https://www.whatsapp.com/"><span className="icon-whatsapp"></span></Link></li>
+                                <li><Link href="https://www.facebook.com/as.mirav/"><span className="icon-facebook"></span></Link></li>
+                                <li><Link href="https://www.instagram.com/auto_skola_mirav_/?hl=en"><span className="icon-instagram-logo"></span></Link></li>
+                                <li><Link href="https://wa.me/38268444101"><span className="icon-whatsapp"></span></Link></li>
                             </ul>
                         </div>
                     </div>

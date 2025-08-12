@@ -310,7 +310,7 @@ export default function Footer2() {
                             <div className="footer-social-links-style2">
                                 <ul className="clearfix">
                                     <li>
-                                        <Link href="https://www.facebook.com/">
+                                        <Link href="https://www.facebook.com/as.mirav/">
                                             <span className="icon-facebook"></span>
                                         </Link>
                                     </li>

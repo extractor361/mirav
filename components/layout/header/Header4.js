@@ -86,7 +86,7 @@ export default function Header4({ scroll, handleMobileMenu, handleSidebar }) {
                             <div className="header-social-links-style2">
                                 <ul className="clearfix">
                                     <li>
-                                        <Link href="https://www.facebook.com/">
+                                        <Link href="https://www.facebook.com/as.mirav/">
                                             <span className="icon-facebook"></span>
                                         </Link>
                                     </li>
@@ -96,7 +96,7 @@ export default function Header4({ scroll, handleMobileMenu, handleSidebar }) {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="https://www.instagram.com/accounts/login/?hl=en">
+                                        <Link href="https://www.instagram.com/auto_skola_mirav_/?hl=en">
                                             <span className="icon-instagram-logo"></span>
                                         </Link>
                                     </li>

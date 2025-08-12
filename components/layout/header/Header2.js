@@ -40,7 +40,7 @@ export default function Header2({ scroll, handleMobileMenu, handlePopup }) {
                         <div className="header-social-links-style1">
                             <ul className="clearfix">
                                 <li>
-                                    <Link href="https://www.facebook.com/">
+                                    <Link href="https://www.facebook.com/as.mirav/">
                                         <span className="icon-facebook"></span>
                                     </Link>
                                 </li>
