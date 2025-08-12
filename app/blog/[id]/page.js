@@ -81,175 +81,36 @@ export default async function BlogSinglePage({ params }) {
                                 <div className="sidebar-box-style2">
                                     <div className="sidebar-search-box-one">
                                         <form className="search-form" action="#">
-                                            <input placeholder="Search..." type="text"/>
+                                            <input placeholder="Pretraga..." type="text"/>
                                             <button type="submit">
                                                 <i className="icon-search"></i>
                                             </button>
                                         </form>
                                     </div>
+                                    
+                                    
                                     <div className="single-sidebar-box">
                                         <div className="sidebar-title">
                                             <div className="icon">
                                                 <img src="../assets/images/icon/blog-sidebar-icon-1.png" alt="icon"/>
                                             </div>
-                                            <h3>Categories</h3>
-                                        </div>
-                                        <div className="sidebar-categories-box">
-                                            <ul className="list-item clearfix">
-                                                <li>
-                                                    <div className="title">
-                                                        <div className="icon">
-                                                            <i className="icon-double-chevron"></i>
-                                                            <i className="icon-double-chevron icon2"></i>
-                                                        </div>
-                                                        <Link href="#">Driving Tips</Link>
-                                                    </div>
-                                                    <div className="count">
-                                                        <h6>10</h6>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div className="title">
-                                                        <div className="icon">
-                                                            <i className="icon-double-chevron"></i>
-                                                            <i className="icon-double-chevron icon2"></i>
-                                                        </div>
-                                                        <Link href="#">Safety Tips</Link>
-                                                    </div>
-                                                    <div className="count">
-                                                        <h6>14</h6>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div className="title">
-                                                        <div className="icon">
-                                                            <i className="icon-double-chevron"></i>
-                                                            <i className="icon-double-chevron icon2"></i>
-                                                        </div>
-                                                        <Link href="#">Driving Test</Link>
-                                                    </div>
-                                                    <div className="count">
-                                                        <h6>06</h6>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div className="title">
-                                                        <div className="icon">
-                                                            <i className="icon-double-chevron"></i>
-                                                            <i className="icon-double-chevron icon2"></i>
-                                                        </div>
-                                                        <Link href="#">Regulations</Link>
-                                                    </div>
-                                                    <div className="count">
-                                                        <h6>03</h6>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div className="title">
-                                                        <div className="icon">
-                                                            <i className="icon-double-chevron"></i>
-                                                            <i className="icon-double-chevron icon2"></i>
-                                                        </div>
-                                                        <Link href="#">Community Events</Link>
-                                                    </div>
-                                                    <div className="count">
-                                                        <h6>08</h6>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div className="title">
-                                                        <div className="icon">
-                                                            <i className="icon-double-chevron"></i>
-                                                            <i className="icon-double-chevron icon2"></i>
-                                                        </div>
-                                                        <Link href="#">Maintenance</Link>
-                                                    </div>
-                                                    <div className="count">
-                                                        <h6>02</h6>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="single-sidebar-box">
-                                        <div className="sidebar-title">
-                                            <div className="icon">
-                                                <img src="../assets/images/icon/blog-sidebar-icon-1.png" alt="icon"/>
-                                            </div>
-                                            <h3>Popular Post</h3>
-                                        </div>
-                                        <div className="sidebar-blog-post">
-                                            <ul className="list-item clearfix">
-                                                <li>
-                                                    <div className="img-box">
-                                                        <img src="../assets/images/blog/blog-sidebar-1-1.jpg" alt="Awesome Image"/>
-                                                    </div>
-                                                    <div className="content-box">
-                                                        <div className="category">
-                                                            <h6>Driving Tips</h6>
-                                                        </div>
-                                                        <div className="title">
-                                                            <h3>
-                                                                <Link href="/blog-single">Top 10 Tips for Passing Your Road
-                                                                    Test.</Link>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div className="img-box">
-                                                        <img src="../assets/images/blog/blog-sidebar-1-2.jpg" alt="Awesome Image"/>
-                                                    </div>
-                                                    <div className="content-box">
-                                                        <div className="category">
-                                                            <h6>Safety Tips</h6>
-                                                        </div>
-                                                        <div className="title">
-                                                            <h3>
-                                                                <Link href="/blog-single">Navigating Roundabouts: A Beginner's
-                                                                    Guide.</Link>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div className="img-box">
-                                                        <img src="../assets/images/blog/blog-sidebar-1-3.jpg" alt="Awesome Image"/>
-                                                    </div>
-                                                    <div className="content-box">
-                                                        <div className="category">
-                                                            <h6>Maintenance</h6>
-                                                        </div>
-                                                        <div className="title">
-                                                            <h3>
-                                                                <Link href="/blog-single">Mastering Maintenance: Your Guide to
-                                                                    Car Care</Link>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="single-sidebar-box">
-                                        <div className="sidebar-title">
-                                            <div className="icon">
-                                                <img src="../assets/images/icon/blog-sidebar-icon-1.png" alt="icon"/>
-                                            </div>
-                                            <h3>Popular Tags</h3>
+                                            <h3>Popularni Tagovi</h3>
                                         </div>
                                         <div className="sidebar-blog-tag">
-                                            <ul className="clearfix">
-                                                <li><Link href="#">Activities</Link></li>
-                                                <li><Link href="#">Cars</Link></li>
-                                                <li><Link href="#">Challenges</Link></li>
-                                                <li><Link href="#">Courses</Link></li>
-                                                <li><Link href="#">Instructors</Link></li>
-                                                <li><Link href="#">Teen Drivers</Link></li>
-                                                <li><Link href="#">Traffic Signs</Link></li>
-                                                <li><Link href="#">Training</Link></li>
-                                            </ul>
-                                        </div>
+  <ul className="clearfix">
+    <li><Link href="#">Časovi vožnje</Link></li>
+    <li><Link href="#">Teorijska nastava</Link></li>
+    <li><Link href="#">Poligon</Link></li>
+    <li><Link href="#">Auto škola</Link></li>
+    <li><Link href="#">Instruktori</Link></li>
+    <li><Link href="#">Saobraćajni znaci</Link></li>
+    <li><Link href="#">Praktična obuka</Link></li>
+    <li><Link href="#">Polaganje ispita</Link></li>
+    <li><Link href="#">Bezbedna vožnja</Link></li>
+    <li><Link href="#">Pravila saobraćaja</Link></li>
+  </ul>
+</div>
+
                                     </div>
                                     <div className="banner-style1 banner-style1--1">
                                         <div className="banner-style1__bg"
