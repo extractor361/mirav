@@ -233,12 +233,14 @@ Rođena 24. januara 1978. godine u Kolašinu. Inženjer drumskog saobraćaja. Sv
                                                 <img src="assets/images/shapes/-v1-shape1.png" alt="shape"/>
                                             </div>
                                             <div className="single-team-style1-title">
-                                                <h3><Link href="/">Ivana Šćepanović  <br/>Petković</Link></h3>
-                                                <span>Instruktor</span>
+                                                <h3><Link href="/">Jadranka Vesović
+  <br/> Rakočević</Link></h3>
+                                                <span>Referent auto škole
+</span>
                                             </div>
                                             <div className="single-team-style1-border"></div>
                                             <div className="single-team-style1-text">
-                                                <p>Ivana je strpljiva i posvećena instruktorka koja se lako povezuje sa kandidatima. Njena obuka je prilagođena svakom pojedincu, što omogućava brži napredak, posebno kod početnika.</p>
+                                                <p>Jadranka je odgovorna za administrativnu podršku i svakodnevne operacije u auto školi. Njena organizacija i preciznost čine rad škole efikasnijim, a kandidati se uvijek mogu osloniti na njenu pomoć u vezi sa svim administrativnim pitanjima.</p>
                                             </div>
                                             <div className="single-team-style1-bottom">
                                                 <ul className="single-team-style1-social-link clearfix">
