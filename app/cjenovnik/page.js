@@ -92,29 +92,47 @@ export default function Cjenovnik_Page() {
                       </div>
                     </div>
 
-                    {/* Dodatne usluge */}
+                    {/* Dodatne usluge tabela */}
                     <div className="col-xl-12 mt-60">
                       <div className="single-service-style1">
                         <div className="single-service-style1__title">
                           <h3>Dodatne usluge</h3>
                           <h6>Cjenovnik dodatnih usluga</h6>
                         </div>
-                        <div >
+                        <div>
                           <img src="/assets/images/shapes/service-v1-shape2.png" alt="shape" />
                         </div>
-                        <div className="single-service-style1__img">
-                          <div className="single-service-style1__inner">
-                            <img src="/assets/images/resources/teorijaa.webp" alt="Crveni Golf 8" />
-                          </div>
-                          <div className="single-service-style1__text">
-                            <ul className="price-list">
-                              <li>Teoretski dio – polaganje: 25 €</li>
-                              <li>Praktični dio – polaganje: 25 €</li>
-                              <li>Svjedočanstvo: 10 €</li>
-                              <li>Ispisnica: 10 €</li>
-                              <li>Dopunski čas: 30 €</li>
-                            </ul>
-                          </div>
+                        <div className="single-service-style1__text mt-4">
+                          <table className="table table-striped" style={{ width: '100%', borderCollapse: 'collapse' }}>
+                            <thead>
+                              <tr style={{ backgroundColor: '#f5f5f5' }}>
+                                <th style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'left' }}>Usluga</th>
+                                <th style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'right' }}>Cena</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style={{ padding: '10px', border: '1px solid #ddd' }}>Teoretski dio – polaganje</td>
+                                <td style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'right' }}>25 €</td>
+                              </tr>
+                              <tr>
+                                <td style={{ padding: '10px', border: '1px solid #ddd' }}>Praktični dio – polaganje</td>
+                                <td style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'right' }}>25 €</td>
+                              </tr>
+                              <tr>
+                                <td style={{ padding: '10px', border: '1px solid #ddd' }}>Svjedočanstvo</td>
+                                <td style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'right' }}>10 €</td>
+                              </tr>
+                              <tr>
+                                <td style={{ padding: '10px', border: '1px solid #ddd' }}>Ispisnica</td>
+                                <td style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'right' }}>10 €</td>
+                              </tr>
+                              <tr>
+                                <td style={{ padding: '10px', border: '1px solid #ddd' }}>Dopunski čas</td>
+                                <td style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'right' }}>30 €</td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
