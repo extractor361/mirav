@@ -1,10 +1,61 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Link from "next/link"
 import "app/favicon.ico"
 import Layout from "@/components/layout/Layout"
 import Location from '@/components/sections/home2/Location'
+
 export default function Contact_Page() {
+    const [formData, setFormData] = useState({
+        ime: '',
+        kontakt: '',
+        email: '',
+        subject: '',
+        message: ''
+    })
+    const [statusMessage, setStatusMessage] = useState('')
+    const [loading, setLoading] = useState(false)
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        setLoading(true)
+        setStatusMessage('')
+
+        try {
+            const res = await fetch('https://miravapibackend.online/api/kontaktForma', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+
+            if (res.ok) {
+                setStatusMessage('✅ Poruka je uspješno poslata!')
+                setFormData({
+                    ime: '',
+                    kontakt: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                })
+            } else {
+                setStatusMessage('❌ Došlo je do greške prilikom slanja.')
+            }
+        } catch (error) {
+            setStatusMessage('❌ Server nije dostupan. Pokušajte ponovo.')
+        } finally {
+            setLoading(false)
+        }
+    }
+
     return (
         <div className="page-wrapper boxed_wrapper course-details-page">
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Kontaktiraj Nas">
@@ -17,12 +68,10 @@ export default function Contact_Page() {
                             <h2>Treba vam pomoć? Kontaktiraj nas!</h2>
                         </div>
                         <div className="row">
-                            
                             <div className="col-xl-6 col-lg-6">
                                 <div className="single-contact-info-style3">
                                     <div className="icon">
-                                        <span className="icon-call-center"><span className="path1"></span><span
-                                                className="path2"></span></span>
+                                        <span className="icon-call-center"></span>
                                     </div>
                                     <div className="text">
                                         <h4>Kontakt</h4>
@@ -30,8 +79,8 @@ export default function Contact_Page() {
                                     <div className="content-box">
                                         <div className="phone-email">
                                             <p>
-                                                <span>KOntakt telefon:</span>
-                                                <Link href="tel:+382  068444101 "> +382  068444101 </Link>
+                                                <span>Kontakt telefon:</span>
+                                                <Link href="tel:+382068444101"> +382 068 444 101 </Link>
                                             </p>
                                             <p>
                                                 <span>Email:</span>
@@ -44,14 +93,11 @@ export default function Contact_Page() {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className="col-xl-6 col-lg-6">
                                 <div className="single-contact-info-style3">
                                     <div className="icon">
-                                        <span className="icon-location"><span className="path1"></span><span className="path2"></span><span
-                                                className="path3"></span><span className="path4"></span><span className="path5"></span><span
-                                                className="path6"></span><span className="path7"></span><span className="path8"></span><span
-                                                className="path9"></span></span>
+                                        <span className="icon-location"></span>
                                     </div>
                                     <div className="text">
                                         <h4>Adresa</h4>
@@ -59,13 +105,12 @@ export default function Contact_Page() {
                                     <div className="content-box">
                                         <div className="phone-email">
                                             <p>
-                                                21/1 Vojina Katnića, <br/>
+                                                21/1 Vojina Katnića, <br />
                                                 Podgorica 81000
                                             </p>
                                         </div>
                                         <div className="btn-box btn-box--2">
-                                            <Link
-                                                href="https://www.google.com/maps/search/Drive+Master,+54+Thurston+Avenue,%3Cbr%3E+Ithaca,+NY+10001./@42.4542057,-76.4913903,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D">
+                                            <Link href="https://www.google.com/maps">
                                                 <i className="icon-next"></i>
                                                 Google Mapa
                                             </Link>
@@ -73,20 +118,18 @@ export default function Contact_Page() {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className="col-xl-6 col-lg-6">
                                 <div className="single-contact-info-style3">
                                     <div className="icon">
-                                        <span className="icon-time"><span className="path1"></span><span className="path2"></span><span
-                                                className="path3"></span><span className="path4"></span><span
-                                                className="path5"></span></span>
+                                        <span className="icon-time"></span>
                                     </div>
                                     <div className="text">
                                         <h4>Radni Sati</h4>
                                     </div>
                                     <div className="content-box">
                                         <div className="phone-email">
-                                            <p><span> Pon - Pet:</span>08:00 do 20:00</p>
+                                            <p><span>Pon - Pet:</span> 08:00 do 20:00</p>
                                             <p><span>Sub:</span> 08:00 do 16:00</p>
                                         </div>
                                         <div className="btn-box">
@@ -95,13 +138,11 @@ export default function Contact_Page() {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className="col-xl-6 col-lg-6">
                                 <div className="single-contact-info-style3">
                                     <div className="icon">
-                                        <span className="icon-faq"><span className="path1"></span><span className="path2"></span><span
-                                                className="path3"></span><span className="path4"></span><span className="path5"></span><span
-                                                className="path6"></span><span className="path7"></span></span>
+                                        <span className="icon-faq"></span>
                                     </div>
                                     <div className="text">
                                         <h4>Faq</h4>
@@ -116,50 +157,27 @@ export default function Contact_Page() {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
 
                         <div className="contact-info-style3-social-links text-center">
                             <div className="title">
                                 <h3>Društvene mreže</h3>
                             </div>
                             <ul className="clearfix">
-                                <li>
-                                    <Link href="https://www.facebook.com/">
-                                        <span className="icon-facebook"></span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="https://x.com/i/flow/login">
-                                        <i className="icon-twitter"></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="https://www.instagram.com/accounts/login/?hl=en">
-                                        <span className="icon-instagram-logo"></span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="https://www.youtube.com/">
-                                        <span className="icon-youtube"></span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="https://www.whatsapp.com/">
-                                        <span className="icon-whatsapp"></span>
-                                    </Link>
-                                </li>
+                                <li><Link href="https://www.facebook.com/"><span className="icon-facebook"></span></Link></li>
+                                <li><Link href="https://x.com/"><i className="icon-twitter"></i></Link></li>
+                                <li><Link href="https://www.instagram.com/"><span className="icon-instagram-logo"></span></Link></li>
+                                <li><Link href="https://www.youtube.com/"><span className="icon-youtube"></span></Link></li>
+                                <li><Link href="https://www.whatsapp.com/"><span className="icon-whatsapp"></span></Link></li>
                             </ul>
                         </div>
-
                     </div>
                 </section>
-                
-                <Location/>
+
+                <Location />
+
                 <section id='main' className="main-contact-form">
                     <div className="container">
-
                         <div className="sec-title withtext text-center">
                             <div className="sub-title">
                                 <h4>Pošalji poruku</h4>
@@ -172,44 +190,39 @@ export default function Contact_Page() {
 
                         <div className="main-contact-form__inner">
                             <div className="contact-form">
-                                <form id="contact-form" name="contact_form" className="default-form2"
-                                    action="assets/inc/sendmail.php" method="post">
+                                <form onSubmit={handleSubmit} className="default-form2">
                                     <div className="row">
                                         <div className="col-xl-6">
                                             <div className="form-group">
                                                 <div className="label-box">
-                                                    <label for="formName">Ime</label>
+                                                    <label htmlFor="ime">Ime</label>
                                                 </div>
                                                 <div className="input-box">
-                                                    <input type="text" name="form_name" id="formName"
-                                                        placeholder="Unesite vaše ime" required=""/>
+                                                    <input type="text" name="ime" id="ime" placeholder="Unesite vaše ime" value={formData.ime} onChange={handleChange} required />
                                                 </div>
                                             </div>
                                             <div className="form-group">
                                                 <div className="label-box">
-                                                    <label for="formPhone">Telefon</label>
+                                                    <label htmlFor="kontakt">Telefon</label>
                                                 </div>
                                                 <div className="input-box">
-                                                    <input type="text" name="form_phone" id="formPhone"
-                                                        placeholder="Unesite kontakt telefon"/>
+                                                    <input type="text" name="kontakt" id="kontakt" placeholder="Unesite kontakt telefon" value={formData.kontakt} onChange={handleChange} />
                                                 </div>
                                             </div>
                                             <div className="form-group">
                                                 <div className="label-box">
-                                                    <label for="formEmail">Email</label>
+                                                    <label htmlFor="email">Email</label>
                                                 </div>
                                                 <div className="input-box">
-                                                    <input type="email" name="form_email" id="formEmail"
-                                                        placeholder="Email adresa" required=""/>
+                                                    <input type="email" name="email" id="email" placeholder="Email adresa" value={formData.email} onChange={handleChange} required />
                                                 </div>
                                             </div>
                                             <div className="form-group">
                                                 <div className="label-box">
-                                                    <label for="formSubject">Predmet</label>
+                                                    <label htmlFor="subject">Predmet</label>
                                                 </div>
                                                 <div className="input-box">
-                                                    <input type="text" name="form_subject" id="formSubject"
-                                                        placeholder="Unesite predmet"/>
+                                                    <input type="text" name="subject" id="subject" placeholder="Unesite predmet" value={formData.subject} onChange={handleChange} />
                                                 </div>
                                             </div>
                                         </div>
@@ -217,25 +230,23 @@ export default function Contact_Page() {
                                         <div className="col-xl-6">
                                             <div className="form-group">
                                                 <div className="label-box">
-                                                    <label for="formMessage">Poruka</label>
+                                                    <label htmlFor="message">Poruka</label>
                                                 </div>
                                                 <div className="input-box">
-                                                    <textarea name="form_message" id="formMessage" placeholder="Pišite ovdje..."
-                                                        required=""></textarea>
+                                                    <textarea name="message" id="message" placeholder="Pišite ovdje..." value={formData.message} onChange={handleChange} required></textarea>
                                                 </div>
                                             </div>
 
                                             <div className="button-box">
-                                                <input id="form_botcheck" name="form_botcheck" className="form-control"
-                                                    type="hidden"/>
-                                                <button className="btn-one" type="submit" data-loading-text="Please wait...">
-                                                    <span className="txt">
-                                                        Pošaljite vaš upit
-                                                    </span>
+                                                <button className="btn-one" type="submit" disabled={loading}>
+                                                    <span className="txt">{loading ? 'Slanje...' : 'Pošaljite vaš upit'}</span>
                                                 </button>
                                             </div>
-                                        </div>
 
+                                            {statusMessage && (
+                                                <p style={{ marginTop: '10px', fontWeight: 'bold' }}>{statusMessage}</p>
+                                            )}
+                                        </div>
                                     </div>
                                 </form>
                             </div>
