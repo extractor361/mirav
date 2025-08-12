@@ -107,11 +107,55 @@ Rođena 24. januara 1978. godine u Kolašinu. Inženjer drumskog saobraćaja. Sv
                                             </div>
                                             <div className="single-team-style1-title">
                                                 <h3><Link href="/">Almedina <br/>Jasharaj</Link></h3>
-                                                <span>Asisten u nastavi</span>
+                                                <span>Asistent u nastavi</span>
                                             </div>
                                             <div className="single-team-style1-border"></div>
                                             <div className="single-team-style1-text">
                                                 <p>Almedina je strastvena u pomaganju kandidatima da savladaju teorijski dio nastave. Kao student saobraćajnog fakulteta, uvijek je u toku sa novim trendovima i propisima u saobraćaju. Njen pristup je edukativan i motivirajuć, čineći teorijsku nastavu zanimljivijom i lakšom za učenike.</p>
+                                            </div>
+                                            <div className="single-team-style1-bottom">
+                                                <ul className="single-team-style1-social-link clearfix">
+                                                    <li>
+                                                        <Link href="https://www.facebook.com/">
+                                                            <span className=" icon-facebook"></span>
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="https://x.com/i/flow/login">
+                                                            <span className="icon-twitter"></span>
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="https://www.instagram.com/accounts/login/?hl=en">
+                                                            <span className="icon-instagram-logo"></span>
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                                <div className="single-team-style1-btn">
+                                                    <Link href="/"><i className="icon-next"></i> Pogledaj Profil</Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="single-team-style1-img">
+                                            <img src="assets/images/resources/tim2.jpeg" alt="Awesome Image"/>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className="single-team-style1">
+                                        <div className="single-team-style1-inner">
+                                            <div className="single-team-style1-shape">
+                                                <img src="assets/images/shapes/-v1-shape1.png" alt="shape"/>
+                                            </div>
+                                            <div className="single-team-style1-title">
+                                                <h3><Link href="/">Ivana  <br/>Šćepanović Petković</Link></h3>
+                                                <span>Instruktor</span>
+                                            </div>
+                                            <div className="single-team-style1-border"></div>
+                                            <div className="single-team-style1-text">
+                                                <p>Instruktor vožnje motornih vozila B kategorije
+Ivana je strpljiva i posvećena instruktorka koja se lako povezuje sa kandidatima. Njena obuka je prilagođena svakom pojedincu, što omogućava brži napredak, posebno kod početnika.</p>
                                             </div>
                                             <div className="single-team-style1-bottom">
                                                 <ul className="single-team-style1-social-link clearfix">

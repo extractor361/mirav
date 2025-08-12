@@ -133,6 +133,7 @@
 
 .single-team-style1-btn {
     position: relative;
+    display:none;
     display: block;
     line-height: 0;
 }
