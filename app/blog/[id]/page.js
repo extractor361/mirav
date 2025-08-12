@@ -2,6 +2,8 @@
 import React from "react";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
+import parse from 'html-react-parser';
+
 
 const API_URL = "https://miravapibackend.online/api";
 
@@ -52,7 +54,8 @@ export default async function BlogSinglePage({ params }) {
                   )}
                   <div className="text-box1">
                     <h2>{novost.naslov}</h2>
-                    <p>{novost.sadrzaj}</p>
+                    <p>{parse(novost.sadrzaj)}
+</p>
                   </div>
 
                   <div className="blog-post-tag2">

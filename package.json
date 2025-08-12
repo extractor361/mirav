@@ -14,6 +14,7 @@
     "@fontsource/pathway-extreme": "^5.2.5",
     "aos": "^2.3.4",
     "bootstrap-touchspin": "^4.7.3",
+    "html-react-parser": "^5.2.6",
     "isotope-layout": "^3.0.6",
     "lightgallery": "^2.7.2",
     "next": "^13.5.11",

@@ -91,7 +91,7 @@ const [isMobile, setIsMobile] = useState(false);
                                                 </div>
                                                 <div className="slider-reviews-box">
                                                     <div className="left">
-                                                        <h3>4.9</h3>
+                                                        <h3>5.0</h3>
                                                     </div>
                                                     <div className="right">
                                                         <form className="star-rating-style1">
@@ -150,7 +150,7 @@ const [isMobile, setIsMobile] = useState(false);
                                                 </div>
                                                 <div className="slider-reviews-box">
                                                     <div className="left">
-                                                        <h3>4.9</h3>
+                                                        <h3>5.0</h3>
                                                     </div>
                                                     <div className="right">
                                                         <form className="star-rating-style1">
@@ -211,7 +211,7 @@ const [isMobile, setIsMobile] = useState(false);
                                                 </div>
                                                 <div className="slider-reviews-box">
                                                     <div className="left">
-                                                        <h3>4.9</h3>
+                                                        <h3>5.0</h3>
                                                     </div>
                                                     <div className="right">
                                                         <form className="star-rating-style1">
