@@ -82,25 +82,17 @@ Svaka neprijatnost se može izbjeći, ali u određenim okolnostima i zbog zahtje
                                     <div className="thm-social-link">
                                         <ul className="clearfix">
                                             <li>
-                                                <Link href="#">
+                                                <Link href="https://www.facebook.com/as.mirav/">
                                                     <i className="icon-facebook"></i>
                                                 </Link>
                                             </li>
+                                            
                                             <li>
-                                                <Link href="#">
-                                                    <i className="icon-twitter"></i>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#">
+                                                <Link href="https://www.instagram.com/auto_skola_mirav_/?hl=en">
                                                     <i className="icon-instagram-logo"></i>
                                                 </Link>
                                             </li>
-                                            <li>
-                                                <Link href="#">
-                                                    <i className="icon-youtube"></i>
-                                                </Link>
-                                            </li>
+                                            
                                         </ul>
                                     </div>
 
