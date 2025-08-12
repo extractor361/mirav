@@ -181,7 +181,7 @@ Ivana je strpljiva i posvećena instruktorka koja se lako povezuje sa kandidatim
                                             </div>
                                         </div>
                                         <div className="single-team-style1-img">
-                                            <img src="assets/images/resources/tim2.jpeg" alt="Awesome Image"/>
+                                            <img src="assets/images/ivana.jpg" alt="Ivana Šćepanović Petjović"/>
                                         </div>
                                     </div>
                                 </SwiperSlide>

@@ -69,7 +69,7 @@ export default async function BlogSinglePage({ params }) {
                   </div>
 
                   <div className="back-to-blog-post-btn">
-                    <Link href="/blog-single">
+                    <Link href="/blog">
                       <span className="icon-menu"></span>Nazad na objave
                     </Link>
                   </div>
