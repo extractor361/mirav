@@ -61,7 +61,7 @@ export default async function BlogSinglePage({ params }) {
                   <div className="blog-post-tag2">
                     <div className="title">
                       <div className="icon">
-                        <img src="/assets/images/icon/post-tags-icon1.png" alt="icon" />
+                        <img src="../assets/images/icon/post-tags-icon1.png" alt="icon" />
                       </div>
                       <h4>Tagovi</h4>
                     </div>
@@ -90,7 +90,7 @@ export default async function BlogSinglePage({ params }) {
                                     <div className="single-sidebar-box">
                                         <div className="sidebar-title">
                                             <div className="icon">
-                                                <img src="assets/images/icon/blog-sidebar-icon-1.png" alt="icon"/>
+                                                <img src="../assets/images/icon/blog-sidebar-icon-1.png" alt="icon"/>
                                             </div>
                                             <h3>Categories</h3>
                                         </div>
@@ -174,7 +174,7 @@ export default async function BlogSinglePage({ params }) {
                                     <div className="single-sidebar-box">
                                         <div className="sidebar-title">
                                             <div className="icon">
-                                                <img src="assets/images/icon/blog-sidebar-icon-1.png" alt="icon"/>
+                                                <img src="../assets/images/icon/blog-sidebar-icon-1.png" alt="icon"/>
                                             </div>
                                             <h3>Popular Post</h3>
                                         </div>
@@ -182,7 +182,7 @@ export default async function BlogSinglePage({ params }) {
                                             <ul className="list-item clearfix">
                                                 <li>
                                                     <div className="img-box">
-                                                        <img src="assets/images/blog/blog-sidebar-1-1.jpg" alt="Awesome Image"/>
+                                                        <img src="../assets/images/blog/blog-sidebar-1-1.jpg" alt="Awesome Image"/>
                                                     </div>
                                                     <div className="content-box">
                                                         <div className="category">
@@ -198,7 +198,7 @@ export default async function BlogSinglePage({ params }) {
                                                 </li>
                                                 <li>
                                                     <div className="img-box">
-                                                        <img src="assets/images/blog/blog-sidebar-1-2.jpg" alt="Awesome Image"/>
+                                                        <img src="../assets/images/blog/blog-sidebar-1-2.jpg" alt="Awesome Image"/>
                                                     </div>
                                                     <div className="content-box">
                                                         <div className="category">
@@ -214,7 +214,7 @@ export default async function BlogSinglePage({ params }) {
                                                 </li>
                                                 <li>
                                                     <div className="img-box">
-                                                        <img src="assets/images/blog/blog-sidebar-1-3.jpg" alt="Awesome Image"/>
+                                                        <img src="../assets/images/blog/blog-sidebar-1-3.jpg" alt="Awesome Image"/>
                                                     </div>
                                                     <div className="content-box">
                                                         <div className="category">
@@ -234,7 +234,7 @@ export default async function BlogSinglePage({ params }) {
                                     <div className="single-sidebar-box">
                                         <div className="sidebar-title">
                                             <div className="icon">
-                                                <img src="assets/images/icon/blog-sidebar-icon-1.png" alt="icon"/>
+                                                <img src="../assets/images/icon/blog-sidebar-icon-1.png" alt="icon"/>
                                             </div>
                                             <h3>Popular Tags</h3>
                                         </div>
