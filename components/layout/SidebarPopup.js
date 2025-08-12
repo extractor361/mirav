@@ -23,7 +23,8 @@ export default function SidebarPopup({ isPopup, handlePopup }) {
                                         <h3>Vozite Sigurno & Pametno sa Nama</h3>
                                         <div className="inner-text">
                                             <p>
-                                                Svaka neprijatnost se može izbeći, ali u određenim okolnostima i zbog zahteva dužnosti ili poslovnih obaveza često se dešava da se zadovoljstva odbace, a neprijatnosti prihvate — pametnim izborom odbacujemo trenutna zadovoljstva da bismo obezbedili sigurnu budućnost.
+Svaka neprijatnost se može izbjeći, ali u određenim okolnostima i zbog zahtjeva dužnosti ili poslovnih obaveza često se dešava da se zadovoljstva odbace, a neprijatnosti prihvate — pametnim izborom odbacujemo trenutna zadovoljstva da bismo obezbijedili sigurnu budućnost.
+
 
 
                                             </p>
