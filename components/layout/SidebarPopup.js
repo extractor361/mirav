@@ -64,7 +64,7 @@ Svaka neprijatnost se može izbjeći, ali u određenim okolnostima i zbog zahtje
                                         </ul>
                                     </div>
 
-                                    <div className="side-content-newsletter-box">
+                                    {/*<div className="side-content-newsletter-box">
                                         <h3>Pretplati se</h3>
                                         <form action="/" method="post">
                                             <div className="form-group">
@@ -77,7 +77,7 @@ Svaka neprijatnost se može izbjeći, ali u određenim okolnostima i zbog zahtje
                                                 </button>
                                             </div>
                                         </form>
-                                    </div>
+                                    </div>*/}
 
                                     <div className="thm-social-link">
                                         <ul className="clearfix">
