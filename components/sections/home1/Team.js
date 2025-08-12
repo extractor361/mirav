@@ -68,7 +68,8 @@ export default function Team() {
                                             </div>
                                             <div className="single-team-style1-border"></div>
                                             <div className="single-team-style1-text">
-                                                <p>Osnivač i direktor, instruktor vožnje B i C kategorije.</p>
+                                                <p>Osnivač i direktor auto škole, instruktor vožnje B i C kategorije, član ispitne komisije
+Rođena 24. januara 1978. godine u Kolašinu. Inženjer drumskog saobraćaja. Svoju karijeru započinje 2003. godine kao instruktor u auto školi Beo Znanje u Beogradu, a 2007. godine postaje rukovodilac te škole. U januaru 2013. godine odlučuje da se vrati u Podgoricu i osniva auto školu Mirav. Do sada je uspješno obučila preko 3000 kandidata.</p>
                                             </div>
                                             <div className="single-team-style1-bottom">
                                                 <ul className="single-team-style1-social-link clearfix">
@@ -105,12 +106,12 @@ export default function Team() {
                                                 <img src="assets/images/shapes/-v1-shape1.png" alt="shape"/>
                                             </div>
                                             <div className="single-team-style1-title">
-                                                <h3><Link href="/">Almedina <br/>Jašaraj</Link></h3>
+                                                <h3><Link href="/">Almedina <br/>Jasharaj</Link></h3>
                                                 <span>Asisten u nastavi</span>
                                             </div>
                                             <div className="single-team-style1-border"></div>
                                             <div className="single-team-style1-text">
-                                                <p>Asistent u teorijskoj nastavi, student Saobraćajnog fakulteta</p>
+                                                <p>Almedina je strastvena u pomaganju kandidatima da savladaju teorijski dio nastave. Kao student saobraćajnog fakulteta, uvijek je u toku sa novim trendovima i propisima u saobraćaju. Njen pristup je edukativan i motivirajuć, čineći teorijsku nastavu zanimljivijom i lakšom za učenike.</p>
                                             </div>
                                             <div className="single-team-style1-bottom">
                                                 <ul className="single-team-style1-social-link clearfix">
@@ -152,7 +153,7 @@ export default function Team() {
                                             </div>
                                             <div className="single-team-style1-border"></div>
                                             <div className="single-team-style1-text">
-                                                <p>Instruktor vožnje motornih vozila B kategorije</p>
+                                                <p>Nikola je mirne naravi i poznat po tome što savršeno prilagođava obuku svakom kandidatu. Sa njim, svaki kandidat se osjeća sigurno i sigurnije savladava sve izazove vožnje.</p>
                                             </div>
                                             <div className="single-team-style1-bottom">
                                                 <ul className="single-team-style1-social-link clearfix">
@@ -194,7 +195,8 @@ export default function Team() {
                                             </div>
                                             <div className="single-team-style1-border"></div>
                                             <div className="single-team-style1-text">
-                                                <p>Instruktor vožnje motornih vozila B kategorije.</p>
+                                                <p>Mićko je posvećen i strpljiv instruktor koji se odlikuje preciznošću i temeljitošću u obuci. Sa dugogodišnjim iskustvom, trudi se da svaki kandidat postigne sigurnost i samopouzdanje za volanom.
+</p>
                                             </div>
                                             <div className="single-team-style1-bottom">
                                                 <ul className="single-team-style1-social-link clearfix">
@@ -236,7 +238,7 @@ export default function Team() {
                                             </div>
                                             <div className="single-team-style1-border"></div>
                                             <div className="single-team-style1-text">
-                                                <p>Instruktor vožnje motornih vozila B kategorije.</p>
+                                                <p>Ivana je strpljiva i posvećena instruktorka koja se lako povezuje sa kandidatima. Njena obuka je prilagođena svakom pojedincu, što omogućava brži napredak, posebno kod početnika.</p>
                                             </div>
                                             <div className="single-team-style1-bottom">
                                                 <ul className="single-team-style1-social-link clearfix">
@@ -278,7 +280,8 @@ export default function Team() {
                                             </div>
                                             <div className="single-team-style1-border"></div>
                                             <div className="single-team-style1-text">
-                                                <p>Instruktor vožnje motornih vozila B kategorije.</p>
+                                                <p>Adam je energičan i pozitivan, uvek spreman da pomogne kandidatima da prevaziđu strahove i nesigurnost. Njegov pristup je prilagođen svakom kandidatu, omogućavajući brže i lakše savladavanje vožnje.
+</p>
                                             </div>
                                             <div className="single-team-style1-bottom">
                                                 <ul className="single-team-style1-social-link clearfix">
