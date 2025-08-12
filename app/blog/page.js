@@ -28,7 +28,7 @@ export default function Blog_Page_Two() {
                     <div className="single-blog-style1__img">
                       <div className="inner">
                         <img
-                          src={slika ? `/uploads/${slika}` : "/assets/images/blog/blog-default.jpg"}
+                          src={slika ? `https://miravapibackend.online/slike/${slika}` : "/assets/images/blog/blog-default.jpg"}
                           alt={naslov}
                         />
                         <div className="single-blog-style1__overlay-icon">
