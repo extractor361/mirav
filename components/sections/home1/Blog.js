@@ -46,7 +46,7 @@ export default function Blog() {
                         <>
                           <img src={`/slike/${slika}`} alt={naslov} />
                           <div className="single-blog-style1__overlay-icon">
-                            <Link className="lightbox-image" data-fancybox="gallery" href={`/uploads/${slika}`}>
+                            <Link className="lightbox-image" data-fancybox="gallery" href={`/slike/${slika}`}>
                               <i className="icon-zoom"></i>
                             </Link>
                           </div>
