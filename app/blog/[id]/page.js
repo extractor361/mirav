@@ -25,7 +25,7 @@ export default async function BlogSinglePage({ params }) {
     novost = await fetchNovost(id);
   } catch (error) {
     return (
-      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle2="Single Post">
+      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle2={novost.naslov}>
         <div className="container">
           <h2>Novost nije pronađena ili došlo je do greške.</h2>
           <Link href="/blog-single">Nazad na Blog</Link>
@@ -36,7 +36,7 @@ export default async function BlogSinglePage({ params }) {
 
   return (
     <div className="page-wrapper boxed_wrapper course-details-page">
-      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle2="Single Post">
+      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle2={novost.naslov}>
         <section className="blog-page-three">
           <div className="container">
             <div className="row">
@@ -60,7 +60,7 @@ export default async function BlogSinglePage({ params }) {
                       <div className="icon">
                         <img src="/assets/images/icon/post-tags-icon1.png" alt="icon" />
                       </div>
-                      <h4>Post Tag</h4>
+                      <h4>Tagovi</h4>
                     </div>
                     {/* Možeš dodati tagove ako ih imaš u API-ju */}
                   </div>

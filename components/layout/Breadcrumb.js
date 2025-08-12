@@ -5,7 +5,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
         <>
 
             <section className="breadcrumb-style1">
-                <div className="breadcrumb-style1-bg" style={{ backgroundImage: "url(assets/images/resources/breadcrumb-main.jpg)" }}>
+                <div className="breadcrumb-style1-bg" style={{ backgroundImage: "url(../assets/images/resources/breadcrumb-main.jpg)" }}>
                     <div className="breadcrumb-style1-bg__overlay"></div>
                 </div>
                 <div className="container">
