@@ -106,7 +106,7 @@ export default function About_Page() {
                                                             </div>
                                                             <div className="text">
                                                                 <p>
-                                                                    Naša misija je da osposobimo sigurne, samopouzdane i savjesne vozače. Kroz moderan pristup nastavi, strpljivo mentorstvo i fokus na praktična znanja, omogućavamo kandidatima da ne nauče samo kako se vozi — već kako se razmišlja na putu.
+Vozila, putevi i podneblje ne možemo mijenjati u većoj mjeri, ali ono što možemo je promijeniti naše ponašanje u saobraćaju. Naša misija je da vas uvjerimo da, bez obzira na vaše fizičke, psihičke, intelektualne i druge karakteristike, prihvatite norme bezbjednog ponašanja dok učestvujete u saobraćaju. Na taj način štitimo ne samo sebe, već i druge učesnike u saobraćaju.
                                                                 </p>
                                                             </div>
                                                             <div className="fact-box">
