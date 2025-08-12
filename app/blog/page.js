@@ -42,17 +42,17 @@ export default function Blog_Page_Two() {
                           <h6>{new Date(datum_objave).toLocaleDateString('sr-RS', { day: '2-digit', month: 'long', year: 'numeric' })}</h6>
                         </div>
                         <div className="category">
-                          <h5>Autor: {korisnik_korisnik_id}</h5> {/* Po potrebi možeš staviti ime autora ako ga imaš */}
+                          <h5>Autor: Admin</h5> {/* Po potrebi možeš staviti ime autora ako ga imaš */}
                         </div>
                         <div className="meta-box">
                           <ul className="meta-info clearfix">
                             <li>
                               <div className="icon"><i className="icon-user"></i></div>
-                              <div className="text"><p>Autor ID: {korisnik_korisnik_id}</p></div>
+                              <div className="text"><p>Mirjana {korisnik_korisnik_id}</p></div>
                             </li>
                             <li>
                               <div className="icon"><i className="icon-stopwatch"></i></div>
-                              <div className="text"><p>3 minuta čitanja</p></div> {/* Ovdje možeš napraviti procjenu trajanja */}
+                              <div className="text"><p>2 minuta čitanja</p></div> {/* Ovdje možeš napraviti procjenu trajanja */}
                             </li>
                           </ul>
                         </div>
