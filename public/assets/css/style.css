@@ -9313,3 +9313,7 @@ select:focus {
 }
 
 .single-project-style1__img-overlay-icon a {display:none !important;}
+
+.service-style1.pt-120.pb-90 > div > div.inner-container > div > div > div > div.col-xl-12.mt-60 > div > div:nth-child(2){
+    margin-top:300px !important;
+}
