@@ -61,7 +61,7 @@ export default function About() {
                                                 <span className="icon-wing"></span>
                                             </div>
                                             <div className="text">
-                                                <p>Osnovani 2005. godine</p>
+                                                <p>Osnovani 2013. godine</p>
                                             </div>
                                         </li>
                                         <li>
@@ -69,7 +69,7 @@ export default function About() {
                                                 <span className="icon-wing"></span>
                                             </div>
                                             <div className="text">
-                                                <p>Proširili usluge 2008.</p>
+                                                <p>Proširili usluge 2020.</p>
                                             </div>
                                         </li>
                                         <li>
@@ -77,7 +77,7 @@ export default function About() {
                                                 <span className="icon-wing"></span>
                                             </div>
                                             <div className="text">
-                                                <p> Ključna prekretnica u 2012.</p>
+                                                <p>Ključna prekretnica u 2021.</p>
                                             </div>
                                         </li>
                                         <li>
@@ -85,7 +85,7 @@ export default function About() {
                                                 <span className="icon-wing"></span>
                                             </div>
                                             <div className="text">
-                                                <p>Od 2015. omogućavamo i online obuku</p>
+                                                <p>Od 2025. omogućavamo i online obuku</p>
                                             </div>
                                         </li>
                                     </ul>
