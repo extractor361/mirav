@@ -257,30 +257,32 @@ export default async function BlogSinglePage({ params }) {
                                         </div>
                                         <div className="banner-style1___inner text-center">
                                             <div className="title-box">
-                                                <h4>Discover Road to</h4>
-                                                <h2>learn Driving</h2>
+                                                <h4>Kreni putem
+</h4>
+                                                <h2>bezbjedne vožnje</h2>
                                             </div>
                                             <ul className="list-item clearfix">
                                                 <li>
-                                                    <h6>safe</h6>
+                                                    <h6>Sigurno</h6>
                                                 </li>
                                                 <li>
-                                                    <h6>Reliable</h6>
+                                                    <h6>Pouzdano</h6>
                                                 </li>
                                                 <li>
-                                                    <h6>Protected</h6>
+                                                    <h6>Strpljivo</h6>
                                                 </li>
                                             </ul>
                                             <div className="content-box">
                                                 <h4>
                                                     <i className="icon-dial-pad"></i>
-                                                    <Link href="tel:66120003456">+66 12 000 3456</Link>
+                                                    <Link href="tel:+382 068 444 101">+382 068 444 101</Link>
                                                 </h4>
-                                                <p>Drive Your Questions to Us Contact Our Experts Now!</p>
+                                                <p>Imate pitanja? Vozite ih nama! Kontaktirajte naše stručnjake i započnite svoje putovanje ka sigurnoj vožnji.
+</p>
                                                 <div className="btn-box">
                                                     <Link className="btn-one" href="#">
                                                         <span className="txt">
-                                                            Start to Learn
+                                                            Želim vozačku dozvolu
                                                         </span>
                                                     </Link>
                                                 </div>
