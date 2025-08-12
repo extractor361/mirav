@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 
-const API_URL = "https://miravapibackend.online";
+const API_URL = "https://miravapibackend.online/api";
 
 async function fetchNovost(id) {
   const res = await fetch(`${API_URL}/dohvatiNovost/${id}`, {
@@ -45,7 +45,7 @@ export default async function BlogSinglePage({ params }) {
                   {novost.slika && (
                     <div className="img-box">
                       <img
-                        src={`https://miravapibackend.online/uploads/${novost.slika}`}
+                        src={`https://miravapibackend.online/slike/${novost.slika}`}
                         alt={novost.naslov}
                       />
                     </div>
@@ -67,7 +67,7 @@ export default async function BlogSinglePage({ params }) {
 
                   <div className="back-to-blog-post-btn">
                     <Link href="/blog-single">
-                      <span className="icon-menu"></span>Back to Blog Post
+                      <span className="icon-menu"></span>Nazad na objave
                     </Link>
                   </div>
                 </div>
