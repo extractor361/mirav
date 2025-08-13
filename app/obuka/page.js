@@ -73,7 +73,7 @@ export default function Service_Details() {
                                                 <div className="col-xl-6 col-lg-6 col-md-6">
                                                     <div className="single-download-box">
                                                         <div className="file-size">
-                                                            <h6>8 Mb</h6>
+                                                            <h6>38 kb</h6>
                                                         </div>
                                                         <div className="icon-box">
                                                             <span className="icon-file"><span className="path1"></span><span
@@ -90,7 +90,7 @@ export default function Service_Details() {
                                                 <div className="col-xl-6 col-lg-6 col-md-6">
                                                     <div className="single-download-box">
                                                         <div className="file-size">
-                                                            <h6>2.5 Mb</h6>
+                                                            <h6>37 Mb</h6>
                                                         </div>
                                                         <div className="icon-box">
                                                             <span className="icon-file"><span className="path1"></span><span
@@ -100,7 +100,7 @@ export default function Service_Details() {
                                                             <h4><Link href="/assets/Pitanja za kandidate sa pravilnicima numerisani(30).docx">Teorijski testovi</Link></h4>
                                                         </div>
                                                         <div className="btn-box">
-                                                            <Link href="#"><i className="icon-next"></i>Preuzmi</Link>
+                                                            <Link href="/assets/Pitanja za kandidate sa pravilnicima numerisani(30).docx"><i className="icon-next"></i>Preuzmi</Link>
                                                         </div>
                                                     </div>
                                                 </div>
