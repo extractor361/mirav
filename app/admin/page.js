@@ -1,6 +1,7 @@
 'use client'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 export default function Dashboard() {
   const router = useRouter()
@@ -11,7 +12,7 @@ export default function Dashboard() {
       try {
         const res = await fetch('https://miravapibackend.online/api/administracija', {
           method: 'POST',
-          credentials: 'include', // bitno da pošalje cookie
+          credentials: 'include', // cookie se mora poslati
         })
 
         if (!res.ok) {
@@ -56,17 +57,23 @@ export default function Dashboard() {
       <p className="mb-6 text-gray-600">Odaberite jednu od opcija:</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <a href="/admin/blog" className="p-6 bg-white shadow rounded-lg hover:shadow-lg transition">
+        <Link
+          href="/admin/blog"
+          className="p-6 bg-white shadow rounded-lg hover:shadow-lg transition block"
+        >
           <h3 className="font-bold text-lg">📝 Blog</h3>
           <p className="text-gray-500 mt-2">Upravljanje objavama i člancima.</p>
-        </a>
-        <a href="/admin/test" className="p-6 bg-white shadow rounded-lg hover:shadow-lg transition">
+        </Link>
+        <Link
+          href="/admin/test"
+          className="p-6 bg-white shadow rounded-lg hover:shadow-lg transition block"
+        >
           <h3 className="font-bold text-lg">🧪 Test</h3>
           <p className="text-gray-500 mt-2">Pregled i uređivanje testova.</p>
-        </a>
+        </Link>
         <button
           onClick={handleLogout}
-          className="p-6 bg-white shadow rounded-lg hover:shadow-lg transition text-left"
+          className="p-6 bg-white shadow rounded-lg hover:shadow-lg transition text-left w-full"
           style={{ cursor: 'pointer' }}
         >
           <h3 className="font-bold text-lg text-red-500">🚪 Odjava</h3>
