@@ -84,53 +84,60 @@ export default function Pitanja() {
 
   // Submit forme
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (!tekstPitanja.trim()) {
-      alert("Tekst pitanja je obavezan!");
-      return;
+  if (!tekstPitanja.trim()) {
+    alert("Tekst pitanja je obavezan!");
+    return;
+  }
+
+  if (odgovori.length === 0 || odgovori.some((o) => !o.tekst_odgovora.trim())) {
+    alert("Unesite tekst za svaki odgovor.");
+    return;
+  }
+
+  const odgovoriJson = JSON.stringify(odgovori);
+
+  const formData = new FormData();
+  formData.append("tekst_pitanja", tekstPitanja);
+  formData.append("tip_pitanja", tipPitanja);
+  formData.append("odgovori", odgovoriJson);
+  if (slika) {
+    formData.append("slika", slika);
+  }
+
+  try {
+    const res = await fetch("https://miravapibackend.online/api/dodaj-pitanje", {
+      method: "POST",
+      body: formData,
+    });
+
+    if (!res.ok) {
+      const data = await res.json();
+      throw new Error(data.error || "Greška pri dodavanju pitanja.");
     }
 
-    if (odgovori.length === 0 || odgovori.some((o) => !o.tekst_odgovora.trim())) {
-      alert("Unesite tekst za svaki odgovor.");
-      return;
-    }
+    const noviPitanje = await res.json();
 
-    const odgovoriJson = JSON.stringify(odgovori);
+    alert("Pitanje uspješno dodato!");
 
-    const formData = new FormData();
-    formData.append("tekst_pitanja", tekstPitanja);
-    formData.append("tip_pitanja", tipPitanja);
-    formData.append("odgovori", odgovoriJson);
-    if (slika) {
-      formData.append("slika", slika);
-    }
+    // Resetovanje formi
+    setTekstPitanja("");
+    setTipPitanja("");
+    setSlika(null);
+    setOdgovori([{ tekst_odgovora: "", tacan: false }]);
 
-    try {
-      const res = await fetch("https://miravapibackend.online/api/dodaj-pitanje", {
-        method: "POST",
-        body: formData,
-      });
+    // Ažuriranje stanja
+    setPitanja((staro) => [...staro, { ...noviPitanje, odgovori }]);
 
-      if (!res.ok) {
-        const data = await res.json();
-        throw new Error(data.error || "Greška pri dodavanju pitanja.");
-      }
+    // Reload stranice nakon uspešnog unosa
+    window.location.reload();
 
-      const noviPitanje = await res.json();
+  } catch (err) {
+    alert(err.message);
+  }
+};
 
-      alert("Pitanje uspješno dodato!");
-
-      setTekstPitanja("");
-      setTipPitanja("");
-      setSlika(null);
-      setOdgovori([{ tekst_odgovora: "", tacan: false }]);
-
-      setPitanja((staro) => [...staro, { ...noviPitanje, odgovori }]);
-    } catch (err) {
-      alert(err.message);
-    }
-  };
 
   // Brisanje pitanja
   const obrisiPitanje = async (id) => {
@@ -193,7 +200,6 @@ export default function Pitanja() {
         <thead>
           <tr style={{ backgroundColor: "#0070f3", color: "white" }}>
             <th style={{ padding: 12, textAlign: "left" }}>Tekst pitanja</th>
-            <th style={{ padding: 12, textAlign: "left", width: 150 }}>Tip pitanja</th>
             <th style={{ padding: 12, textAlign: "left", width: 250 }}>Odgovori</th>
             <th style={{ padding: 12, textAlign: "center", width: 100 }}>Slika</th>
             <th style={{ padding: 12, textAlign: "center", width: 120 }}>Akcije</th>
@@ -211,7 +217,6 @@ export default function Pitanja() {
           {trenutnaPitanja.map((p) => (
             <tr key={p.pitanje_id} style={{ borderBottom: "1px solid #ddd" }}>
               <td style={{ padding: 10, verticalAlign: "top" }}>{p.tekst_pitanja}</td>
-              <td style={{ padding: 10, verticalAlign: "top" }}>{p.tip_pitanja || "-"}</td>
               <td style={{ padding: 10, verticalAlign: "top" }}>
                 <ul style={{ margin: 0, paddingLeft: 20 }}>
                   {p.odgovori.map((o) => (
@@ -231,7 +236,7 @@ export default function Pitanja() {
               <td style={{ padding: 10, textAlign: "center", verticalAlign: "top" }}>
                 {p.slika ? (
                   <img
-                    src={`/uploads/${p.slika}`}
+                    src={`https://miravapibackend.online/slike/${p.slika}`}
                     alt="Slika pitanja"
                     style={{ maxWidth: 80, maxHeight: 80, objectFit: "cover", borderRadius: 4 }}
                   />

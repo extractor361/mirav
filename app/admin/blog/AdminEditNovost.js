@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import axios from 'axios';
 
@@ -10,13 +10,20 @@ const API_BASE = 'https://miravapibackend.online/api';
 const IMAGE_BASE_URL = 'https://miravapibackend.online/slike/';
 
 export default function AdminEditNovost({ novost, onCancel, onUpdate }) {
-  const [naslov, setNaslov] = useState(novost.naslov);
-  const [sadrzaj, setSadrzaj] = useState(novost.sadrzaj || ''); // ako ima sadržaj u objektu
-  const [slika, setSlika] = useState(null); // nova slika
+  const [naslov, setNaslov] = useState(novost?.naslov || '');
+  const [sadrzaj, setSadrzaj] = useState(novost?.sadrzaj || '');
+  const [slika, setSlika] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const handleSubmit = async e => {
+  useEffect(() => {
+    if (novost) {
+      setNaslov(novost.naslov || '');
+      setSadrzaj(novost.sadrzaj || '');
+    }
+  }, [novost]);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!naslov.trim()) {
@@ -29,26 +36,31 @@ export default function AdminEditNovost({ novost, onCancel, onUpdate }) {
 
     try {
       const formData = new FormData();
+      formData.append('novosti_id', novost.novosti_id);
       formData.append('naslov', naslov);
       formData.append('sadrzaj', sadrzaj);
-      if (slika) formData.append('slika', slika);
+      if (slika) {
+        formData.append('slika', slika); // nova slika ako postoji
+      }
 
-      // POST ili PUT za izmenu novosti
-      // Pretpostavimo da endpoint za izmenu izgleda ovako:
-      // PUT https://miravapibackend.online/api/novosti/{id}
-      const response = await axios.put(`${API_BASE}/novosti/${novost.novosti_id}`, formData, {
-        headers: { 'Content-Type': 'multipart/form-data' },
-      });
+      const response = await axios.post(
+        `${API_BASE}/izmijeni-novost/${novost.novosti_id}`,
+        formData,
+        {
+          headers: { 'Content-Type': 'multipart/form-data' },
+        }
+      );
 
       if (response.status === 200) {
-        // Vrati ažurirani objekat novosti (pretpostavimo da ga backend vraća)
         onUpdate(response.data);
+        window.location.reload();
+
       } else {
         setError('Došlo je do greške prilikom izmene.');
       }
     } catch (err) {
-      setError('Došlo je do greške prilikom izmene.');
       console.error(err);
+      setError('Došlo je do greške prilikom izmene.');
     } finally {
       setLoading(false);
     }
@@ -68,14 +80,16 @@ export default function AdminEditNovost({ novost, onCancel, onUpdate }) {
         marginRight: 'auto',
       }}
     >
-      <h2 style={{ marginBottom: 20, color: '#183D73' }}>✏️ Izmeni novost #{novost.novosti_id}</h2>
+      <h2 style={{ marginBottom: 20, color: '#183D73' }}>
+        ✏️ Izmeni novost #{novost.novosti_id}
+      </h2>
 
       <div style={{ marginBottom: 15 }}>
         <label style={{ fontWeight: 'bold', color: '#183D73' }}>Naslov:</label>
         <input
           type="text"
           value={naslov}
-          onChange={e => setNaslov(e.target.value)}
+          onChange={(e) => setNaslov(e.target.value)}
           required
           style={{
             width: '100%',
@@ -92,7 +106,7 @@ export default function AdminEditNovost({ novost, onCancel, onUpdate }) {
         <div style={{ marginTop: 5, marginBottom: 20 }}>
           <ReactQuill
             value={sadrzaj}
-            onChange={setSadrzaj}
+            onChange={(value) => setSadrzaj(value)}
             theme="snow"
             style={{ height: 250, borderRadius: 4 }}
           />
@@ -104,7 +118,7 @@ export default function AdminEditNovost({ novost, onCancel, onUpdate }) {
         <input
           type="file"
           accept="image/*"
-          onChange={e => setSlika(e.target.files[0])}
+          onChange={(e) => setSlika(e.target.files[0])}
           style={{ marginTop: 5 }}
         />
         {novost.slika && !slika && (
