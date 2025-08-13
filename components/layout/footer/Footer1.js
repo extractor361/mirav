@@ -264,7 +264,7 @@ export default function Footer1() {
                     <div className="bottom-inner">
                         <div className="copyright-text">
                             <p>
-                                © {new Date().getFullYear()} <Link href="/digital-artefakt.me">Digital Artefakt,</Link> All Rights Reserved.
+                                © {new Date().getFullYear()} <Link href="www.digital-artefakt.me">Digital Artefakt,</Link> All Rights Reserved.
                             </p>
                         </div>
                         <div className="footer-menu">

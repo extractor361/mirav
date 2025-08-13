@@ -63,7 +63,7 @@ export default function Dashboard() {
           href="/admin/blog"
           className="p-6 bg-white shadow rounded-lg hover:shadow-lg transition block"
         >
-          <h3 className="font-bold text-lg">📝 Blog</h3>
+          <h3 className="font-bold text-lg">📰 Blog</h3>
           <p className="text-gray-500 mt-2">Upravljanje objavama i člancima.</p>
         </Link>
         <Link
