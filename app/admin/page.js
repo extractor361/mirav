@@ -70,7 +70,7 @@ export default function Dashboard() {
           href="/admin/test"
           className="p-6 bg-white shadow rounded-lg hover:shadow-lg transition block"
         >
-          <h3 className="font-bold text-lg">🧪 Test</h3>
+<h3 className="font-bold text-lg">📝 Test</h3>
           <p className="text-gray-500 mt-2">Pregled i uređivanje testova.</p>
         </Link>
         <button
