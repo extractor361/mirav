@@ -341,7 +341,7 @@ export default function Course_Details() {
                                         <div className="title">
                                             <h3>
                                                 <Link
-                                                    href="#">
+                                                    href="/assets/PRIRUČNIK_T1-01_T1-02_BEZ_SESTRA.docx">
                                                      Preuzmi vodič za početnike u vožnji (PDF)
                                                 </Link>
                                             </h3>

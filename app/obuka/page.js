@@ -80,10 +80,10 @@ export default function Service_Details() {
                                                                     className="path2"></span><span className="path3"></span></span>
                                                         </div>
                                                         <div className="title">
-                                                            <h4><Link href="#">Vodi za početnike</Link></h4>
+                                                            <h4><Link href="#">Vodič za početnike</Link></h4>
                                                         </div>
                                                         <div className="btn-box">
-                                                            <Link href="#"><i className="icon-next"></i>Preuzmi</Link>
+                                                            <Link href="/assets/PRIRUČNIK_T1-01_T1-02_BEZ_SESTRA.docx"><i className="icon-next"></i>Preuzmi</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -97,7 +97,7 @@ export default function Service_Details() {
                                                                     className="path2"></span><span className="path3"></span></span>
                                                         </div>
                                                         <div className="title">
-                                                            <h4><Link href="#">Teorijski testovi</Link></h4>
+                                                            <h4><Link href="/assets/Pitanja za kandidate sa pravilnicima numerisani(30).docx">Teorijski testovi</Link></h4>
                                                         </div>
                                                         <div className="btn-box">
                                                             <Link href="#"><i className="icon-next"></i>Preuzmi</Link>
@@ -184,7 +184,7 @@ Više od decenije iskustva i preko 2000 obučenih vozača su naša najbolja prep
                                                             <i className="icon-download"></i>
                                                         </div>
                                                         <div className="title">
-                                                            <h3><Link href="#"> Vodič za početnike</Link></h3>Preuzmite naš besplatni PDF vodič i spremite se za prvu vožnju!
+                                                            <h3><Link href="/assets/PRIRUČNIK_T1-01_T1-02_BEZ_SESTRA.docx"> Vodič za početnike</Link></h3>Preuzmite naš besplatni PDF vodič i spremite se za prvu vožnju!
 
 
                                                             <p>(PDF, 8Mb)</p>
