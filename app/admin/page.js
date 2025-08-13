@@ -8,29 +8,31 @@ export default function Dashboard() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const provjeriPrijavu = async () => {
-      try {
-        const res = await fetch('https://miravapibackend.online/api/administracija', {
-          method: 'POST',
-          credentials: 'include', // cookie se mora poslati
-        })
+  const provjeriPrijavu = async () => {
+    try {
+      const res = await fetch('https://miravapibackend.online/api/administracija', {
+        method: 'POST',
+        credentials: 'include'
+      });
 
-        if (!res.ok) {
-          router.push('/prijava')
-          return
-        }
-
-        const data = await res.json()
-        console.log('Prijavljeni korisnik:', data)
-      } catch (err) {
-        router.push('/prijava')
-      } finally {
-        setLoading(false)
+      if (!res.ok) {
+        router.push('/prijava');
+        return;
       }
-    }
 
-    provjeriPrijavu()
-  }, [router])
+      const data = await res.json();
+      console.log('Prijavljeni korisnik:', data);
+    } catch (err) {
+      console.error(err);
+      router.push('/prijava');
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  provjeriPrijavu();
+}, [router]);
+
 
   const handleLogout = async () => {
     try {
