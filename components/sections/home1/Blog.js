@@ -44,9 +44,9 @@ export default function Blog() {
                     <div className="inner">
                       {slika ? (
                         <>
-                          <img src={`/slike/${slika}`} alt={naslov} />
+                          <img src={`https://miravapibackend.online/slike/${slika}`} alt={naslov} />
                           <div className="single-blog-style1__overlay-icon">
-                            <Link className="lightbox-image" data-fancybox="gallery" href={`/slike/${slika}`}>
+                            <Link className="lightbox-image" data-fancybox="gallery" href={`https://miravapibackend.online/slike/${slika}`}>
                               <i className="icon-zoom"></i>
                             </Link>
                           </div>
@@ -106,7 +106,7 @@ export default function Blog() {
               ></div>
               <p>
                 Želiš da saznaš više?
-                <Link href="/blog-2">
+                <Link href="/blog">
                   <i className="icon-next"></i> pročitaj još
                 </Link>
               </p>

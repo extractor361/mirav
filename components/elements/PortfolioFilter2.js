@@ -657,9 +657,216 @@ export default function PortfolioFilter2() {
                             </div>
                         </div>
 
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item  training ">
+                            <div className="single-project-style1">
+                                <div className="single-project-style1__img">
+                                    <img src="assets/images/resources/driving (1).jpg" alt="Awesome Image"/>
+                                    <div className="single-project-style1__img-overlay-content">
+                                        <div className="category">
+                                            <h6>Vožnja</h6>
+                                        </div>
+                                        <div className="title">
+                                            <h3><Link href="#">Časovi vožnje</Link></h3>
+                                        </div>
+                                    </div>
+                                    <div className="single-project-style1__img-overlay-icon">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
+                        <div className="col-xl-4 col-lg-6 col-md-6 filter-item  training ">
+                            <div className="single-project-style1">
+                                <div className="single-project-style1__img">
+                                    <img src="assets/images/resources/driving (2).jpg" alt="Awesome Image"/>
+                                    <div className="single-project-style1__img-overlay-content">
+                                        <div className="category">
+                                            <h6>Vožnja</h6>
+                                        </div>
+                                        <div className="title">
+                                            <h3><Link href="#">Časovi vožnje</Link></h3>
+                                        </div>
+                                    </div>
+                                    <div className="single-project-style1__img-overlay-icon">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div className="col-xl-4 col-lg-6 col-md-6 filter-item  training ">
+                            <div className="single-project-style1">
+                                <div className="single-project-style1__img">
+                                    <img src="assets/images/resources/driving (3).jpg" alt="Awesome Image"/>
+                                    <div className="single-project-style1__img-overlay-content">
+                                        <div className="category">
+                                            <h6>Vožnja</h6>
+                                        </div>
+                                        <div className="title">
+                                            <h3><Link href="#">Časovi vožnje</Link></h3>
+                                        </div>
+                                    </div>
+                                    <div className="single-project-style1__img-overlay-icon">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-xl-4 col-lg-6 col-md-6 filter-item  training ">
+                            <div className="single-project-style1">
+                                <div className="single-project-style1__img">
+                                    <img src="assets/images/resources/driving (4).jpg" alt="Awesome Image"/>
+                                    <div className="single-project-style1__img-overlay-content">
+                                        <div className="category">
+                                            <h6>Vožnja</h6>
+                                        </div>
+                                        <div className="title">
+                                            <h3><Link href="#">Časovi vožnje</Link></h3>
+                                        </div>
+                                    </div>
+                                    <div className="single-project-style1__img-overlay-icon">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-xl-4 col-lg-6 col-md-6 filter-item  training ">
+                            <div className="single-project-style1">
+                                <div className="single-project-style1__img">
+                                    <img src="assets/images/resources/driving (5).jpg" alt="Awesome Image"/>
+                                    <div className="single-project-style1__img-overlay-content">
+                                        <div className="category">
+                                            <h6>Vožnja</h6>
+                                        </div>
+                                        <div className="title">
+                                            <h3><Link href="#">Časovi vožnje</Link></h3>
+                                        </div>
+                                    </div>
+                                    <div className="single-project-style1__img-overlay-icon">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-4 col-lg-6 col-md-6 filter-item  training ">
+                            <div className="single-project-style1">
+                                <div className="single-project-style1__img">
+                                    <img src="assets/images/resources/driving (6).jpg" alt="Awesome Image"/>
+                                    <div className="single-project-style1__img-overlay-content">
+                                        <div className="category">
+                                            <h6>Vožnja</h6>
+                                        </div>
+                                        <div className="title">
+                                            <h3><Link href="#">Časovi vožnje</Link></h3>
+                                        </div>
+                                    </div>
+                                    <div className="single-project-style1__img-overlay-icon">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-xl-4 col-lg-6 col-md-6 filter-item  training ">
+                            <div className="single-project-style1">
+                                <div className="single-project-style1__img">
+                                    <img src="assets/images/resources/driving (7).jpg" alt="Awesome Image"/>
+                                    <div className="single-project-style1__img-overlay-content">
+                                        <div className="category">
+                                            <h6>Vožnja</h6>
+                                        </div>
+                                        <div className="title">
+                                            <h3><Link href="#">Časovi vožnje</Link></h3>
+                                        </div>
+                                    </div>
+                                    <div className="single-project-style1__img-overlay-icon">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-xl-4 col-lg-6 col-md-6 filter-item  training ">
+                            <div className="single-project-style1">
+                                <div className="single-project-style1__img">
+                                    <img src="assets/images/resources/driving (8).jpg" alt="Awesome Image"/>
+                                    <div className="single-project-style1__img-overlay-content">
+                                        <div className="category">
+                                            <h6>Vožnja</h6>
+                                        </div>
+                                        <div className="title">
+                                            <h3><Link href="#">Časovi vožnje</Link></h3>
+                                        </div>
+                                    </div>
+                                    <div className="single-project-style1__img-overlay-icon">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-xl-4 col-lg-6 col-md-6 filter-item  training ">
+                            <div className="single-project-style1">
+                                <div className="single-project-style1__img">
+                                    <img src="assets/images/resources/driving (9).jpg" alt="Awesome Image"/>
+                                    <div className="single-project-style1__img-overlay-content">
+                                        <div className="category">
+                                            <h6>Vožnja</h6>
+                                        </div>
+                                        <div className="title">
+                                            <h3><Link href="#">Časovi vožnje</Link></h3>
+                                        </div>
+                                    </div>
+                                    <div className="single-project-style1__img-overlay-icon">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-xl-4 col-lg-6 col-md-6 filter-item  training ">
+                            <div className="single-project-style1">
+                                <div className="single-project-style1__img">
+                                    <img src="assets/images/resources/driving (10).jpg" alt="Awesome Image"/>
+                                    <div className="single-project-style1__img-overlay-content">
+                                        <div className="category">
+                                            <h6>Vožnja</h6>
+                                        </div>
+                                        <div className="title">
+                                            <h3><Link href="#">Časovi vožnje</Link></h3>
+                                        </div>
+                                    </div>
+                                    <div className="single-project-style1__img-overlay-icon">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-xl-4 col-lg-6 col-md-6 filter-item  training ">
+                            <div className="single-project-style1">
+                                <div className="single-project-style1__img">
+                                    <img src="assets/images/resources/driving (11).jpg" alt="Awesome Image"/>
+                                    <div className="single-project-style1__img-overlay-content">
+                                        <div className="category">
+                                            <h6>Vožnja</h6>
+                                        </div>
+                                        <div className="title">
+                                            <h3><Link href="#">Časovi vožnje</Link></h3>
+                                        </div>
+                                    </div>
+                                    <div className="single-project-style1__img-overlay-icon">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      
                         
 
                     </div>

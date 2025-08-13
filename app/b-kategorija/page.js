@@ -93,7 +93,7 @@ export default function Course_Details() {
                             <div className="col-xl-8 col-lg-12">
                                 <div className="intro-style1-img">
                                     <div className="inner">
-                                        <img src="assets/images/resources/intro-v1-1.jpg" alt="image"/>
+                                        <img src="assets/images/resources/driving (12).jpg" alt="image"/>
                                     </div>
                                     <div className="overlay-content">
                                         <div className="price-box">
@@ -124,7 +124,7 @@ export default function Course_Details() {
                                                 <p>Stotine uspješnih vozača</p>
                                             </div>
                                             <div className="title2">
-                                                <h3>4.9/5</h3>
+                                                <h3>5/5</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -391,7 +391,7 @@ export default function Course_Details() {
                                         </div>
                                     </div>
                                     <div className="title-box">
-                                        <h3><Link href="#">Citroën C3 je kompaktan, lagan za upravljanje, s odličnom preglednošću i stabilnošću na cesti. Savršen je za početnike, a njegova jednostavnost u vožnji omogućava brzo savladavanje osnovnih veština i sigurnosti za volanom.
+                                        <h3><Link href="#">Citroën C3 je kompaktan, lagan za upravljanje, s odličnom preglednošću i stabilnošću na cesti. Savršen je za početnike, a njegova jednostavnost u vožnji omogućava brzo savladavanje osnovnih vještina i sigurnosti za volanom.
 </Link></h3>
                                         <div className="btn-box">
                                            
@@ -553,7 +553,7 @@ export default function Course_Details() {
                                     <div className="icon">
                                         <i className="icon-dial-pad"></i>
                                     </div>
-                                    <h3><Link href="tel:+382 068 444 1016">+382 068 444 1016</Link></h3>
+                                    <h3><Link href="tel:+382 068 444 1016">+382 068 444 101</Link></h3>
                                 </div>
                                 <div className="text">
                                     <p>21/1 Vojina Katnića, Podgorica 81000</p>

@@ -52,7 +52,7 @@ export default function Footer1() {
                             <div className="shape float-bob-x">
                             </div>
                             <div className="btn-box">
-                                <p>Prijavi se. <Link href="/contact"><i className="icon-next"></i> Zakaži sada</Link>
+                                <p>Prijavi se. <Link href="/kontakt"><i className="icon-next"></i> Zakaži sada</Link>
                                 </p>
                             </div>
                         </div>

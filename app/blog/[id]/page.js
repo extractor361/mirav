@@ -106,7 +106,7 @@ export default async function BlogSinglePage({ params }) {
     <li><Link href="#">Saobraćajni znaci</Link></li>
     <li><Link href="#">Praktična obuka</Link></li>
     <li><Link href="#">Polaganje ispita</Link></li>
-    <li><Link href="#">Bezbedna vožnja</Link></li>
+    <li><Link href="#">Bezbjedna vožnja</Link></li>
     <li><Link href="#">Pravila saobraćaja</Link></li>
   </ul>
 </div>
@@ -141,7 +141,7 @@ export default async function BlogSinglePage({ params }) {
                                                 <p>Imate pitanja? Vozite ih nama! Kontaktirajte naše stručnjake i započnite svoje putovanje ka sigurnoj vožnji.
 </p>
                                                 <div className="btn-box">
-                                                    <Link className="btn-one" href="#">
+                                                    <Link className="btn-one" href="/kontakt">
                                                         <span className="txt">
                                                             Želim vozačku dozvolu
                                                         </span>

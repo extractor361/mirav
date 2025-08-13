@@ -57,7 +57,7 @@ Svaka neprijatnost se može izbjeći, ali u određenim okolnostima i zbog zahtje
                                             <li>
                                                 <div className="inner">
                                                     <div className="text">
-                                                        <p>Radno vrijeme 08:00 – 20:00</p>
+                                                        <p>Radno vrijeme 08:00 – 15:00</p>
                                                     </div>
                                                 </div>
                                             </li>

@@ -20,7 +20,7 @@ export default function About() {
                                     <img src="assets/images/resources/nagrada.png" alt="logo"/>
                                 </div>
                                 <div className="img-car wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2000ms">
-                                    <img className="float-bob-y" src="assets/images/resources/golf 8 cherry.png" alt="Car"/>
+                                    <img className="float-bob-y" src="assets/images/resources/golf 8 cherry (2).png" alt="Car"/>
                                 </div>
                                 <div className="about-style3__curved-circle-outer">
                                     <div className="about-style3__curved-circle">

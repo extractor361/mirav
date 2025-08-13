@@ -253,10 +253,7 @@ export default function Testimonial() {
                         <div className="section-btn-inner">
                             <div className="section-btn-inner-bg"
                                 style={{ backgroundImage: "url(assets/images/pattern/thm-pattern-1.png)" }}></div>
-                            <p>
-                                Otkrij šta su ostali polaznici rekli o nama!
-                                <Link href="/"><i className="icon-next"></i>Pročitaj više</Link>
-                            </p>
+                           
                         </div>
                     </div>
 

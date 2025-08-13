@@ -375,7 +375,7 @@ Ivana je strpljiva i posvećena instruktorka koja se lako povezuje sa kandidatim
                                 style={{ backgroundImage: "url(assets/images/pattern/thm-pattern-1.png)" }}></div>
                             <p>
                                 Naš tim je uvijek tu da pomogne!
-                                <Link href="/"><i className="icon-next"></i>prijavi se</Link>
+                                <Link href="/kontakt"><i className="icon-next"></i>prijavi se</Link>
                             </p>
                         </div>
                     </div>

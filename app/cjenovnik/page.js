@@ -107,7 +107,7 @@ export default function Cjenovnik_Page() {
                             <thead>
                               <tr style={{ backgroundColor: '#f5f5f5' }}>
                                 <th style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'left' }}>Usluga</th>
-                                <th style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'right' }}>Cena</th>
+                                <th style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'right' }}>Cijena</th>
                               </tr>
                             </thead>
                             <tbody>

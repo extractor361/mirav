@@ -39,7 +39,7 @@ export default function Service_Details() {
                                                 </li>
                                                 <li>
                                                     <div className="title">
-                                                        <Link href="#"><i className="icon-next"></i>Test bezbednosti u saobraćaju</Link>
+                                                        <Link href="#"><i className="icon-next"></i>Test bezbjednosti u saobraćaju</Link>
                                                     </div>
                                                 </li>
 
@@ -164,7 +164,7 @@ export default function Service_Details() {
                                     </div>
                                     <div className="text-box">
                                         <p>
-                                           Kada znaš da voziš pravilno i sigurno, svaki put je lakši. Naši stručnjaci su tu da ti pomognu da postaneš odgovoran i vešt vozač.
+                                           Kada znaš da voziš pravilno i sigurno, svaki put je lakši. Naši stručnjaci su tu da ti pomognu da postaneš odgovoran i vješt vozač.
 Više od decenije iskustva i preko 2000 obučenih vozača su naša najbolja preporuka.
                                         </p>
                                     </div>
@@ -382,7 +382,7 @@ Više od decenije iskustva i preko 2000 obučenih vozača su naša najbolja prep
                                                         <div className="bottom-box">
                                                             <div className="text">
                                                                 <p>
-                                                                    U realnim uslovima sa instruktorom pored vas, savladajte vožnju od osnovnih do naprednih veština.
+                                                                    U realnim uslovima sa instruktorom pored vas, savladajte vožnju od osnovnih do naprednih vještina.
                                                                 </p>
                                                             </div>
                                                             <div className="list-item">

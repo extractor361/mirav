@@ -129,11 +129,11 @@ export default function Contact_Page() {
                                     </div>
                                     <div className="content-box">
                                         <div className="phone-email">
-                                            <p><span>Pon - Pet:</span> 08:00 do 20:00</p>
-                                            <p><span>Sub:</span> 08:00 do 16:00</p>
+                                            <p><span>Pon - Pet:</span> 08:00 do 15:00</p>
+                                            <p><span>Subotom i nedeljom:</span> Ne radimo </p>
                                         </div>
                                         <div className="btn-box">
-                                            <Link href="/about"><i className="icon-next"></i>Zakazivanje</Link>
+                                            <Link href="/kontakt"><i className="icon-next"></i>Zakazivanje</Link>
                                         </div>
                                     </div>
                                 </div>
