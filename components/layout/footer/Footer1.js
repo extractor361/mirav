@@ -97,7 +97,7 @@ export default function Footer1() {
                                             </li>
                                         </ul>
                                     </div>
-                                    <div className="subscribe-box-form">
+                                    {/*<div className="subscribe-box-form">
                                         <div className="text">
                                             <p>Budite prvi koji saznaje – Prijavite se za novosti!</p>
                                         </div>
@@ -114,7 +114,7 @@ export default function Footer1() {
                                                 Prijavi se
                                             </button>
                                         </form>
-                                    </div>
+                                    </div>/*/}
                                 </div>
                             </div>
                         </div>
