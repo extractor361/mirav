@@ -28,7 +28,7 @@ Rođena 1978. u Kolašinu. Inženjer drumskog saobraćaja. Od 2013. vodi auto š
     }
   },
   {
-    name: "Ivana Šćepanović Petković",
+    name: "Ivana Petković",
     role: "Instruktor",
     image: "assets/images/ivana.jpg",
     description: `Instruktor B kategorije. Strpljiva i posvećena, prilagođava obuku svakom kandidatu.`,
