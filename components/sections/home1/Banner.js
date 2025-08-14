@@ -136,7 +136,7 @@ const [isMobile, setIsMobile] = useState(false);
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="swiper-slide">
-                            <div className="image-layer" style={{ backgroundImage: "url(assets/images/resources/Mirav-2036_compressed.webp)", backgroundPosition:'0 0' }}></div>
+                            <div className="image-layer" style={{ backgroundImage: "url(assets/images/resources/Mirav-2036_compressed.webp)", backgroundPosition:'-300 0' }}></div>
                             <div className="image-layer__left-gradient"></div>
                             <div className="container">
                                 <div className="row">
