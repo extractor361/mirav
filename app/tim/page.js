@@ -89,8 +89,24 @@ export default function Team_Page() {
     <div className="page-wrapper boxed_wrapper">
       <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Naš Tim">
         <section className="team-style1 team-style1--2">
+          
           <div className="container">
             <div className="row">
+              <section className="about-style3__content py-5">
+  <div className="sec-title text-center">
+    <div className="sub-title">
+      <h4>Naš tim</h4>
+    </div>
+    <h2>Iskustvo, posvećenost i podrška na svakom koraku</h2>
+  </div>
+  <div className="text1 text-center">
+    <p>
+      Naš tim je uvijek spreman da pomogne, podijeli znanje i iskustvo, 
+      te vas podrži na svakom koraku vaše vozačke obuke. 
+      Strpljenje, profesionalizam i osmijeh su ono što nas izdvaja.
+    </p>
+  </div>
+</section>
               {teamMembers.map((member, index) => (
                 <div key={index} className="col-xl-4 col-lg-6">
                   <div className="single-team-style1">
