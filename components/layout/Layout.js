@@ -62,7 +62,6 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, brea
                 <SidebarPopup isPopup={isPopup} handlePopup={handlePopup} />
 
                 {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
-                {breadcrumbTitle2 && <Breadcrumb2 breadcrumbTitle2={breadcrumbTitle2} />}
 
                 {children}
 

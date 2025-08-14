@@ -1,57 +1,37 @@
-'use client'
-import { useRouter } from 'next/navigation'
-import { useEffect, useState } from 'react'
-import Link from 'next/link'
+"use client";
+
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Dashboard() {
-  const router = useRouter()
-  const [loading, setLoading] = useState(true)
+  const router = useRouter();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-  const provjeriPrijavu = async () => {
-    try {
-      const res = await fetch('https://miravapibackend.online/api/administracija', {
-        method: 'POST',
-        credentials: 'include'
-      });
+    const provjeriCookie = () => {
+      const cookies = document.cookie || "";
+      const imaToken = cookies.includes("autentikacija="); // koristi naziv iz backenda
 
-      if (!res.ok) {
-        router.push('/prijava');
+      if (!imaToken) {
+        router.push("/prijava");
         return;
       }
 
-      const data = await res.json();
-      console.log('Prijavljeni korisnik:', data);
-    } catch (err) {
-      console.error(err);
-      router.push('/prijava');
-    } finally {
       setLoading(false);
-    }
-  }
+    };
 
-  provjeriPrijavu();
-}, [router]);
+    provjeriCookie();
+  }, [router]);
 
+  const handleLogout = () => {
+    // Za sada samo briše cookie lokalno (dok ne koristiš pravi backend logout)
+    document.cookie =
+      "autentikacija=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    router.push("/prijava");
+  };
 
-  const handleLogout = async () => {
-    try {
-      const res = await fetch('https://miravapibackend.online/api/odjava', {
-        method: 'POST',
-        credentials: 'include',
-      })
-      if (res.ok) {
-        router.push('/prijava')
-      } else {
-        alert('Greška pri odjavi')
-      }
-    } catch (error) {
-      console.error('Logout error:', error)
-      alert('Greška pri odjavi')
-    }
-  }
-
-  if (loading) return <p>Provjera prijave...</p>
+  if (loading) return <p>Provjera prijave...</p>;
 
   return (
     <>
@@ -70,18 +50,18 @@ export default function Dashboard() {
           href="/admin/test"
           className="p-6 bg-white shadow rounded-lg hover:shadow-lg transition block"
         >
-<h3 className="font-bold text-lg">📝 Test</h3>
+          <h3 className="font-bold text-lg">📝 Test</h3>
           <p className="text-gray-500 mt-2">Pregled i uređivanje testova.</p>
         </Link>
         <button
           onClick={handleLogout}
           className="p-6 bg-white shadow rounded-lg hover:shadow-lg transition text-left w-full"
-          style={{ cursor: 'pointer' }}
+          style={{ cursor: "pointer" }}
         >
           <h3 className="font-bold text-lg text-red-500">🚪 Odjava</h3>
           <p className="text-gray-500 mt-2">Odjavite se iz sistema.</p>
         </button>
       </div>
     </>
-  )
+  );
 }
