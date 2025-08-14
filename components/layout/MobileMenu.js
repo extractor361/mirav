@@ -48,7 +48,37 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
               <li><Link href="/" onClick={handleMobileMenu}>Naslovna</Link></li>
 
               {/* O nama */}
-              <li><Link href="/o-nama" onClick={handleMobileMenu}>O nama</Link></li>
+<li className={isActive.key === "onama" ? "dropdown current" : "dropdown"}>
+  <Link
+    href="#"
+    onClick={(e) => {
+      e.preventDefault();
+      handleToggle("onama");
+    }}
+  >
+    O nama
+  </Link>
+  <ul style={{ display: isActive.key === "onama" ? "block" : "none" }}>
+    <li>
+      <Link href="/o-nama" onClick={handleMobileMenu}>
+        O nama
+      </Link>
+    </li>
+    <li>
+      <Link href="/tim" onClick={handleMobileMenu}>
+        Tim
+      </Link>
+    </li>
+  </ul>
+  <span
+    className={isActive.key === "onama" ? "dropdown-btn open" : "dropdown-btn"}
+    onClick={() => handleToggle("onama")}
+    role="button"
+    tabIndex={0}
+  >
+    <span className="fa fa-angle-down" />
+  </span>
+</li>
 
               {/* B Kategorija */}
               <li><Link href="/b-kategorija" onClick={handleMobileMenu}>B Kategorija</Link></li>
