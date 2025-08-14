@@ -8766,12 +8766,12 @@ select:focus {
 
 @media(min-width:1200px){
 .slikaaaaaaa{
-    background-position: 0px 0px;
+    background-position: 0px 0px !important;
 }}
 
 @media(max-width:480px){
 .slikaaaaaaa{
-    background-position: -300px 0px;
+    background-position: -280px 0px !important;
 }
 
 
