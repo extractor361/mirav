@@ -5,57 +5,28 @@ import Link from 'next/link'
 
 export default function Dashboard() {
   const router = useRouter()
-  const [loading, setLoading] = useState(true)
   const [korisnik, setKorisnik] = useState(null)
 
   useEffect(() => {
-    const provjeriPrijavu = async () => {
-      const token = localStorage.getItem('autentikacija')
-
-      if (!token) {
-        router.push('/prijava')
-        return
-      }
-
-      try {
-        const res = await fetch('https://miravapibackend.online/api/administracija', {
-          method: 'GET',
-          headers: {
-            'Authorization': `Bearer ${token}`
-          }
-        })
-
-        if (!res.ok) {
-          localStorage.removeItem('autentikacija')
-          router.push('/prijava')
-          return
-        }
-
-        const data = await res.json()
-        setKorisnik(data)
-      } catch (err) {
-        console.error(err)
-        localStorage.removeItem('autentikacija')
-        router.push('/prijava')
-      } finally {
-        setLoading(false)
-      }
+    const storedUser = localStorage.getItem('korisnik')
+    if (!storedUser) {
+      router.push('/prijava')
+      return
     }
-
-    provjeriPrijavu()
+    setKorisnik(JSON.parse(storedUser))
   }, [router])
 
   const handleLogout = () => {
-    localStorage.removeItem('autentikacija')
+    localStorage.removeItem('korisnik')
     router.push('/prijava')
   }
 
-  if (loading) return <p>Provjera prijave...</p>
+  if (!korisnik) return <p>Provjera prijave...</p>
 
   return (
     <>
       <h2 className="text-2xl font-bold mb-4">
-        Dobrodošli {korisnik?.ime || ''} u Admin Panel
+        Dobrodošli {korisnik.ime} u Admin Panel
       </h2>
       <p className="mb-6 text-gray-600">Odaberite jednu od opcija:</p>
 
