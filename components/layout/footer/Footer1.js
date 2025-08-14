@@ -129,44 +129,44 @@ export default function Footer1() {
                                         <div className="footer-widget-links">
                                             <ul>
                                                 <li>
-                                                    <Link href="/">
+                                                    <Link href="/o-nama">
                                                         O nama
                                                         <i className="icon-next"></i>
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/">
+                                                    <Link href="/b-kategorija">
                                                         Obuka
                                                         <i className="icon-next"></i>
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/">
-                                                        Testovi
+                                                    <Link href="/test">
+                                                        Teorijski test
                                                         <i className="icon-next"></i>
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/">
-                                                        Instruktori
+                                                    <Link href="/tim">
+                                                        Tim
                                                         <i className="icon-next"></i>
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/">
+                                                    <Link href="/blog">
                                                         Blog
                                                         <i className="icon-next"></i>
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/">
+                                                    <Link href="/galerija">
                                                         Galerija
                                                         <i className="icon-next"></i>
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/">
-                                                        Prijava
+                                                    <Link href="/kontakt">
+                                                        Kontakt
                                                         <i className="icon-next"></i>
                                                     </Link>
                                                 </li>
@@ -176,30 +176,15 @@ export default function Footer1() {
                                     <div className="col-xl-6 col-lg-6 col-md-6">
                                         <div className="footer-widget-links right">
                                             <ul>
+                                                
                                                 <li>
-                                                    <Link href="/">
-                                                        Konsultacije
-                                                        <i className="icon-next"></i>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/">
+                                                    <Link href="/cjenovnik">
                                                         Cjenovnik
                                                         <i className="icon-next"></i>
                                                     </Link>
                                                 </li>
-                                                <li>
-                                                    <Link href="/">
-                                                        Kontakt
-                                                        <i className="icon-next"></i>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/">
-                                                        FAQ
-                                                        <i className="icon-next"></i>
-                                                    </Link>
-                                                </li>
+                                               
+                                                
                                                 
                                             </ul>
                                         </div>
