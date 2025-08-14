@@ -99,7 +99,7 @@ export default function Team_Page() {
     <h2>Iskustvo, posvećenost i podrška na svakom koraku</h2>
   </div>
   <div className="text1 text-center">
-    <p>
+    <p style={{marginBottom:40}}>
       Naš tim je uvijek spreman da pomogne, podijeli znanje i iskustvo, 
       te vas podrži na svakom koraku vaše vozačke obuke. 
       Strpljenje, profesionalizam i osmijeh su ono što nas izdvaja.
