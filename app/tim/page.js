@@ -92,7 +92,6 @@ export default function Team_Page() {
           
           <div className="container">
             <div className="row">
-              <section className="about-style3__content py-5">
   <div className="sec-title text-center">
     <div className="sub-title">
       <h4>Naš tim</h4>
@@ -106,7 +105,6 @@ export default function Team_Page() {
       Strpljenje, profesionalizam i osmijeh su ono što nas izdvaja.
     </p>
   </div>
-</section>
               {teamMembers.map((member, index) => (
                 <div key={index} className="col-xl-4 col-lg-6">
                   <div className="single-team-style1">
