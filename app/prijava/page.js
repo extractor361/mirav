@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 export default function PrijavaPage() {
@@ -8,6 +8,14 @@ export default function PrijavaPage() {
   const [email, setEmail] = useState("");
   const [lozinka, setLozinka] = useState("");
   const [error, setError] = useState("");
+
+  // Ako postoji token u localStorage, odmah šalji korisnika na /admin
+  useEffect(() => {
+    const token = localStorage.getItem("autentikacija");
+    if (token) {
+      router.push("/admin");
+    }
+  }, [router]);
 
   const prijava = async (e) => {
     e.preventDefault();
@@ -21,7 +29,6 @@ export default function PrijavaPage() {
     try {
       const res = await fetch("https://miravapibackend.online/api/prijava", {
         method: "POST",
-        credentials: "include", // omogućava primanje kolačića sa servera
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ unos: { email, lozinka } }),
       });
@@ -31,8 +38,15 @@ export default function PrijavaPage() {
       if (!res.ok) {
         setError(data.error || "Greška pri prijavi.");
       } else {
-        // Ako backend vraća korisnika, možeš po potrebi sačuvati podatke u globalni kontekst ili localStorage
-        router.push("/admin"); // preusmjerava na admin dashboard
+        // Sačuvaj token i korisnika u localStorage
+        if (data.token) {
+          localStorage.setItem("autentikacija", data.token);
+        }
+        if (data.korisnik) {
+          localStorage.setItem("korisnik", JSON.stringify(data.korisnik));
+        }
+
+        router.push("/admin");
       }
     } catch (err) {
       setError("Greška na serveru.");
@@ -42,7 +56,7 @@ export default function PrijavaPage() {
   return (
     <div style={styles.page}>
       <form onSubmit={prijava} style={styles.form}>
-        <h2>Prijava</h2>
+        <h2 style={styles.title}>Prijava</h2>
         <input
           type="email"
           placeholder="Email"
@@ -83,13 +97,19 @@ const styles = {
     maxWidth: "350px",
     display: "flex",
     flexDirection: "column",
-    gap: "0.5rem",
+    gap: "0.75rem",
+  },
+  title: {
+    textAlign: "center",
+    marginBottom: "1rem",
+    color: "#333",
   },
   input: {
     padding: "0.75rem",
     fontSize: "1rem",
     border: "1px solid #ccc",
     borderRadius: "5px",
+    outline: "none",
   },
   button: {
     padding: "0.75rem",
@@ -99,10 +119,12 @@ const styles = {
     border: "none",
     borderRadius: "5px",
     cursor: "pointer",
+    transition: "background 0.3s",
   },
   error: {
     color: "red",
     marginTop: "0.5rem",
     textAlign: "center",
+    fontSize: "0.9rem",
   },
 };
