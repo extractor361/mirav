@@ -8764,9 +8764,14 @@ select:focus {
 }
 
 
+@media(min-width:1200px){
+.slikaaaaaaa{
+    background-position: 0px 0px;
+}}
+
 @media(max-width:480px){
 .slikaaaaaaa{
-    background-position: -300px 0px !important;
+    background-position: -300px 0px;
 }
 
 
