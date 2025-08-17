@@ -12,7 +12,11 @@ export default function Menu() {
                 <ul><li><Link href="/tim">Tim</Link></li></ul>
                 </li> 
                 <li className="dropdown"><Link href="/b-kategorija">B kategorija</Link>
-                <ul><li><Link href="/cjenovnik">Cjenovnik</Link></li></ul>
+                <ul>
+                    <li><Link href="/cjenovnik">Cjenovnik</Link></li>
+                    <li><Link href="/vodic-za-pocetnike">Vodič za početnike</Link></li>
+
+                    </ul>
                 </li> 
                   
                 
