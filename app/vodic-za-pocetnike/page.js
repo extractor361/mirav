@@ -115,7 +115,8 @@ export default function Vodic_Page() {
                 className="section-btn-inner-bg py-4 px-5 rounded"
                 style={{
                   backgroundImage: "url(/assets/images/pattern/thm-pattern-1.png)",
-                  backgroundSize: 'cover'
+                  backgroundSize: 'cover',
+                  position:'relative'
                 }}
               >
                 <p className="mb-0 text-white fw-bold fs-5">
