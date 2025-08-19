@@ -103,7 +103,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
 
               {/* Cjenovnik */}
               <li><Link href="/cjenovnik" onClick={handleMobileMenu}>Cjenovnik</Link></li>
-              {{/*<li><Link href="/vodic-za-pocetnike" onClick={handleMobileMenu}>Vodič za početnike</Link></li>*/}}
+              {/*<li><Link href="/vodic-za-pocetnike" onClick={handleMobileMenu}>Vodič za početnike</Link></li>*/}
 
               {/* Blog */}
               <li><Link href="/blog" onClick={handleMobileMenu}>Blog</Link></li>

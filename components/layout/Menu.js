@@ -14,7 +14,7 @@ export default function Menu() {
                 <li className="dropdown"><Link href="/b-kategorija">B kategorija</Link>
                 <ul>
                     <li><Link href="/cjenovnik">Cjenovnik</Link></li>
-                   {{/* <li><Link href="/vodic-za-pocetnike">Vodič za početnike</Link></li> */}}
+                   {/* <li><Link href="/vodic-za-pocetnike">Vodič za početnike</Link></li> */}
 
                     </ul>
                 </li> 
