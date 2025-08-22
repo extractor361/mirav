@@ -227,7 +227,7 @@ export default function Footer1() {
                                         <div className="title">
                                             <h4>
                                                 <Link
-                                                    href="/assets/PRIRUČNIK_T1-01_T1-02_BEZ_SESTRA.docx">
+                                                    href="/">
                                                     Vodič za početnike u vožnji
                                                 </Link>
                                             </h4>
