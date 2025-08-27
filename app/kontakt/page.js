@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from 'react'
 import Link from "next/link"
-import "app/favicon.ico"
 import Layout from "@/components/layout/Layout"
 import Location from '@/components/sections/home2/Location'
 

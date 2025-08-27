@@ -1,0 +1,408 @@
+[
+  {
+    "broj_casa": 1,
+    "oblast": "Osnovni pojmovi o bezbjednosti saobraćaja",
+    "tema": "Bezbjednost saobraćaja",
+    "znanja_i_vjestine": [
+      "Opisuje istorijski razvoj drumskog saobraćaja",
+      "Definiše saobraćajne nezgode i opisuje njihove uzroke i posljedice",
+      "Poznaje osnovne odredbe Zakona o bezbjednosti saobraćaja na putevima",
+      "Objašnjava značenje pojedinih izraza u Zakonu o bezbjednosti saobraćaja na putevima",
+      "Uočava važnost preciznog i jedinstvenog definisanja pojmova"
+    ],
+    "preporuke_za_nastavu": []
+  },
+  {
+    "broj_casa": 2,
+    "oblast": "Osnovni pojmovi o bezbjednosti saobraćaja",
+    "tema": "Uslovi za učestvovanje u saobraćaju",
+    "znanja_i_vjestine": [
+      "Zna podjelu motornih i priključnih vozila na kategorije",
+      "Navodi uslove za učestvovanje vozila u saobraćaju",
+      "Navodi vrste tehničkih pregleda vozila i uočava njihov značaj",
+      "Navodi propise vezane za registraciju motornih i priključnih vozila",
+      "Uočava uticaj preventivnih mjera na bezbjedno odvijanje saobraćaja",
+      "Upoznaje propise vezane za uslove za upravljanje vozilom i osposobljavanje kandidata",
+      "Objašnjava sticanje prava na upravljanje vozilom i izdavanje vozačke dozvole",
+      "Navodi obaveze vozača u vezi zdravstvenih pregleda"
+    ],
+    "preporuke_za_nastavu": [
+      "Kroz statističke podatke prikazati stanje bezbjednosti kod nas i u svijetu",
+      "Na prigodan način prikazati primjere saobraćajnih nezgoda, vrste vozila, tehničke preglede"
+    ]
+  },
+  {
+    "broj_casa": 3,
+    "oblast": "Saobraćajna signalizacija",
+    "tema": "Znakovi opasnosti",
+    "znanja_i_vjestine": [
+      "Objašnjava pojam, značaj i način postavljanja saobraćajnih znakova",
+      "Navodi opšte odredbe o saobraćajnim znakovima",
+      "Navodi tačan naziv i značenje pojedinih znakova opasnosti",
+      "Obrazlaže postupanje prema saobraćajnim znakovima opasnosti"
+    ],
+    "preporuke_za_nastavu": [
+      "Objasniti stvarne i apstraktne opasnosti zbog nepoštovanja signalizacije",
+      "Pripremiti prigodne testove za provjeru"
+    ]
+  },
+  {
+    "broj_casa": 4,
+    "oblast": "Saobraćajna signalizacija",
+    "tema": "Znakovi izričitih naredbi",
+    "znanja_i_vjestine": [
+      "Navodi tačan naziv i značenje pojedinih znakova izričitih naredbi",
+      "Obrazlaže postupanje prema saobraćajnim znakovima izričitih naredbi"
+    ],
+    "preporuke_za_nastavu": []
+  },
+  {
+    "broj_casa": 5,
+    "oblast": "Saobraćajna signalizacija",
+    "tema": "Znakovi obavještenja, dopunske table i oznake na kolovozu",
+    "znanja_i_vjestine": [
+      "Navodi tačan naziv i značenje pojedinih znakova obavještenja",
+      "Pojašnjava razloge postavljanja i značenje dopunskih tabli",
+      "Razlikuje oznake na kolovozu i uočava njihov uticaj na bezbjednost"
+    ],
+    "preporuke_za_nastavu": []
+  },
+  {
+    "broj_casa": 6,
+    "oblast": "Saobraćajna signalizacija",
+    "tema": "Svjetlosni saobraćajni znakovi i svjetlosne oznake",
+    "znanja_i_vjestine": [
+      "Navodi vrste semafora, razloge i način postavljanja",
+      "Zna značenje pojedinih svjetlosnih znakova",
+      "Uočava uticaj svjetlosnih oznaka na bezbjednost",
+      "Opisuje obilježavanje prelaza preko pruge i radova na putu"
+    ],
+    "preporuke_za_nastavu": []
+  },
+  {
+    "broj_casa": 7,
+    "oblast": "Saobraćajna signalizacija",
+    "tema": "Znaci koje daju ovlašćena lica",
+    "znanja_i_vjestine": [
+      "Navodi načine davanja znakova od strane ovlašćenog lica",
+      "Zna značenje pojedinih znakova koje daje ovlašćeno lice",
+      "Objašnjava postupanje prema znacima koje daju ovlašćena lica"
+    ],
+    "preporuke_za_nastavu": []
+  },
+  {
+    "broj_casa": 8,
+    "oblast": "Pravila saobraćaja",
+    "tema": "Opšta pravila",
+    "znanja_i_vjestine": [
+      "Poznaje opšta pravila ponašanja učesnika",
+      "Poznaje hijerarhiju postupanja učesnika",
+      "Zna opšte obaveze prema pješacima i vozilima",
+      "Poznaje propise o sigurnosnim pojasevima i zabranama"
+    ],
+    "preporuke_za_nastavu": [
+      "Posebnu pažnju posvetiti predviđanju i izbjegavanju opasnosti"
+    ]
+  },
+  {
+    "broj_casa": 9,
+    "oblast": "Pravila saobraćaja",
+    "tema": "Uključivanje, kretanje po putu i brzina kretanja",
+    "znanja_i_vjestine": [
+      "Opisuje propisno uključivanje i isključivanje vozila",
+      "Poznaje propise o kretanju po putu (strana, trake, odstojanje)",
+      "Definiše pojam brzine i ograničenja brzine",
+      "Obrazlaže uticaj brzine na bezbjednost",
+      "Opisuje pravilno skretanje ulijevo i udesno"
+    ],
+    "preporuke_za_nastavu": [
+      "Analizirati konkretne saobraćajne situacije",
+      "Provjeru znanja vršiti putem testova sa više tačnih odgovora"
+    ]
+  },
+  {
+    "broj_casa": 10,
+    "oblast": "Pravila saobraćaja",
+    "tema": "Prvenstvo prolaza",
+    "znanja_i_vjestine": [
+      "Objašnjava pravilo desne strane i pravilo lijevog skretanja",
+      "Objašnjava prvenstvo prolaza pri susretu sa šinskim vozilom i drugim slučajevima",
+      "Ističe specifičnosti saobraćaja vozila pod pratnjom",
+      "Opisuje postupanje vozača i pješaka pri susretu sa vozilima pod pratnjom"
+    ],
+    "preporuke_za_nastavu": []
+  },
+  {
+    "broj_casa": 11,
+    "oblast": "Pravila saobraćaja",
+    "tema": "Saobraćaj na raskrsnici",
+    "znanja_i_vjestine": [
+      "Opisuje postupke vozača prilikom približavanja raskrsnici",
+      "Navodi načine i hijerarhiju regulisanja saobraćaja na raskrsnici",
+      "Objašnjava konfliktne tačke",
+      "Objašnjava prolazak kroz raskrsnice sa kružnim tokom",
+      "Nabraja mjesta na kojima je zabranjeno polukružno okretanje"
+    ],
+    "preporuke_za_nastavu": []
+  },
+  {
+    "broj_casa": 12,
+    "oblast": "Pravila saobraćaja",
+    "tema": "Mimoilaženje, preticanje i obilaženje",
+    "znanja_i_vjestine": [
+      "Opisuje postupke vozača pri mimoilaženju",
+      "Zna opšta pravila preticanja i obilaženja",
+      "Definiše pojam bezbjednog preticanja",
+      "Navodi slučajeve kada vozač ne smije otpočeti preticanje",
+      "Objašnjava zvučne i svjetlosne znakove upozorenja",
+      "Zna obavezu upotrebe rotacionog i trepćućeg svjetla"
+    ],
+    "preporuke_za_nastavu": []
+  },
+  {
+    "broj_casa": 13,
+    "oblast": "Pravila saobraćaja",
+    "tema": "Zaustavljanje i parkiranje, vučenje vozila, upotreba svjetala",
+    "znanja_i_vjestine": [
+      "Zna opšta pravila o zaustavljanju i parkiranju",
+      "Navodi mjesta na kojima je zabranjeno zaustavljanje i parkiranje",
+      "Opisuje način obezbjeđenja i obilježavanja vozila",
+      "Opisuje postupak prinudnog zaustavljanja",
+      "Upoznaje propise o vučenju vozila",
+      "Poznaje način upotrebe svjetala i propise"
+    ],
+    "preporuke_za_nastavu": []
+  },
+  {
+    "broj_casa": 14,
+    "oblast": "Pravila saobraćaja",
+    "tema": "Saobraćaj na prelazu pruge, u tunelu, autoputu",
+    "znanja_i_vjestine": [
+      "Objašnjava postupanje pri prelasku pruge",
+      "Obrazlaže opasnosti ukrštanja drumskog i šinskog saobraćaja",
+      "Navodi propise za autoput i put rezervisan za motorna vozila",
+      "Opisuje specifičnosti saobraćaja u tunelu",
+      "Nabraja radnje zabranjene u tunelu"
+    ],
+    "preporuke_za_nastavu": []
+  },
+  {
+    "broj_casa": 15,
+    "oblast": "Ostali učesnici u saobraćaju",
+    "tema": "Ostala vozila",
+    "znanja_i_vjestine": [
+      "Opisuje saobraćaj tramvaja i drugih vozila po šinama",
+      "Poznaje propise za radne mašine, bicikle, motocikle",
+      "Objašnjava specifičnosti zaprežnih vozila",
+      "Navodi propise za gonjenje stoke po putu",
+      "Opisuje uticaj životinja na saobraćaj"
+    ],
+    "preporuke_za_nastavu": [
+      "Prigodan video materijal"
+    ]
+  },
+  {
+    "broj_casa": 16,
+    "oblast": "Ostali učesnici u saobraćaju",
+    "tema": "Pješaci",
+    "znanja_i_vjestine": [
+      "Opisuje ponašanje djece, starih i osoba sa posebnim potrebama",
+      "Opisuje kretanje pješaka po kolovozu, trotoaru i prelazu",
+      "Navodi obaveze vozača prema pješacima",
+      "Poznaje propise za organizovanu kolonu",
+      "Navodi rizike zbog nedostatka znanja pješaka"
+    ],
+    "preporuke_za_nastavu": [
+      "Prigodan materijal"
+    ]
+  },
+  {
+    "broj_casa": 17,
+    "oblast": "Prevoz putnika i robe",
+    "tema": "Teret na vozilu i prevoz lica vozilima",
+    "znanja_i_vjestine": [
+      "Poznaje opšte propise za postavljanje i označavanje tereta",
+      "Poznaje opšta pravila o prevozu lica"
+    ],
+    "preporuke_za_nastavu": []
+  },
+  {
+    "broj_casa": 18,
+    "oblast": "Vozilo",
+    "tema": "Motori SUS",
+    "znanja_i_vjestine": [
+      "Nabraja djelove motora",
+      "Objašnjava hlađenje i podmazivanje",
+      "Opisuje napajanje OTO i dizel motora",
+      "Opisuje sisteme paljenja",
+      "Objašnjava odvod izduvnih gasova"
+    ],
+    "preporuke_za_nastavu": [
+      "Modeli, slike, video materijal"
+    ]
+  },
+  {
+    "broj_casa": 19,
+    "oblast": "Vozilo",
+    "tema": "Sistem za prenos snage i upravljanje",
+    "znanja_i_vjestine": [
+      "Opisuje koncepciju vozila",
+      "Navodi sklopove vozila",
+      "Razlikuje konstrukcije karoserije",
+      "Objašnjava rad spojnice, mjenjača, diferencijala",
+      "Navodi elemente sistema za upravljanje"
+    ],
+    "preporuke_za_nastavu": [
+      "Računarska simulacija rada sistema"
+    ]
+  },
+  {
+    "broj_casa": 20,
+    "oblast": "Vozilo",
+    "tema": "Sistem kočenja i oslanjanja, svjetlosni uređaji",
+    "znanja_i_vjestine": [
+      "Nabraja vrste kočnica",
+      "Opisuje rad mehaničke i hidraulične kočnice",
+      "Razlikuje doboš i disk kočnice",
+      "Razlikuje elemente sistema oslanjanja",
+      "Navodi vrste svjetala i njihovu upotrebu"
+    ],
+    "preporuke_za_nastavu": []
+  },
+  {
+    "broj_casa": 21,
+    "oblast": "Vozilo",
+    "tema": "Uređaji za vidljivost, kontrolno-mjerni uređaji i oprema",
+    "znanja_i_vjestine": [
+      "Nabraja uređaje za vidljivost",
+      "Opisuje kontrolnu tablu",
+      "Razlikuje kontrolno-mjerne uređaje",
+      "Opisuje sigurnosnu opremu vozila",
+      "Nabraja obaveznu opremu"
+    ],
+    "preporuke_za_nastavu": []
+  },
+  {
+    "broj_casa": 22,
+    "oblast": "Vozilo",
+    "tema": "Kotrljanje točkova po putu",
+    "znanja_i_vjestine": [
+      "Objašnjava ulogu i građu pneumatika",
+      "Objašnjava označavanje pneumatika",
+      "Upoređuje pogonske i gonjene točkove",
+      "Navodi sile na točkovima i faktore"
+    ],
+    "preporuke_za_nastavu": [
+      "Posebnu pažnju posvetiti stabilnosti vozila"
+    ]
+  },
+  {
+    "broj_casa": 23,
+    "oblast": "Vozač i vozilo",
+    "tema": "Vozilo kao faktor bezbjednosti",
+    "znanja_i_vjestine": [
+      "Definiše aktivnu i pasivnu bezbjednost vozila",
+      "Objašnjava katalitičke elemente bezbjednosti",
+      "Uočava uticaj opterećenja",
+      "Opisuje opasnosti pri vožnji motocikla"
+    ],
+    "preporuke_za_nastavu": []
+  },
+  {
+    "broj_casa": 24,
+    "oblast": "Vozač",
+    "tema": "Vozač kao faktor bezbjednosti",
+    "znanja_i_vjestine": [
+      "Objašnjava osobine i sposobnosti vozača koje utiču na bezbjednost",
+      "Opisuje uticaj umora, stresa i zdravstvenog stanja na vožnju",
+      "Prepoznaje uticaj alkohola, droga i lijekova na vozača",
+      "Razumije značaj pravilnog odmora i koncentracije"
+    ],
+    "preporuke_za_nastavu": [
+      "Kroz primjere prikazati posljedice vožnje pod dejstvom alkohola i umora"
+    ]
+  },
+  {
+    "broj_casa": 25,
+    "oblast": "Vozač",
+    "tema": "Psihofizičke osobine vozača",
+    "znanja_i_vjestine": [
+      "Opisuje percepciju, pažnju i vrijeme reagovanja vozača",
+      "Uočava razliku između objektivne i subjektivne procjene brzine",
+      "Navodi uticaj vremenskih uslova, tame i umora na percepciju",
+      "Objašnjava značaj vježbe i iskustva"
+    ],
+    "preporuke_za_nastavu": [
+      "Analizirati realne primjere usporene reakcije vozača"
+    ]
+  },
+  {
+    "broj_casa": 26,
+    "oblast": "Vozač",
+    "tema": "Odgovornost i kultura u saobraćaju",
+    "znanja_i_vjestine": [
+      "Prepoznaje značaj kulturnog i tolerantnog ponašanja u saobraćaju",
+      "Objašnjava odgovornost vozača prema drugim učesnicima",
+      "Navodi posljedice agresivne i rizične vožnje",
+      "Razvija pozitivan odnos prema poštovanju propisa"
+    ],
+    "preporuke_za_nastavu": [
+      "Diskusija o primjerima tolerantnog i netolerantnog ponašanja"
+    ]
+  },
+  {
+    "broj_casa": 27,
+    "oblast": "Vozač",
+    "tema": "Postupci u vanrednim situacijama",
+    "znanja_i_vjestine": [
+      "Navodi postupke u slučaju saobraćajne nezgode",
+      "Zna osnovne mjere prve pomoći povrijeđenima",
+      "Opisuje postupke u slučaju požara na vozilu",
+      "Navodi način obezbjeđenja mjesta nezgode"
+    ],
+    "preporuke_za_nastavu": [
+      "Praktične vježbe iz pružanja prve pomoći i obezbjeđenja vozila"
+    ]
+  },
+  {
+    "broj_casa": 28,
+    "oblast": "Ekološki aspekti vožnje",
+    "tema": "Ekološka vožnja",
+    "znanja_i_vjestine": [
+      "Objašnjava uticaj saobraćaja na životnu sredinu",
+      "Navodi mjere za smanjenje zagađenja",
+      "Opisuje principe ekonomične i ekološke vožnje",
+      "Uočava značaj redovnog održavanja vozila"
+    ],
+    "preporuke_za_nastavu": [
+      "Kroz praktične primjere prikazati ekonomičnu vožnju"
+    ]
+  },
+  {
+    "broj_casa": 29,
+    "oblast": "Ponavljanje i provjera znanja",
+    "tema": "Testovi i analiza situacija",
+    "znanja_i_vjestine": [
+      "Rješava testove iz oblasti saobraćajnih propisa",
+      "Analizira složene saobraćajne situacije",
+      "Povezuje teorijska znanja sa praktičnim primjerima",
+      "Samostalno uočava greške i ispravlja ih"
+    ],
+    "preporuke_za_nastavu": [
+      "Pripremiti testove sa kombinovanim pitanjima i analizom slučajeva"
+    ]
+  },
+  {
+    "broj_casa": 30,
+    "oblast": "Završna provjera",
+    "tema": "Završni test i evaluacija",
+    "znanja_i_vjestine": [
+      "Pokazuje sveobuhvatno znanje iz propisa i pravila",
+      "Demonstrira razumijevanje tehničkih karakteristika vozila",
+      "Objašnjava odgovornost i kulturu vozača",
+      "Povezuje znanje o vozilu, vozaču i učesnicima u saobraćaju"
+    ],
+    "preporuke_za_nastavu": [
+      "Organizovati završni test u realnim uslovima"
+    ]
+  }]

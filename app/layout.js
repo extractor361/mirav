@@ -1,17 +1,21 @@
-import "@/node_modules/react-modal-video/css/modal-video.css"
-import "public/assets/css/style.css"
-import "public/assets/css/responsive.css"
-import 'swiper/css'
-import "swiper/css/pagination"
+import "@/node_modules/react-modal-video/css/modal-video.css";
+import 'swiper/css';
+import "swiper/css/pagination";
 import 'swiper/css/free-mode';
+
 export const metadata = {
     title: 'Auto Škola Mirav',
-    description: 'Veb platforma auto škole MIrav',
+    description: 'Veb platforma auto škole Mirav',
 }
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
+            <head>
+                {/* CSS fajlovi iz public foldera */}
+                <link rel="stylesheet" href="/assets/css/style.css" />
+                <link rel="stylesheet" href="/assets/css/responsive.css" />
+            </head>
             <body className="body-bg-1">{children}</body>
         </html>
     )

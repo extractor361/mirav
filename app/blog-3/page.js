@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import Link from "next/link"
-import "app/favicon.ico"
 import Layout from "@/components/layout/Layout"
 export default function Blog_Page_Three() {
     return (

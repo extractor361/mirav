@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import Link from "next/link"
-import "app/favicon.ico"
 import Layout from "@/components/layout/Layout"
 import Faq from '@/components/sections/home2/Faq'
 export default function Service_Page_Three() {

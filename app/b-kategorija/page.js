@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import Link from "next/link"
-import "app/favicon.ico"
 import Layout from "@/components/layout/Layout"
 import CounterUp from "@/components/elements/CounterUp"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"

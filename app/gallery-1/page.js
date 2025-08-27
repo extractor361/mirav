@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import "app/favicon.ico"
 import Layout from "@/components/layout/Layout"
 import dynamic from 'next/dynamic'
 const PortfolioFilter1 = dynamic(() => import('@/components/elements/PortfolioFilter1'), { ssr: false,})

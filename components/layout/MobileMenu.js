@@ -48,52 +48,66 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
               <li><Link href="/" onClick={handleMobileMenu}>Naslovna</Link></li>
 
               {/* O nama */}
-<li className={isActive.key === "onama" ? "dropdown current" : "dropdown"}>
-  <Link
-    href="#"
-    onClick={(e) => {
-      e.preventDefault();
-      handleToggle("onama");
-    }}
-  >
-    O nama
-  </Link>
-  <ul style={{ display: isActive.key === "onama" ? "block" : "none" }}>
-    <li>
-      <Link href="/o-nama" onClick={handleMobileMenu}>
-        O nama
-      </Link>
-    </li>
-    <li>
-      <Link href="/tim" onClick={handleMobileMenu}>
-        Tim
-      </Link>
-    </li>
-  </ul>
-  <span
-    className={isActive.key === "onama" ? "dropdown-btn open" : "dropdown-btn"}
-    onClick={() => handleToggle("onama")}
-    role="button"
-    tabIndex={0}
-  >
-    <span className="fa fa-angle-down" />
-  </span>
-</li>
+              <li className={isActive.key === "onama" ? "dropdown current" : "dropdown"}>
+                <Link
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleToggle("onama");
+                  }}
+                >
+                  O nama
+                </Link>
+                <ul style={{ display: isActive.key === "onama" ? "block" : "none" }}>
+                  <li>
+                    <Link href="/o-nama" onClick={handleMobileMenu}>
+                      O nama
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/tim" onClick={handleMobileMenu}>
+                      Tim
+                    </Link>
+                  </li>
+                </ul>
+                <span
+                  className={isActive.key === "onama" ? "dropdown-btn open" : "dropdown-btn"}
+                  onClick={() => handleToggle("onama")}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <span className="fa fa-angle-down" />
+                </span>
+              </li>
 
               {/* B Kategorija */}
               <li><Link href="/b-kategorija" onClick={handleMobileMenu}>B Kategorija</Link></li>
 
-              {/* Testovi dropdown */}
-              <li className={isActive.key === "testovi" ? "dropdown current" : "dropdown"}>
-                <Link href="#" onClick={(e) => { e.preventDefault(); handleToggle("testovi") }}>
-                  Testovi
-                </Link>
-                <ul style={{ display: isActive.key === "testovi" ? "block" : "none" }}>
-                  <li><Link href="/test" onClick={handleMobileMenu}>Teorijski test 1</Link></li>
+              {/* Program teorijske obuke dropdown */}
+              <li className={isActive.key === "program" ? "dropdown current" : "dropdown"}>
+                <Link
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleToggle("program");
+                  }}
+                >
+                  Teorijska obuka                </Link>
+                <ul style={{ display: isActive.key === "program" ? "block" : "none" }}>
+                  <li>
+                    <Link href="/raspored" onClick={handleMobileMenu}>
+                  Program teorijske obuke
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/test" onClick={handleMobileMenu}>
+                      Teorijski test
+                    </Link>
+                  </li>
                 </ul>
                 <span
-                  className={isActive.key === "testovi" ? "dropdown-btn open" : "dropdown-btn"}
-                  onClick={() => handleToggle("testovi")}
+                  className={isActive.key === "program" ? "dropdown-btn open" : "dropdown-btn"}
+                  onClick={() => handleToggle("program")}
                   role="button"
                   tabIndex={0}
                 >
@@ -103,7 +117,6 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
 
               {/* Cjenovnik */}
               <li><Link href="/cjenovnik" onClick={handleMobileMenu}>Cjenovnik</Link></li>
-              {/*<li><Link href="/vodic-za-pocetnike" onClick={handleMobileMenu}>Vodič za početnike</Link></li>*/}
 
               {/* Blog */}
               <li><Link href="/blog" onClick={handleMobileMenu}>Blog</Link></li>

@@ -2,7 +2,6 @@
 import React from 'react'
 import { useState } from "react"
 import Link from "next/link"
-import "app/favicon.ico"
 import Layout from "@/components/layout/Layout"
 export default function Service_Details() {
     const [activeIndex, setActiveIndex] = useState(1)
@@ -489,7 +488,7 @@ Više od decenije iskustva i preko 2000 obučenih vozača su naša najbolja prep
                                             </div>
                                         </div>
                                         <div className="btn-box">
-                                            <Link className="btn-one" href="#">
+                                            <Link className="btn-one" href="/kontakt">
                                                 <span className="txt">
                                                     Prijavi se sada
                                                 </span>

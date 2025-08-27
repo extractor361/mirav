@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import "app/favicon.ico"
 import Layout from "@/components/layout/Layout"
 export default function History_Page() {
 

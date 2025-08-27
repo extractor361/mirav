@@ -1,4 +1,3 @@
-import "app/favicon.ico"
 import Layout from "@/components/layout/Layout"
 import Banner from "@/components/sections/home1/Banner"
 import About from "@/components/sections/home1/About"

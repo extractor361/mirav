@@ -38,7 +38,7 @@ export default function Blog() {
                                         </div>
                                         <div className="checked-box1">
                                             <input type="checkbox" name="skipper1" id="skipper"/>
-                                            <label for="skipper">
+                                            <label htmlFor="skipper">
                                                 <span></span>I agree the terms & conditions
                                             </label>
                                         </div>

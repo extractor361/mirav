@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import CountdownTimer from '@/components/elements/CountdownTimer';
-import "app/favicon.ico"
 export default function CommingSoon_Page() {
 
     const targetDate = new Date();

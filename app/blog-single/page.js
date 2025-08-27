@@ -326,7 +326,7 @@ export default function Blog_Details() {
                                                 <div className="col-md-12">
                                                     <div className="checked-box1">
                                                         <input type="checkbox" name="skipper1" id="skipper" checked=""/>
-                                                        <label for="skipper">
+                                                        <label htmlFor="skipper">
                                                             <span></span>Save my name, email, and website in this browser for
                                                             the next time I comment.
                                                         </label>

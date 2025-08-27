@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import { useState } from "react"
-import "app/favicon.ico"
 import Layout from "@/components/layout/Layout"
 import About from "@/components/sections/home3/About"
 import Choose from '@/components/sections/home3/Choose'

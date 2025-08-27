@@ -13,7 +13,7 @@ export default function Search({ isSidebar, handleSidebar }) {
                 </div>
                 <div className="search-popup__content">
                     <form action="/">
-                        <label for="search" className="sr-only">Pretraži ovdje</label>
+                        <label htmlFor="search" className="sr-only">Pretraži ovdje</label>
                         <input type="text" id="search" placeholder="Pretraži ovdje..." />
                         <button type="submit" aria-label="search submit" className="thm-btn">
                             <i className="icon-search"></i>
