@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import Link from "next/link"
-import "app/favicon.ico"
 import Layout from "@/components/layout/Layout"
 import Courses from '@/components/sections/home4/Courses';
 export default function Courses_Page_One() {
