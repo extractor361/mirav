@@ -1,36 +1,50 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
+import { EditorContent, useEditor } from '@tiptap/react';
+import StarterKit from '@tiptap/starter-kit';
+import Underline from '@tiptap/extension-underline';
+import Link from '@tiptap/extension-link';
 import axios from 'axios';
-
-const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 
 const API_BASE = 'https://miravapibackend.online/api';
 const IMAGE_BASE_URL = 'https://miravapibackend.online/slike/';
 
 export default function AdminEditNovost({ novost, onCancel, onUpdate }) {
   const [naslov, setNaslov] = useState(novost?.naslov || '');
-  const [sadrzaj, setSadrzaj] = useState(novost?.sadrzaj || '');
   const [slika, setSlika] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [editorLoaded, setEditorLoaded] = useState(false);
+
+  const editor = useEditor({
+    extensions: [StarterKit, Underline, Link],
+    content: novost?.sadrzaj || '',
+    editorProps: {
+      attributes: { class: 'focus:outline-none min-h-[200px] p-2' },
+    },
+    onUpdate: ({ editor }) => {},
+    immediatelyRender: false,
+  });
 
   useEffect(() => {
-    if (novost) {
+    setEditorLoaded(true);
+  }, []);
+
+  useEffect(() => {
+    if (novost && editor) {
       setNaslov(novost.naslov || '');
-      setSadrzaj(novost.sadrzaj || '');
+      setSlika(null);
+      editor.commands.setContent(novost.sadrzaj || '');
     }
-  }, [novost]);
+  }, [novost, editor]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     if (!naslov.trim()) {
       setError('Naslov je obavezan.');
       return;
     }
-
     setLoading(true);
     setError(null);
 
@@ -38,23 +52,17 @@ export default function AdminEditNovost({ novost, onCancel, onUpdate }) {
       const formData = new FormData();
       formData.append('novosti_id', novost.novosti_id);
       formData.append('naslov', naslov);
-      formData.append('sadrzaj', sadrzaj);
-      if (slika) {
-        formData.append('slika', slika); // nova slika ako postoji
-      }
+      formData.append('sadrzaj', editor.getHTML());
+      if (slika) formData.append('slika', slika);
 
       const response = await axios.post(
         `${API_BASE}/izmijeni-novost/${novost.novosti_id}`,
         formData,
-        {
-          headers: { 'Content-Type': 'multipart/form-data' },
-        }
+        { headers: { 'Content-Type': 'multipart/form-data' } }
       );
 
       if (response.status === 200) {
         onUpdate(response.data);
-        window.location.reload();
-
       } else {
         setError('Došlo je do greške prilikom izmene.');
       }
@@ -81,11 +89,11 @@ export default function AdminEditNovost({ novost, onCancel, onUpdate }) {
       }}
     >
       <h2 style={{ marginBottom: 20, color: '#183D73' }}>
-        ✏️ Izmeni novost #{novost.novosti_id}
+        ✏️ Izmijeni novost #{novost.novosti_id}
       </h2>
 
       <div style={{ marginBottom: 15 }}>
-        <label style={{ fontWeight: 'bold', color: '#183D73' }}>Naslov:</label>
+        <label style={{ fontWeight: 'bold', color: '#183D73', display: 'block', marginBottom: 5 }}>Naslov:</label>
         <input
           type="text"
           value={naslov}
@@ -94,7 +102,6 @@ export default function AdminEditNovost({ novost, onCancel, onUpdate }) {
           style={{
             width: '100%',
             padding: 10,
-            marginTop: 5,
             borderRadius: 4,
             border: '1px solid #ccc',
           }}
@@ -102,18 +109,45 @@ export default function AdminEditNovost({ novost, onCancel, onUpdate }) {
       </div>
 
       <div style={{ marginBottom: 15 }}>
-        <label style={{ fontWeight: 'bold', color: '#183D73' }}>Sadržaj:</label>
-        <div style={{ marginTop: 5, marginBottom: 20 }}>
-          <ReactQuill
-            value={sadrzaj}
-            onChange={(value) => setSadrzaj(value)}
-            theme="snow"
-            style={{ height: 250, borderRadius: 4 }}
-          />
+        <label style={{ fontWeight: 'bold', color: '#183D73', display: 'block', marginBottom: 5 }}>Sadržaj:</label>
+
+        {/* Toolbar */}
+        {/* Toolbar */}
+{editorLoaded && editor && (
+  <div style={{ marginBottom: 5, display: 'flex', gap: 5 }}>
+    <button type="button" onClick={() => editor.chain().focus().toggleBold().run()}>B</button>
+    <button type="button" onClick={() => editor.chain().focus().toggleItalic().run()}><i>I</i></button>
+    <button type="button" onClick={() => editor.chain().focus().toggleUnderline().run()}>U</button>
+    <button type="button" onClick={() => editor.chain().focus().toggleBulletList().run()}>• List</button>
+    <button type="button" onClick={() => editor.chain().focus().toggleOrderedList().run()}>1. List</button>
+    <button type="button" onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()}>H1</button>
+    <button type="button" onClick={() => editor.chain().focus().toggleHeading({ level: 2 }).run()}>H2</button>
+    <button type="button" onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()}>H3</button>
+    <button type="button" onClick={() => {
+  const url = prompt('Unesite URL:'); // traži novi URL od korisnika
+  if (!url) return; // ako ništa nije uneto, ne radi ništa
+  editor.chain().focus().unsetLink().setLink({ href: url }).run();
+}}>
+  Link
+</button>
+
+  </div>
+)}
+
+        {/* Editor */}
+        <div
+          style={{
+            minHeight: '200px',
+            border: '1px solid #ccc',
+            borderRadius: 4,
+            padding: 10,
+          }}
+        >
+          {editorLoaded && editor && <EditorContent editor={editor} />}
         </div>
       </div>
 
-      <div style={{ marginBottom: 15, marginTop: 50 }}>
+      <div style={{ marginBottom: 15, marginTop: 20 }}>
         <label style={{ fontWeight: 'bold', color: '#183D73' }}>Nova slika (opciono):</label>
         <input
           type="file"

@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import dynamic from 'next/dynamic';
-import 'react-quill/dist/quill.snow.css';
 import AdminEditNovost from './AdminEditNovost';
-
-const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
+import { EditorContent, useEditor } from '@tiptap/react';
+import StarterKit from '@tiptap/starter-kit';
+import Underline from '@tiptap/extension-underline';
+import Link from '@tiptap/extension-link';
 
 const API_BASE = 'https://miravapibackend.online/api';
 const IMAGE_BASE_URL = 'https://miravapibackend.online/slike/';
@@ -15,22 +15,40 @@ export default function AdminBlogList() {
   const [novosti, setNovosti] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
   const [naslov, setNaslov] = useState('');
   const [sadrzaj, setSadrzaj] = useState('');
   const [slika, setSlika] = useState(null);
   const [submitError, setSubmitError] = useState(null);
   const [submitLoading, setSubmitLoading] = useState(false);
   const [editNovost, setEditNovost] = useState(null);
+  const [editorLoaded, setEditorLoaded] = useState(false);
+
+  // inicijalizacija Tiptap editora
+  const editor = useEditor({
+    extensions: [StarterKit, Underline, Link],
+    content: '',
+    editorProps: {
+      attributes: {
+        class: 'min-h-[250px] p-2',
+      },
+    },
+    onUpdate: ({ editor }) => setSadrzaj(editor.getHTML()),
+    immediatelyRender: false, // obavezno zbog SSR
+  });
 
   useEffect(() => {
-    axios
-      .get(`${API_BASE}/dohvatiNovosti`)
-      .then((response) => {
-        setNovosti(response.data);
+    setEditorLoaded(true);
+  }, []);
+
+  useEffect(() => {
+    axios.get(`${API_BASE}/dohvatiNovosti`)
+      .then(res => {
+        setNovosti(res.data);
         setLoading(false);
       })
-      .catch((error) => {
-        setError(error.message);
+      .catch(err => {
+        setError(err.message);
         setLoading(false);
       });
   }, []);
@@ -51,7 +69,7 @@ export default function AdminBlogList() {
       });
 
       const novaNovost = {
-        novosti_id: Date.now(), // privremeni ID dok backend ne vrati pravi
+        novosti_id: Date.now(),
         naslov,
         sadrzaj,
         slika: slika ? slika.name : null,
@@ -59,18 +77,13 @@ export default function AdminBlogList() {
         korisnik_korisnik_id: 0,
       };
 
-      setNovosti((prev) => [novaNovost, ...prev]);
-
-      // reset forme
+      setNovosti(prev => [novaNovost, ...prev]);
       setNaslov('');
       setSadrzaj('');
       setSlika(null);
+      if (editor) editor.commands.setContent('');
     } catch (err) {
-      setSubmitError(
-        err.response?.data?.message ||
-          err.message ||
-          'Greška prilikom dodavanja novosti.'
-      );
+      setSubmitError(err.response?.data?.message || err.message || 'Greška prilikom dodavanja novosti.');
     } finally {
       setSubmitLoading(false);
     }
@@ -80,275 +93,112 @@ export default function AdminBlogList() {
     if (!window.confirm('Da li ste sigurni da želite da obrišete ovu novost?')) return;
 
     try {
-      await axios.delete(`${API_BASE}/obrisiNovost`, {
-        data: { novosti_id: id },
-      });
-      setNovosti((prev) => prev.filter((n) => n.novosti_id !== id));
+      await axios.delete(`${API_BASE}/obrisiNovost`, { data: { novosti_id: id } });
+      setNovosti(prev => prev.filter(n => n.novosti_id !== id));
     } catch (err) {
       alert(err.response?.data?.message || 'Greška prilikom brisanja novosti.');
     }
   };
 
   const openEditForm = (novosti_id) => {
-    const fullNovost = novosti.find((n) => n.novosti_id === novosti_id);
-    if (fullNovost) {
-      setEditNovost(fullNovost);
-    }
+    const fullNovost = novosti.find(n => n.novosti_id === novosti_id);
+    if (fullNovost) setEditNovost(fullNovost);
   };
 
   const handleUpdateNovost = (updatedNovost) => {
-    setNovosti((prev) =>
-      prev.map((n) =>
-        n.novosti_id === updatedNovost.novosti_id ? updatedNovost : n
-      )
-    );
+    setNovosti(prev => prev.map(n => n.novosti_id === updatedNovost.novosti_id ? updatedNovost : n));
     setEditNovost(null);
   };
 
-  if (loading)
-    return <p style={{ textAlign: 'center', padding: 20 }}>Učitavanje...</p>;
-  if (error)
-    return <p style={{ color: 'green', textAlign: 'center' }}>Greška: {error}</p>;
+  if (loading) return <p style={{ textAlign: 'center', padding: 20 }}>Učitavanje...</p>;
+  if (error) return <p style={{ color: 'green', textAlign: 'center' }}>Greška: {error}</p>;
 
   return (
-    <div
-      style={{
-        maxWidth: 1000,
-        margin: 'auto',
-        padding: '30px',
-        backgroundColor: '#E6F0FF',
-        minHeight: '100vh',
-      }}
-    >
-      <h1
-        style={{
-          textAlign: 'center',
-          marginBottom: 30,
-          color: '#183D73',
-        }}
-      >
-        📋 Lista blog novosti (admin)
-      </h1>
+    <div style={{ maxWidth: 1000, margin: 'auto', padding: 30, backgroundColor: '#E6F0FF', minHeight: '100vh' }}>
+      <h1 style={{ textAlign: 'center', marginBottom: 30, color: '#183D73' }}>📋 Lista blog novosti (admin)</h1>
 
       <div style={{ overflowX: 'auto', marginBottom: 40 }}>
-        <table
-          style={{
-            width: '100%',
-            borderCollapse: 'collapse',
-            borderRadius: 8,
-            overflow: 'hidden',
-            boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
-            backgroundColor: '#fff',
-          }}
-        >
+        <table style={{ width: '100%', borderCollapse: 'collapse', borderRadius: 8, overflow: 'hidden', boxShadow: '0 2px 6px rgba(0,0,0,0.1)', backgroundColor: '#fff' }}>
           <thead style={{ backgroundColor: '#183D73', color: '#fff' }}>
             <tr>
-              {['Naslov', 'Slika', 'Datum objave', 'Korisnik ID', 'Akcije'].map(
-                (h) => (
-                  <th
-                    key={h}
-                    style={{
-                      padding: 12,
-                      textAlign: 'left',
-                      fontWeight: 'bold',
-                    }}
-                  >
-                    {h}
-                  </th>
-                )
-              )}
+              {['Naslov', 'Slika', 'Datum objave', 'Korisnik ID', 'Akcije'].map(h => (
+                <th key={h} style={{ padding: 12, textAlign: 'left', fontWeight: 'bold' }}>{h}</th>
+              ))}
             </tr>
           </thead>
           <tbody>
             {novosti.length === 0 ? (
               <tr>
-                <td colSpan="6" style={{ textAlign: 'center', padding: 20 }}>
-                  Nema novosti
-                </td>
+                <td colSpan="6" style={{ textAlign: 'center', padding: 20 }}>Nema novosti</td>
               </tr>
             ) : (
-              novosti.map(
-                ({
-                  novosti_id,
-                  naslov,
-                  slika,
-                  datum_objave,
-                  korisnik_korisnik_id,
-                }) => (
-                  <tr key={novosti_id} style={{ borderBottom: '1px solid #ddd' }}>
-                    <td style={{ padding: 12 }}>{naslov}</td>
-                    <td style={{ padding: 12, textAlign: 'center' }}>
-                      {slika ? (
-                        <img
-                          src={`${IMAGE_BASE_URL}${slika}`}
-                          alt={naslov}
-                          style={{
-                            maxWidth: 100,
-                            maxHeight: 70,
-                            objectFit: 'cover',
-                            borderRadius: 4,
-                            border: '1px solid #ccc',
-                          }}
-                        />
-                      ) : (
-                        <span>–</span>
-                      )}
-                    </td>
-                    <td style={{ padding: 12 }}>{datum_objave}</td>
-                    <td style={{ padding: 12 }}>{korisnik_korisnik_id}</td>
-                    <td
-                      style={{
-                        padding: 12,
-                        display: 'flex',
-                        gap: 8,
-                      }}
-                    >
-                      <button
-                        onClick={() => openEditForm(novosti_id)}
-                        title="Izmeni novost"
-                        style={{
-                          backgroundColor: '#28a745',
-                          color: '#fff',
-                          border: 'none',
-                          padding: '6px 12px',
-                          borderRadius: 4,
-                          cursor: 'pointer',
-                          transition: 'background 0.2s',
-                        }}
-                        onMouseOver={(e) =>
-                          (e.target.style.backgroundColor = '#218838')
-                        }
-                        onMouseOut={(e) =>
-                          (e.target.style.backgroundColor = '#28a745')
-                        }
-                      >
-                        ✏️
-                      </button>
-                      <button
-                        onClick={() => handleDelete(novosti_id)}
-                        style={{
-                          backgroundColor: '#dc3545',
-                          color: '#fff',
-                          border: 'none',
-                          padding: '6px 12px',
-                          borderRadius: 4,
-                          cursor: 'pointer',
-                          transition: 'background 0.2s',
-                        }}
-                        onMouseOver={(e) =>
-                          (e.target.style.backgroundColor = '#c82333')
-                        }
-                        onMouseOut={(e) =>
-                          (e.target.style.backgroundColor = '#dc3545')
-                        }
-                      >
-                        Obriši
-                      </button>
-                    </td>
-                  </tr>
-                )
-              )
+              novosti.map(({ novosti_id, naslov, slika, datum_objave, korisnik_korisnik_id }) => (
+                <tr key={novosti_id} style={{ borderBottom: '1px solid #ddd' }}>
+                  <td style={{ padding: 12 }}>{naslov}</td>
+                  <td style={{ padding: 12, textAlign: 'center' }}>
+                    {slika ? <img src={`${IMAGE_BASE_URL}${slika}`} alt={naslov} style={{ maxWidth: 100, maxHeight: 70, objectFit: 'cover', borderRadius: 4, border: '1px solid #ccc' }} /> : <span>–</span>}
+                  </td>
+                  <td style={{ padding: 12 }}>{datum_objave}</td>
+                  <td style={{ padding: 12 }}>{korisnik_korisnik_id}</td>
+                  <td style={{ padding: 12, display: 'flex', gap: 8 }}>
+                    <button onClick={() => openEditForm(novosti_id)} title="Izmeni novost" style={{ backgroundColor: '#28a745', color: '#fff', border: 'none', padding: '6px 12px', borderRadius: 4, cursor: 'pointer' }}>✏️</button>
+                    <button onClick={() => handleDelete(novosti_id)} style={{ backgroundColor: '#dc3545', color: '#fff', border: 'none', padding: '6px 12px', borderRadius: 4, cursor: 'pointer' }}>Obriši</button>
+                  </td>
+                </tr>
+              ))
             )}
           </tbody>
         </table>
       </div>
 
       {!editNovost && (
-        <form
-          onSubmit={handleAdd}
-          style={{
-            backgroundColor: '#fff',
-            padding: 20,
-            borderRadius: 8,
-            boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-          }}
-        >
-          <h2 style={{ marginBottom: 20, color: '#183D73' }}>
-            ✏️ Dodaj novu novost
-          </h2>
+        <form onSubmit={handleAdd} style={{ backgroundColor: '#fff', padding: 20, borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+          <h2 style={{ marginBottom: 20, color: '#183D73' }}>✏️ Dodaj novu novost</h2>
 
           <div style={{ marginBottom: 15 }}>
-            <label style={{ fontWeight: 'bold', color: '#183D73' }}>
-              Naslov:
-            </label>
-            <input
-              type="text"
-              value={naslov}
-              onChange={(e) => setNaslov(e.target.value)}
-              required
-              style={{
-                width: '100%',
-                padding: 10,
-                marginTop: 5,
-                borderRadius: 4,
-                border: '1px solid #ccc',
-              }}
-            />
+            <label style={{ fontWeight: 'bold', color: '#183D73', display: 'block', marginBottom: 5 }}>Naslov:</label>
+            <input type="text" value={naslov} onChange={e => setNaslov(e.target.value)} required
+              style={{ width: '100%', padding: 10, borderRadius: 4, border: '1px solid #ccc' }} />
           </div>
 
           <div style={{ marginBottom: 15 }}>
-            <label style={{ fontWeight: 'bold', color: '#183D73' }}>
-              Sadržaj:
-            </label>
-            <div style={{ marginTop: 5, marginBottom: 20 }}>
-              <ReactQuill
-                value={sadrzaj}
-                onChange={setSadrzaj}
-                theme="snow"
-                style={{ height: 250, borderRadius: 4 }}
-              />
+            <label style={{ fontWeight: 'bold', color: '#183D73', display: 'block', marginBottom: 5 }}>Sadržaj:</label>
+
+            {/* Toolbar */}
+            {editorLoaded && editor && (
+              <div style={{ marginBottom: 5, display: 'flex', gap: 5 }}>
+                <button type="button" onClick={() => editor.chain().focus().toggleBold().run()}>B</button>
+                <button type="button" onClick={() => editor.chain().focus().toggleItalic().run()}><i>I</i></button>
+                <button type="button" onClick={() => editor.chain().focus().toggleUnderline().run()}>U</button>
+                <button type="button" onClick={() => editor.chain().focus().toggleBulletList().run()}>• List</button>
+                <button type="button" onClick={() => editor.chain().focus().toggleOrderedList().run()}>1. List</button>
+                <button type="button" onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()}>H1</button>
+                <button type="button" onClick={() => editor.chain().focus().toggleHeading({ level: 2 }).run()}>H2</button>
+                <button type="button" onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()}>H3</button>
+                <button type="button" onClick={() => editor.chain().focus().toggleLink({ href: 'https://example.com' }).run()}>Link</button>
+              </div>
+            )}
+
+            {/* Editor */}
+            <div style={{ minHeight: '250px', border: '1px solid #ccc', borderRadius: 4, padding: 10 }}>
+              {editorLoaded && editor && <EditorContent editor={editor} />}
             </div>
           </div>
 
-          <div style={{ marginBottom: 15, marginTop: 50 }}>
-            <label style={{ fontWeight: 'bold', color: '#183D73' }}>
-              Slika (opciono):
-            </label>
-            <input
-              type="file"
-              accept="image/*"
-              onChange={(e) => setSlika(e.target.files[0])}
-              style={{ marginTop: 5 }}
-            />
+          <div style={{ marginBottom: 15, marginTop: 20 }}>
+            <label style={{ fontWeight: 'bold', color: '#183D73' }}>Slika (opciono):</label>
+            <input type="file" accept="image/*" onChange={e => setSlika(e.target.files[0])} style={{ marginTop: 5 }} />
           </div>
 
-          {submitError && (
-            <p style={{ color: 'red', marginBottom: 15 }}>{submitError}</p>
-          )}
+          {submitError && <p style={{ color: 'red', marginBottom: 15 }}>{submitError}</p>}
 
-          <button
-            type="submit"
-            disabled={submitLoading}
-            style={{
-              padding: '10px 20px',
-              backgroundColor: '#468FFB',
-              color: 'white',
-              border: 'none',
-              borderRadius: 4,
-              cursor: submitLoading ? 'not-allowed' : 'pointer',
-              fontWeight: 'bold',
-              fontSize: 16,
-              transition: 'background 0.3s',
-            }}
-            onMouseOver={(e) =>
-              !submitLoading && (e.target.style.backgroundColor = '#356ac3')
-            }
-            onMouseOut={(e) =>
-              !submitLoading && (e.target.style.backgroundColor = '#468FFB')
-            }
-          >
+          <button type="submit" disabled={submitLoading} style={{ padding: '10px 20px', backgroundColor: '#468FFB', color: 'white', border: 'none', borderRadius: 4, cursor: submitLoading ? 'not-allowed' : 'pointer', fontWeight: 'bold', fontSize: 16 }}>
             {submitLoading ? 'Otpremanje fotografije...' : 'Dodaj novost'}
           </button>
         </form>
       )}
 
-      {editNovost && (
-        <AdminEditNovost
-          novost={editNovost}
-          onCancel={() => setEditNovost(null)}
-          onUpdate={handleUpdateNovost}
-        />
-      )}
+      {editNovost && <AdminEditNovost novost={editNovost} onCancel={() => setEditNovost(null)} onUpdate={handleUpdateNovost} />}
     </div>
   );
 }

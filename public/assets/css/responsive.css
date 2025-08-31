@@ -3646,7 +3646,7 @@
 justify-content: center;}
 .single-team-style1-img img {
    
-    height: 265px !important;
+    height: 100% !important;
 }
     .breadcrumb-style1 .title h2 {
         font-size: 40px;

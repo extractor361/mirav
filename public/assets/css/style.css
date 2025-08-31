@@ -19,24 +19,7 @@
 
 
 
-@import '@fontsource/onest/100.css';
-@import '@fontsource/onest/200.css';
-@import '@fontsource/onest/300.css';
-@import '@fontsource/onest/400.css';
-@import '@fontsource/onest/500.css';
-@import '@fontsource/onest/600.css';
-@import '@fontsource/onest/700.css';
-@import '@fontsource/onest/800.css';
-@import '@fontsource/onest/900.css';
-@import '@fontsource/pathway-extreme/100.css';
-@import '@fontsource/pathway-extreme/200.css';
-@import '@fontsource/pathway-extreme/300.css';
-@import '@fontsource/pathway-extreme/400.css';
-@import '@fontsource/pathway-extreme/500.css';
-@import '@fontsource/pathway-extreme/600.css';
-@import '@fontsource/pathway-extreme/700.css';
-@import '@fontsource/pathway-extreme/800.css';
-@import '@fontsource/pathway-extreme/900.css';
+
 
 
 @import url('animate.min.css');
@@ -95,7 +78,7 @@ body {
 .body-bg-1 {
     background-color: #ffffff;
 }
-
+.fc .fc-button-primary:disabled, .fc .fc-button-group > .fc-button {background:#548df9 !important}
 p {
     font-family: var(--thm-font);
     color: var(--thm-body-font-color);
