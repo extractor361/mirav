@@ -4476,6 +4476,7 @@ select:focus {
     width: 100%;
     transform: scale(1.0);
     transition: all 1500ms ease;
+    min-height: 250px !important;
 }
 
 .single-project-style1:hover .single-project-style1__img img {
