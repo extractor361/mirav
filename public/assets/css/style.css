@@ -87,7 +87,7 @@ p {
     font-weight: var(--thm-body-font-weight);
     margin: 0;
 }
-
+.fc .fc-daygrid-body-natural .fc-daygrid-day-events{margin-bottom: :0px !important;}
 a {
     color: var(--thm-black);
     transition: all 200ms linear;
