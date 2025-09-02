@@ -12,9 +12,7 @@ export default function RasporedKalendar_Page() {
   // Pretvorimo JSON u događaje za kalendar
   const events = raspored.map((cas) => ({
     title: `${cas.broj_casa}. čas`, // samo broj časa u kalendaru
-    start: cas.datum
-      ? cas.datum.split(".").reverse().join("-")
-      : null,
+    start: cas.datum ? cas.datum.split(".").reverse().join("-") : null,
     extendedProps: {
       tema: cas.tema,
       oblast: cas.oblast,
@@ -28,14 +26,43 @@ export default function RasporedKalendar_Page() {
       <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Raspored časova">
         <section className="pt-12 pb-12">
           <div className="container">
-            <div className="sec-title text-center" style={{ paddingTop: "50px" }}>
+            <div
+              className="sec-title text-center"
+              style={{ paddingTop: "50px" }}
+            >
               <div className="sub-title">
                 <h4>Teorijski program</h4>
               </div>
               <h2>Kalendar časova</h2>
             </div>
 
-            {/* Kalendar sa paddingom odozdo */}
+            {/* Kartica sa detaljima iznad kalendara */}
+            {selectedEvent && (
+              <div className="bg-white p-6 rounded-2xl shadow-xl mb-6 relative">
+                <button
+                  className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
+                  onClick={() => setSelectedEvent(null)}
+                >
+                  ✕
+                </button>
+                <h3 className="text-xl font-bold mb-4">
+                  {selectedEvent.title} – {selectedEvent.extendedProps.tema}
+                </h3>
+                <p>
+                  <strong>Oblast:</strong> {selectedEvent.extendedProps.oblast}
+                </p>
+                <p>
+                  <strong>Znanja i vještine:</strong>{" "}
+                  {selectedEvent.extendedProps.znanja}
+                </p>
+                <p>
+                  <strong>Preporuke:</strong>{" "}
+                  {selectedEvent.extendedProps.preporuke}
+                </p>
+              </div>
+            )}
+
+            {/* Kalendar */}
             <div
               className="bg-white p-4 rounded-xl shadow-lg"
               style={{ paddingBottom: "40px" }}
@@ -60,32 +87,6 @@ export default function RasporedKalendar_Page() {
                 }}
               />
             </div>
-
-            {/* Modal sa paddingom odozdo */}
-            {selectedEvent && (
-              <div
-                className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-                style={{ paddingBottom: "40px", marginTop:"40px" }}
-              >
-                <div
-                  className="bg-white p-6 rounded-2xl shadow-xl max-w-lg w-full relative"
-                  style={{ paddingBottom: "30px" }}
-                >
-                  <button
-                    className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
-                    onClick={() => setSelectedEvent(null)}
-                  >
-                    ✕
-                  </button>
-                  <h3 className="text-xl font-bold mb-4">
-                    {selectedEvent.title} – {selectedEvent.extendedProps.tema}
-                  </h3>
-                  <p><strong>Oblast:</strong> {selectedEvent.extendedProps.oblast}</p>
-                  <p><strong>Znanja i vještine:</strong> {selectedEvent.extendedProps.znanja}</p>
-                  <p><strong>Preporuke:</strong> {selectedEvent.extendedProps.preporuke}</p>
-                </div>
-              </div>
-            )}
           </div>
         </section>
       </Layout>
