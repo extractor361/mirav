@@ -252,7 +252,10 @@ export default function Testimonial() {
                     <div className="section-btn">
                         <div className="section-btn-inner">
                             <div className="section-btn-inner-bg"
-                                style={{ backgroundImage: "url(assets/images/pattern/thm-pattern-1.png)" }}></div>
+                                style={{ backgroundImage: "url(assets/images/pattern/thm-pattern-1.png)" }}>
+
+                                    <p>Napišite recenziju<a href="/https://www.google.com/search?sca_esv=2bd8a92f2f2a46b0&rlz=1C1GCEA_enME1079ME1079&sxsrf=AE3TifPQCzR-m-egEdtsG1fq7SiIkhJzoQ:1757160531446&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-Ez_wJVZnOBIirB6DxRSK9ugU5Y5N0TgMbmESqrcjYJ94A5mbrX8jevc-892vDjHb3x0ymJxzwt7ft_Cl5YCc34qwclTeHAo-3F2NSLC-KNqfXcxleQ%3D%3D&q=Auto+%C5%A1kola+Mirav+Reviews&sa=X&ved=2ahUKEwi54KiKjcSPAxXuR_EDHTWJI1UQ0bkNegQIIhAE&biw=1920&bih=911&dpr=1"><i class="icon-next"></i> ovdje</a></p>
+                                </div>
                            
                         </div>
                     </div>
