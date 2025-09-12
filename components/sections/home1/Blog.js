@@ -102,8 +102,7 @@ export default function Blog() {
             <div className="section-btn-inner">
               <div
                 className="section-btn-inner-bg"
-                style={{ backgroundImage: "url(assets/images/pattern/thm-pattern-1.png)" }}
-              ></div>
+                style={{ backgroundImage: "url(assets/images/pattern/thm-pattern-1.png)" }}></div>
               <p>
                 Želiš da saznaš više?
                 <Link href="/blog">

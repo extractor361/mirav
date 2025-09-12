@@ -115,7 +115,7 @@ export default function Gallery_Page_Two() {
               <p style={{ fontWeight: 'bold', marginBottom: '20px' }}>{pitanje.tekst_pitanja}</p>
               {pitanje.slika && (
                 <img 
-                  src={`/uploads/${pitanje.slika}`}
+                  src={`https://miravapibackend.online/slike/${pitanje.slika}`}
                   alt="Pitanje slika"
                   style={{ width: '100%', maxWidth: '600px', marginBottom: '20px', borderRadius: '4px' }}
                 />
