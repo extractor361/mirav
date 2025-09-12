@@ -117,7 +117,7 @@ export default function Gallery_Page_Two() {
                 <img 
                   src={`https://miravapibackend.online/slike/${pitanje.slika}`}
                   alt="Pitanje slika"
-                  style={{ width: '100%', maxWidth: '600px', marginBottom: '20px', borderRadius: '4px' }}
+                  style={{ width: '100%', maxWidth: '200px', marginBottom: '20px', borderRadius: '4px' }}
                 />
               )}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '30px' }}>
