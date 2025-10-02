@@ -113,15 +113,15 @@ export default function Cjenovnik_Page() {
                             <tbody>
                               <tr>
                                 <td style={{ padding: '10px', border: '1px solid #ddd' }}>Teoretski dio – polaganje</td>
-                                <td style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'right' }}>25 €</td>
+                                <td style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'right' }}>20 €</td>
                               </tr>
                               <tr>
                                 <td style={{ padding: '10px', border: '1px solid #ddd' }}>Praktični dio – polaganje</td>
-                                <td style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'right' }}>25 €</td>
+                                <td style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'right' }}>20 €</td>
                               </tr>
                               <tr>
                                 <td style={{ padding: '10px', border: '1px solid #ddd' }}>Svjedočanstvo</td>
-                                <td style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'right' }}>10 €</td>
+                                <td style={{ padding: '10px', border: '1px solid #ddd', textAlign: 'right' }}>20 €</td>
                               </tr>
                               <tr>
                                 <td style={{ padding: '10px', border: '1px solid #ddd' }}>Ispisnica</td>
