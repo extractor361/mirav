@@ -11,7 +11,7 @@
       "Uočava važnost preciznog i jedinstvenog definisanja pojmova"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "06.10.2025"
+    "datum": "02.02.2026"
   },
   {
     "broj_casa": 2,
@@ -31,7 +31,7 @@
       "Kroz statističke podatke prikazati stanje bezbjednosti kod nas i u svijetu",
       "Na prigodan način prikazati primjere saobraćajnih nezgoda, vrste vozila, tehničke preglede"
     ],
-    "datum": "06.10.2025"
+    "datum": "02.02.2026"
   },
   {
     "broj_casa": 3,
@@ -47,7 +47,7 @@
       "Objasniti stvarne i apstraktne opasnosti zbog nepoštovanja signalizacije",
       "Pripremiti prigodne testove za provjeru"
     ],
-    "datum": "07.10.2025"
+    "datum": "03.02.2026"
   },
   {
     "broj_casa": 4,
@@ -58,7 +58,7 @@
       "Obrazlaže postupanje prema saobraćajnim znakovima izričitih naredbi"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "07.10.2025"
+    "datum": "03.02.2026"
   },
   {
     "broj_casa": 5,
@@ -70,7 +70,7 @@
       "Razlikuje oznake na kolovozu i uočava njihov uticaj na bezbjednost"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "08.10.2025"
+    "datum": "03.02.2026"
   },
   {
     "broj_casa": 6,
@@ -83,7 +83,7 @@
       "Opisuje obilježavanje prelaza preko pruge i radova na putu"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "08.10.2025"
+    "datum": "04.02.2026"
   },
   {
     "broj_casa": 7,
@@ -96,7 +96,7 @@
       "Opisuje obilježavanje prelaza preko pruge i radova na putu"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "08.10.2025"
+    "datum": "04.02.2026"
   },
   {
     "broj_casa": 8,
@@ -108,7 +108,7 @@
       "Objašnjava postupanje prema znacima koje daju ovlašćena lica"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "09.10.2025"
+    "datum": "04.02.2026"
   },
   {
     "broj_casa": 9,
@@ -120,7 +120,7 @@
       "Objašnjava postupanje prema znacima koje daju ovlašćena lica"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "09.10.2025"
+    "datum": "05.02.2026"
   },
   {
     "broj_casa": 10,
@@ -135,7 +135,7 @@
     "preporuke_za_nastavu": [
       "Posebnu pažnju posvetiti predviđanju i izbjegavanju opasnosti"
     ],
-    "datum": "09.10.2025"
+    "datum": "05.02.2026"
   },
   {
     "broj_casa": 11,
@@ -152,7 +152,7 @@
       "Analizirati konkretne saobraćajne situacije",
       "Provjeru znanja vršiti putem testova sa više tačnih odgovora"
     ],
-    "datum": "10.10.2025"
+    "datum": "05.02.2026"
   },
   {
     "broj_casa": 12,
@@ -165,7 +165,7 @@
       "Opisuje postupanje vozača i pješaka pri susretu sa vozilima pod pratnjom"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "10.10.2025"
+    "datum": "06.02.2026"
   },
   {
     "broj_casa": 13,
@@ -182,7 +182,7 @@
       "Kroz video primjere ilustrovati pravilno i nepravilno preticanje",
       "Posebno obraditi opasnosti nepravilnog preticanja"
     ],
-    "datum": "13.10.2025"
+    "datum": "06.02.2026"
   },
   {
     "broj_casa": 14,
@@ -198,8 +198,26 @@
     "preporuke_za_nastavu": [
       "Na prigodnim lokacijama pokazati razliku između propisnog i nepropisnog parkiranja"
     ],
-    "datum": "13.10.2025"
+    "datum": "06.02.2026"
   },
+  {
+  "broj_casa": 15,
+  "oblast": "Pravila saobraćaja",
+  "tema": "Saobraćaj na prelazu puta preko željezničke pruge",
+  "znanja_i_vjestine": [
+    "Opisuje postupke vozača pri nailasku na prelaz puta preko željezničke pruge",
+    "Navodi obaveze vozača pri nailasku na branik ili svjetlosnu signalizaciju",
+    "Uočava opasnosti pri prelasku preko pruge",
+    "Razlikuje obezbijeđene i neobezbijeđene prelaze",
+    "Objašnjava posljedice nepropisnog prelaska preko željezničke pruge"
+  ],
+  "preporuke_za_nastavu": [
+    "Analizirati video snimke realnih situacija na pružnim prelazima",
+    "Diskusija o greškama vozača i mogućim posljedicama"
+  ],
+  "datum": "09.02.2026"
+},
+
   {
     "broj_casa": 16,
     "oblast": "Pravila saobraćaja",
@@ -214,7 +232,7 @@
     "preporuke_za_nastavu": [
       "Na prigodnim lokacijama pokazati razliku između propisnog i nepropisnog parkiranja"
     ],
-    "datum": "13.10.2025"
+    "datum": "09.02.2026"
   },
   {
     "broj_casa": 17,
@@ -227,7 +245,7 @@
       "Uočava opasnosti pri kretanju navedenim saobraćajnicama"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "14.10.2025"
+    "datum": "09.02.2026"
   },
   {
     "broj_casa": 18,
@@ -242,7 +260,7 @@
     "preporuke_za_nastavu": [
       "Analizirati tipične nezgode sa pješacima i biciklistima"
     ],
-    "datum": "14.10.2025"
+    "datum": "09.02.2026"
   },
   {
     "broj_casa": 19,
@@ -257,7 +275,7 @@
     "preporuke_za_nastavu": [
       "Analizirati tipične nezgode sa pješacima i biciklistima"
     ],
-    "datum": "14.10.2025"
+    "datum": "10.02.2026"
   },
   {
     "broj_casa": 20,
@@ -272,7 +290,7 @@
     "preporuke_za_nastavu": [
       "Prikazati fotografije i video zapise nepravilnog prevoza tereta i lica"
     ],
-    "datum": "15.10.2025"
+    "datum": "10.02.2026"
   },
   {
     "broj_casa": 21,
@@ -287,7 +305,7 @@
     "preporuke_za_nastavu": [
       "Koristiti makete ili animacije motora za lakše razumijevanje"
     ],
-    "datum": "15.10.2025"
+    "datum": "10.02.2026"
   },
   {
     "broj_casa": 22,
@@ -300,7 +318,7 @@
       "Uočava značaj ispravnosti sistema prenosa snage i upravljanja"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "16.10.2025"
+    "datum": "11.02.2026"
   },
   {
     "broj_casa": 23,
@@ -315,7 +333,7 @@
     "preporuke_za_nastavu": [
       "Prikazati dijelove kočionog sistema i svjetlosnih uređaja"
     ],
-    "datum": "16.10.2025"
+    "datum": "12.02.2026"
   },
   {
     "broj_casa": 24,
@@ -328,7 +346,7 @@
       "Uočava značaj pravilne upotrebe opreme"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "16.10.2025"
+    "datum": "12.02.2026"
   },
   {
     "broj_casa": 25,
@@ -341,7 +359,7 @@
       "Uočava posljedice vožnje sa neispravnim pneumaticima"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "17.10.2025"
+    "datum": "13.02.2026"
   },
   {
     "broj_casa": 26,
@@ -354,7 +372,7 @@
       "Opisuje opasnosti pri vožnji motocikla"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "17.10.2025"
+    "datum": "13.02.2026"
   },
   {
     "broj_casa": 27,
@@ -369,7 +387,7 @@
     "preporuke_za_nastavu": [
       "Analizirati realne primjere usporene reakcije vozača"
     ],
-    "datum": "17.10.2025"
+    "datum": "13.02.2026"
   },
   {
     "broj_casa": 28,
@@ -384,7 +402,7 @@
     "preporuke_za_nastavu": [
       "Diskusija o primjerima tolerantnog i netolerantnog ponašanja"
     ],
-    "datum": "20.10.2025"
+    "datum": "16.02.2026"
   },
   {
     "broj_casa": 29,
@@ -399,7 +417,7 @@
     "preporuke_za_nastavu": [
       "Praktične vježbe iz pružanja prve pomoći i obezbjeđenja vozila"
     ],
-    "datum": "20.10.2025"
+    "datum": "16.02.2026"
   },
   {
     "broj_casa": 30,
@@ -414,7 +432,7 @@
     "preporuke_za_nastavu": [
       "Praktične vježbe iz pružanja prve pomoći i obezbjeđenja vozila"
     ],
-    "datum": "20.10.2025"
+    "datum": "17.02.2026"
   },
   {
     "broj_casa": 31,
@@ -429,7 +447,7 @@
     "preporuke_za_nastavu": [
       "Kroz praktične primjere prikazati ekonomičnu vožnju"
     ],
-    "datum": "21.10.2025"
+    "datum": "17.02.2026"
   },
   {
     "broj_casa": 32,
@@ -444,7 +462,7 @@
     "preporuke_za_nastavu": [
       "Pripremiti testove sa kombinovanim pitanjima i analizom slučajeva"
     ],
-    "datum": "21.10.2025"
+    "datum": "17.02.2026"
   },
   {
     "broj_casa": 33,
@@ -461,7 +479,7 @@
       "Objašnjava uticaj represivnih mjera na bezbjednost saobraćaja"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "22.10.2025"
+    "datum": "18.02.2026"
   },
   {
     "broj_casa": 34,
@@ -478,7 +496,7 @@
       "Objašnjava uticaj represivnih mjera na bezbjednost saobraćaja"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "22.10.2025"
+    "datum": "18.02.2026"
   },
   {
     "broj_casa": 35,
@@ -495,7 +513,7 @@
       "Objašnjava uticaj represivnih mjera na bezbjednost saobraćaja"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "22.10.2025"
+    "datum": "18.02.2026"
   },
   {
     "broj_casa": 36,
@@ -513,7 +531,7 @@
       "Polaznike upoznati sa sadržajem kutije za prvu pomoć, namjenom i načinom upotrebe pojedinih elemenata",
       "Na času vježbi demonstrirati postupke pružanja prve pomoći"
     ],
-    "datum": "23.10.2025"
+    "datum": "19.02.2026"
   },
   {
     "broj_casa": 37,
@@ -527,7 +545,7 @@
       "Umije postaviti povrijeđenog u pravilan položaj u zavisnosti od povrede"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "23.10.2025"
+    "datum": "19.02.2026"
   },
   {
     "broj_casa": 38,
@@ -541,7 +559,7 @@
       "Opisuje način prevoza i postupak sa povrijeđenim u toku prevoza"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "23.10.2025"
+    "datum": "19.02.2026"
   },
   {
     "broj_casa": 39,
@@ -549,7 +567,7 @@
     "tema": "Vježba",
     "znanja_i_vjestine": [],
     "preporuke_za_nastavu": [],
-    "datum": "24.10.2025"
+    "datum": "20.02.2026"
   },
   {
     "broj_casa": 40,
@@ -557,7 +575,6 @@
     "tema": "Vježba",
     "znanja_i_vjestine": [],
     "preporuke_za_nastavu": [],
-    "datum": "24.10.2025"
+    "datum": "20.02.2026"
   }
-  
 ]
