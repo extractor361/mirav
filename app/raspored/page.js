@@ -51,14 +51,20 @@ export default function RasporedKalendar_Page() {
                 <p>
                   <strong>Oblast:</strong> {selectedEvent.extendedProps.oblast}
                 </p>
-                <p>
-                  <strong>Znanja i vještine:</strong>{" "}
-                  {selectedEvent.extendedProps.znanja}<br></br>
-                </p>
-                <p>
+               <p>
+  <strong>Znanja i vještine:</strong>
+  <br />
+  {selectedEvent.extendedProps.znanja.map((item, index) => (
+    <span key={index}>
+      {item}
+      <br />
+    </span>
+  ))}
+</p>
+                {/*<p>
                   <strong>Preporuke:</strong>{" "}
                   {selectedEvent.extendedProps.preporuke}
-                </p>
+                </p>*/}
               </div>
             )}
 
