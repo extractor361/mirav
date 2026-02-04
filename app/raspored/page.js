@@ -53,7 +53,7 @@ export default function RasporedKalendar_Page() {
                 </p>
                 <p>
                   <strong>Znanja i vještine:</strong>{" "}
-                  {selectedEvent.extendedProps.znanja}
+                  {selectedEvent.extendedProps.znanja}<br></br>
                 </p>
                 <p>
                   <strong>Preporuke:</strong>{" "}
