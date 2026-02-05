@@ -64,6 +64,11 @@
 
   {
     "broj_casa": 5,
+    "oblast": "Vjezba",
+    "datum": "03.02.2026"
+  },
+{
+    "broj_casa": 6,
     "oblast": "Saobraćajna signalizacija",
     "tema": "Znakovi obavještenja, dopunske table i oznake na kolovozu",
     "znanja_i_vjestine": [
@@ -74,9 +79,8 @@
     "preporuke_za_nastavu": [],
     "datum": "03.02.2026"
   },
-
   {
-    "broj_casa": 6,
+    "broj_casa": 7,
     "oblast": "Saobraćajna signalizacija",
     "tema": "Svjetlosni saobraćajni znakovi i svjetlosne oznake",
     "znanja_i_vjestine": [
@@ -90,22 +94,9 @@
   },
 
   {
-    "broj_casa": 7,
-    "oblast": "Saobraćajna signalizacija",
-    "tema": "Znaci koje daju ovlašćena lica",
-    "znanja_i_vjestine": [
-      "Navodi načine davanja znakova",
-      "Zna značenje znakova",
-      "Postupa po znacima"
-    ],
-    "preporuke_za_nastavu": [],
-    "datum": "04.02.2026"
-  },
-
-  {
     "broj_casa": 8,
     "oblast": "Saobraćajna signalizacija",
-    "tema": "Vježba",
+    "tema": "Znaci koje daju ovlašćena lica",
     "znanja_i_vjestine": [
       "Navodi načine davanja znakova",
       "Zna značenje znakova",
@@ -125,11 +116,24 @@
       "Postupa po znacima"
     ],
     "preporuke_za_nastavu": [],
-    "datum": "05.02.2026"
+    "datum": "04.02.2026"
   },
 
   {
     "broj_casa": 10,
+    "oblast": "Saobraćajna signalizacija",
+    "tema": "Vježba",
+    "znanja_i_vjestine": [
+      "Navodi načine davanja znakova",
+      "Zna značenje znakova",
+      "Postupa po znacima"
+    ],
+    "preporuke_za_nastavu": [],
+    "datum": "05.02.2026"
+  },
+
+  {
+    "broj_casa": 11,
     "oblast": "Pravila saobraćaja",
     "tema": "Opšta pravila",
     "znanja_i_vjestine": [
@@ -143,7 +147,7 @@
   },
 
   {
-    "broj_casa": 11,
+    "broj_casa": 12,
     "oblast": "Pravila saobraćaja",
     "tema": "Uključivanje vozila u saobraćaj, kretanje po putu i brzina kretanja",
     "znanja_i_vjestine": [
@@ -156,7 +160,7 @@
   },
 
   {
-    "broj_casa": 12,
+    "broj_casa": 13,
     "oblast": "Pravila saobraćaja",
     "tema": "Prvenstvo prolaza vozila i pješaka",
     "znanja_i_vjestine": [
@@ -168,7 +172,7 @@
   },
 
   {
-    "broj_casa": 13,
+    "broj_casa": 14,
     "oblast": "Pravila saobraćaja",
     "tema": "Mimoilaženje, preticanje i obilaženje",
     "znanja_i_vjestine": [
@@ -181,7 +185,7 @@
   },
 
   {
-    "broj_casa": 14,
+    "broj_casa": 15,
     "oblast": "Pravila saobraćaja",
     "tema": "Zaustavljanje i parkiranje, vučenje vozila i upotreba svjetala",
     "znanja_i_vjestine": [
@@ -194,7 +198,7 @@
   },
 
   {
-    "broj_casa": 15,
+    "broj_casa": 16,
     "oblast": "Pravila saobraćaja",
     "tema": "Saobraćaj na prelazu puta preko željezničke pruge, u tunelu, na auto-putu i putu rezervisanom za motorna vozila",
     "znanja_i_vjestine": [
@@ -206,7 +210,7 @@
   },
 
   {
-    "broj_casa": 16,
+    "broj_casa": 17,
     "oblast": "Ostali učesnici u saobraćaju",
     "tema": "Ostala vozila u saobraćaju",
     "znanja_i_vjestine": [
@@ -218,7 +222,7 @@
   },
 
   {
-    "broj_casa": 17,
+    "broj_casa": 18,
     "oblast": "Ostali učesnici u saobraćaju",
     "tema": "Vježba",
     "znanja_i_vjestine": [
@@ -229,7 +233,7 @@
   },
 
   {
-    "broj_casa": 18,
+    "broj_casa": 19,
     "oblast": "Ostali učesnici u saobraćaju",
     "tema": "Pješaci u saobraćaju",
     "znanja_i_vjestine": [
@@ -241,7 +245,7 @@
   },
 
   {
-    "broj_casa": 19,
+    "broj_casa": 20,
     "oblast": "Ostali učesnici u saobraćaju",
     "tema": "Biciklisti i motociklisti",
     "znanja_i_vjestine": [
@@ -253,7 +257,7 @@
   },
 
   {
-    "broj_casa": 20,
+    "broj_casa": 21,
     "oblast": "Prevoz putnika i robe",
     "tema": "Teret na vozilu i prevoz lica vozilima",
     "znanja_i_vjestine": [
@@ -265,7 +269,7 @@
   },
 
   {
-    "broj_casa": 21,
+    "broj_casa": 22,
     "oblast": "Vozilo",
     "tema": "Motori SUS",
     "znanja_i_vjestine": [
@@ -277,7 +281,7 @@
   },
 
   {
-    "broj_casa": 22,
+    "broj_casa": 23,
     "oblast": "Vozilo",
     "tema": "Sistem za prenos snage i upravljanje",
     "znanja_i_vjestine": [
@@ -288,7 +292,7 @@
   },
 
   {
-    "broj_casa": 23,
+    "broj_casa": 24,
     "oblast": "Vozilo",
     "tema": "Sistem kočenja i oslanjanja, svjetlosni uređaji",
     "znanja_i_vjestine": [
@@ -299,7 +303,7 @@
   },
 
   {
-    "broj_casa": 24,
+    "broj_casa": 25,
     "oblast": "Vozilo",
     "tema": "Uređaji za vidljivost, kontrolno-mjerni uređaji i oprema",
     "znanja_i_vjestine": [
@@ -310,7 +314,7 @@
   },
 
   {
-    "broj_casa": 25,
+    "broj_casa": 26,
     "oblast": "Vozilo",
     "tema": "Kotrljanje točkova po putu",
     "znanja_i_vjestine": [
@@ -321,7 +325,7 @@
   },
 
   {
-    "broj_casa": 26,
+    "broj_casa": 27,
     "oblast": "Vozač i vozilo",
     "tema": "Vozilo kao faktor bezbjednosti",
     "znanja_i_vjestine": [
@@ -332,7 +336,7 @@
   },
 
   {
-    "broj_casa": 27,
+    "broj_casa": 28,
     "oblast": "Vozač",
     "tema": "Psihofizičke osobine vozača",
     "znanja_i_vjestine": [
@@ -343,7 +347,7 @@
   },
 
   {
-    "broj_casa": 28,
+    "broj_casa": 29,
     "oblast": "Vozač",
     "tema": "Odgovornost i kultura u saobraćaju",
     "znanja_i_vjestine": [
@@ -354,7 +358,7 @@
   },
 
   {
-    "broj_casa": 29,
+    "broj_casa": 30,
     "oblast": "Vozač",
     "tema": "Postupci u vanrednim situacijama",
     "znanja_i_vjestine": [
@@ -365,7 +369,7 @@
   },
 
   {
-    "broj_casa": 30,
+    "broj_casa": 31,
     "oblast": "Vozač",
     "tema": "Vježba",
     "znanja_i_vjestine": [
@@ -376,7 +380,7 @@
   },
 
   {
-    "broj_casa": 31,
+    "broj_casa": 32,
     "oblast": "Zaštita životne sredine",
     "tema": "Uticaj drumskog saobraćaja na stanje životne sredine",
     "znanja_i_vjestine": [
@@ -387,7 +391,7 @@
   },
 
   {
-    "broj_casa": 32,
+    "broj_casa": 33,
     "oblast": "Ponavljanje i provjera znanja",
     "tema": "Testovi i analiza situacija",
     "znanja_i_vjestine": [
@@ -398,22 +402,11 @@
   },
 
   {
-    "broj_casa": 33,
+    "broj_casa": 34,
     "oblast": "Saobraćajni propisi",
     "tema": "Posebne mjere i kaznene odredbe",
     "znanja_i_vjestine": [
       "Opisuje mjere"
-    ],
-    "preporuke_za_nastavu": [],
-    "datum": "18.02.2026"
-  },
-
-  {
-    "broj_casa": 34,
-    "oblast": "Saobraćajni propisi",
-    "tema": "Vježba",
-    "znanja_i_vjestine": [
-      "Primjenjuje znanje"
     ],
     "preporuke_za_nastavu": [],
     "datum": "18.02.2026"
@@ -432,6 +425,17 @@
 
   {
     "broj_casa": 36,
+    "oblast": "Saobraćajni propisi",
+    "tema": "Vježba",
+    "znanja_i_vjestine": [
+      "Primjenjuje znanje"
+    ],
+    "preporuke_za_nastavu": [],
+    "datum": "18.02.2026"
+  },
+
+  {
+    "broj_casa": 37,
     "oblast": "Vozač i saobraćaj",
     "tema": "Dužnosti učesnika u saobraćaju u slučaju saobraćajne nezgode",
     "znanja_i_vjestine": [
@@ -442,7 +446,7 @@
   },
 
   {
-    "broj_casa": 37,
+    "broj_casa": 38,
     "oblast": "Prva pomoć",
     "tema": "Vrste povreda u saobraćajnim nezgodama",
     "znanja_i_vjestine": [
@@ -453,7 +457,7 @@
   },
 
   {
-    "broj_casa": 38,
+    "broj_casa": 39,
     "oblast": "Prva pomoć",
     "tema": "Postupak prilikom ukazivanja prve pomoći",
     "znanja_i_vjestine": [
@@ -464,7 +468,7 @@
   },
 
   {
-    "broj_casa": 39,
+    "broj_casa":40,
     "oblast": "Prva pomoć",
     "tema": "Vježba",
     "znanja_i_vjestine": [
@@ -475,7 +479,7 @@
   },
 
   {
-    "broj_casa": 40,
+    "broj_casa": 41,
     "oblast": "Prva pomoć",
     "tema": "Vježba",
     "znanja_i_vjestine": [
