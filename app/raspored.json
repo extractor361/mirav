@@ -113,7 +113,6 @@
   },
 
 
-
   {
     "broj_casa": 9,
     "oblast": "Pravila saobraćaja",
@@ -131,29 +130,6 @@
   {
     "broj_casa": 10,
     "oblast": "Pravila saobraćaja",
-    "tema": "Uključivanje vozila u saobraćaj, kretanje po putu i brzina kretanja",
-    "znanja_i_vjestine": [
-      "Opisuje uključivanje",
-      "Navodi ograničenja brzine",
-      "Opisuje pravilno skretanje"
-    ],
-    "preporuke_za_nastavu": [],
-    "datum": "06.02.2026"
-  },
-    {
-    "broj_casa": 11,
-    "oblast": "vjezba",
-    "tema": "vjezba",
-    "znanja_i_vjestine": [
-      "vjezba"
-    ],
-    "preporuke_za_nastavu": [],
-    "datum": "06.02.2026"
-  },
-
-  {
-    "broj_casa": 12,
-    "oblast": "Pravila saobraćaja",
     "tema": "Prvenstvo prolaza vozila i pješaka",
     "znanja_i_vjestine": [
       "Objašnjava pravilo desne strane",
@@ -162,7 +138,28 @@
     "preporuke_za_nastavu": [],
     "datum": "06.02.2026"
   },
-
+      {
+    "broj_casa": 11,
+    "oblast": "vjezba",
+    "tema": "vjezba",
+    "znanja_i_vjestine": [
+      "vjezba"
+    ],
+    "preporuke_za_nastavu": [],
+    "datum": "05.02.2026"
+  },
+  {
+    "broj_casa": 12,
+    "oblast": "Pravila saobraćaja",
+    "tema": "Uključivanje vozila u saobraćaj, kretanje po putu i brzina kretanja",
+    "znanja_i_vjestine": [
+      "Opisuje uključivanje",
+      "Navodi ograničenja brzine",
+      "Opisuje pravilno skretanje"
+    ],
+    "preporuke_za_nastavu": [],
+    "datum": "05.02.2026"
+  },
   {
     "broj_casa": 13,
     "oblast": "Pravila saobraćaja",
