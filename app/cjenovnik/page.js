@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import Layout from '@/components/layout/Layout'
+import Head from "next/head";
 
 export default function Cjenovnik_Page() {
   return (<>
