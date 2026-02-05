@@ -112,34 +112,10 @@
     "datum": "04.02.2026"
   },
 
+
+
   {
     "broj_casa": 9,
-    "oblast": "Saobraćajna signalizacija",
-    "tema": "Vježba",
-    "znanja_i_vjestine": [
-      "Navodi načine davanja znakova",
-      "Zna značenje znakova",
-      "Postupa po znacima"
-    ],
-    "preporuke_za_nastavu": [],
-    "datum": "05.02.2026"
-  },
-
-  {
-    "broj_casa": 10,
-    "oblast": "Saobraćajna signalizacija",
-    "tema": "Vježba",
-    "znanja_i_vjestine": [
-      "Navodi načine davanja znakova",
-      "Zna značenje znakova",
-      "Postupa po znacima"
-    ],
-    "preporuke_za_nastavu": [],
-    "datum": "05.02.2026"
-  },
-
-  {
-    "broj_casa": 11,
     "oblast": "Pravila saobraćaja",
     "tema": "Opšta pravila",
     "znanja_i_vjestine": [
@@ -153,7 +129,7 @@
   },
 
   {
-    "broj_casa": 12,
+    "broj_casa": 10,
     "oblast": "Pravila saobraćaja",
     "tema": "Uključivanje vozila u saobraćaj, kretanje po putu i brzina kretanja",
     "znanja_i_vjestine": [
@@ -164,9 +140,19 @@
     "preporuke_za_nastavu": [],
     "datum": "06.02.2026"
   },
+    {
+    "broj_casa": 11,
+    "oblast": "vjezba",
+    "tema": "vjezba",
+    "znanja_i_vjestine": [
+      "vjezba"
+    ],
+    "preporuke_za_nastavu": [],
+    "datum": "06.02.2026"
+  },
 
   {
-    "broj_casa": 13,
+    "broj_casa": 12,
     "oblast": "Pravila saobraćaja",
     "tema": "Prvenstvo prolaza vozila i pješaka",
     "znanja_i_vjestine": [
@@ -178,7 +164,7 @@
   },
 
   {
-    "broj_casa": 14,
+    "broj_casa": 13,
     "oblast": "Pravila saobraćaja",
     "tema": "Mimoilaženje, preticanje i obilaženje",
     "znanja_i_vjestine": [
