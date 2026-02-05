@@ -10,7 +10,10 @@
       "Objašnjava značenje pojedinih izraza u Zakonu o bezbjednosti saobraćaja na putevima",
       "Uočava važnost preciznog i jedinstvenog definisanja pojmova"
     ],
-    "preporuke_za_nastavu": [],
+    "preporuke_za_nastavu": [
+      "Kroz statističke podatke prikazati stanje bezbjednosti kod nas i u svijetu",
+      "Na prigodan način prikazati primjere saobraćajnih nezgoda, vrste vozila, djelove puta i sadržaj tehničkog pregleda"
+    ],
     "datum": "02.02.2026"
   },
   {
@@ -20,560 +23,464 @@
     "znanja_i_vjestine": [
       "Zna podjelu motornih i priključnih vozila na kategorije",
       "Navodi uslove za učestvovanje vozila u saobraćaju",
-      "Navodi vrste tehničkih pregleda vozila i uočava njihov značaj",
-      "Navodi propise vezane za registraciju motornih i priključnih vozila",
-      "Uočava uticaj preventivnih mjera na bezbjedno odvijanje saobraćaja",
-      "Upoznaje propise vezane za uslove za upravljanje vozilom i osposobljavanje kandidata",
-      "Objašnjava sticanje prava na upravljanje vozilom i izdavanje vozačke dozvole",
+      "Navodi vrste tehničkih pregleda vozila i njihov značaj",
+      "Navodi propise vezane za registraciju vozila",
+      "Upoznaje propise vezane za osposobljavanje vozača",
+      "Objašnjava sticanje prava na upravljanje vozilom",
       "Navodi obaveze vozača u vezi zdravstvenih pregleda"
     ],
-    "preporuke_za_nastavu": [
-      "Kroz statističke podatke prikazati stanje bezbjednosti kod nas i u svijetu",
-      "Na prigodan način prikazati primjere saobraćajnih nezgoda, vrste vozila, tehničke preglede"
-    ],
+    "preporuke_za_nastavu": [],
     "datum": "02.02.2026"
   },
+
   {
     "broj_casa": 3,
     "oblast": "Saobraćajna signalizacija",
     "tema": "Znakovi opasnosti",
     "znanja_i_vjestine": [
-      "Objašnjava pojam, značaj i način postavljanja saobraćajnih znakova",
-      "Navodi opšte odredbe o saobraćajnim znakovima",
-      "Navodi tačan naziv i značenje pojedinih znakova opasnosti",
-      "Obrazlaže postupanje prema saobraćajnim znakovima opasnosti"
+      "Objašnjava pojam i značaj saobraćajnih znakova",
+      "Navodi opšte odredbe o znakovima",
+      "Navodi tačan naziv i značenje znakova opasnosti",
+      "Obrazlaže postupanje prema znakovima"
     ],
     "preporuke_za_nastavu": [
       "Objasniti stvarne i apstraktne opasnosti zbog nepoštovanja signalizacije",
-      "Pripremiti prigodne testove za provjeru"
+      "Pripremiti testove za provjeru"
     ],
     "datum": "03.02.2026"
   },
+
   {
     "broj_casa": 4,
     "oblast": "Saobraćajna signalizacija",
     "tema": "Znakovi izričitih naredbi",
     "znanja_i_vjestine": [
-      "Navodi tačan naziv i značenje pojedinih znakova izričitih naredbi",
-      "Obrazlaže postupanje prema saobraćajnim znakovima izričitih naredbi"
+      "Navodi tačan naziv i značenje znakova izričitih naredbi",
+      "Obrazlaže postupanje prema njima"
     ],
     "preporuke_za_nastavu": [],
     "datum": "03.02.2026"
   },
+
   {
     "broj_casa": 5,
     "oblast": "Saobraćajna signalizacija",
     "tema": "Znakovi obavještenja, dopunske table i oznake na kolovozu",
     "znanja_i_vjestine": [
-      "Navodi tačan naziv i značenje pojedinih znakova obavještenja",
-      "Pojašnjava razloge postavljanja i značenje dopunskih tabli",
-      "Razlikuje oznake na kolovozu i uočava njihov uticaj na bezbjednost"
+      "Navodi značenje znakova obavještenja",
+      "Objašnjava dopunske table",
+      "Razlikuje oznake na kolovozu"
     ],
     "preporuke_za_nastavu": [],
     "datum": "03.02.2026"
   },
+
   {
     "broj_casa": 6,
     "oblast": "Saobraćajna signalizacija",
     "tema": "Svjetlosni saobraćajni znakovi i svjetlosne oznake",
     "znanja_i_vjestine": [
-      "Navodi vrste semafora, razloge i način postavljanja",
-      "Zna značenje pojedinih svjetlosnih znakova",
-      "Uočava uticaj svjetlosnih oznaka na bezbjednost",
-      "Opisuje obilježavanje prelaza preko pruge i radova na putu"
+      "Navodi vrste semafora",
+      "Objašnjava značenje svjetlosnih znakova",
+      "Opisuje obilježavanje prelaza preko pruge",
+      "Opisuje obilježavanje prepreka i radova"
     ],
     "preporuke_za_nastavu": [],
     "datum": "04.02.2026"
   },
+
   {
     "broj_casa": 7,
     "oblast": "Saobraćajna signalizacija",
-    "tema": "Vježba",
+    "tema": "Znaci koje daju ovlašćena lica",
     "znanja_i_vjestine": [
-      "Navodi vrste semafora, razloge i način postavljanja",
-      "Zna značenje pojedinih svjetlosnih znakova",
-      "Uočava uticaj svjetlosnih oznaka na bezbjednost",
-      "Opisuje obilježavanje prelaza preko pruge i radova na putu"
+      "Navodi načine davanja znakova",
+      "Zna značenje znakova",
+      "Postupa po znacima"
     ],
     "preporuke_za_nastavu": [],
     "datum": "04.02.2026"
   },
+
   {
     "broj_casa": 8,
     "oblast": "Saobraćajna signalizacija",
-    "tema": "Znaci koje daju ovlašćena lica",
+    "tema": "Vježba",
     "znanja_i_vjestine": [
-      "Navodi načine davanja znakova od strane ovlašćenog lica",
-      "Zna značenje pojedinih znakova koje daje ovlašćeno lice",
-      "Objašnjava postupanje prema znacima koje daju ovlašćena lica"
+      "Navodi načine davanja znakova",
+      "Zna značenje znakova",
+      "Postupa po znacima"
     ],
     "preporuke_za_nastavu": [],
     "datum": "04.02.2026"
   },
+
   {
     "broj_casa": 9,
     "oblast": "Saobraćajna signalizacija",
     "tema": "Vježba",
     "znanja_i_vjestine": [
-      "Navodi načine davanja znakova od strane ovlašćenog lica",
-      "Zna značenje pojedinih znakova koje daje ovlašćeno lice",
-      "Objašnjava postupanje prema znacima koje daju ovlašćena lica"
+      "Navodi načine davanja znakova",
+      "Zna značenje znakova",
+      "Postupa po znacima"
     ],
     "preporuke_za_nastavu": [],
     "datum": "05.02.2026"
   },
+
   {
     "broj_casa": 10,
     "oblast": "Pravila saobraćaja",
     "tema": "Opšta pravila",
     "znanja_i_vjestine": [
-      "Poznaje opšta pravila ponašanja učesnika",
-      "Poznaje hijerarhiju postupanja učesnika",
-      "Zna opšte obaveze prema pješacima i vozilima",
-      "Poznaje propise o sigurnosnim pojasevima i zabranama"
+      "Poznaje opšta pravila o ponašanju učesnika u saobraćaju"
     ],
     "preporuke_za_nastavu": [
-      "Posebnu pažnju posvetiti predviđanju i izbjegavanju opasnosti"
+      "Posebnu pažnju posvetiti predviđanju i izbjegavanju opasnosti",
+      "Na časovima analizirati konkretne situacije"
     ],
     "datum": "05.02.2026"
   },
+
   {
     "broj_casa": 11,
     "oblast": "Pravila saobraćaja",
-    "tema": "Uključivanje, kretanje po putu i brzina kretanja",
+    "tema": "Uključivanje vozila u saobraćaj, kretanje po putu i brzina kretanja",
     "znanja_i_vjestine": [
-      "Opisuje propisno uključivanje i isključivanje vozila",
-      "Poznaje propise o kretanju po putu (strana, trake, odstojanje)",
-      "Definiše pojam brzine i ograničenja brzine",
-      "Obrazlaže uticaj brzine na bezbjednost",
-      "Opisuje pravilno skretanje ulijevo i udesno"
+      "Opisuje uključivanje",
+      "Navodi ograničenja brzine",
+      "Opisuje pravilno skretanje"
     ],
-    "preporuke_za_nastavu": [
-      "Analizirati konkretne saobraćajne situacije",
-      "Provjeru znanja vršiti putem testova sa više tačnih odgovora"
-    ],
+    "preporuke_za_nastavu": [],
     "datum": "05.02.2026"
   },
+
   {
     "broj_casa": 12,
     "oblast": "Pravila saobraćaja",
-    "tema": "Prvenstvo prolaza",
+    "tema": "Prvenstvo prolaza vozila i pješaka",
     "znanja_i_vjestine": [
-      "Objašnjava pravilo desne strane i pravilo lijevog skretanja",
-      "Objašnjava prvenstvo prolaza pri susretu sa šinskim vozilom i drugim slučajevima",
-      "Ističe specifičnosti saobraćaja vozila pod pratnjom",
-      "Opisuje postupanje vozača i pješaka pri susretu sa vozilima pod pratnjom"
+      "Objašnjava pravilo desne strane",
+      "Opisuje postupanje"
     ],
     "preporuke_za_nastavu": [],
     "datum": "06.02.2026"
   },
+
   {
     "broj_casa": 13,
     "oblast": "Pravila saobraćaja",
     "tema": "Mimoilaženje, preticanje i obilaženje",
     "znanja_i_vjestine": [
-      "Definiše pojmove mimoilaženje, preticanje i obilaženje",
-      "Opisuje uslove i način propisnog mimoilaženja",
-      "Navodi pravila i uslove bezbjednog preticanja",
-      "Objašnjava situacije kada je preticanje zabranjeno",
-      "Objašnjava način propisnog obilaženja vozila i prepreka"
+      "Opisuje postupke",
+      "Navodi zabrane",
+      "Objašnjava znakove"
     ],
-    "preporuke_za_nastavu": [
-      "Kroz video primjere ilustrovati pravilno i nepravilno preticanje",
-      "Posebno obraditi opasnosti nepravilnog preticanja"
-    ],
+    "preporuke_za_nastavu": [],
     "datum": "06.02.2026"
   },
+
   {
     "broj_casa": 14,
     "oblast": "Pravila saobraćaja",
-    "tema": "Zaustavljanje i parkiranje, vučenje vozila, upotreba svjetala",
+    "tema": "Zaustavljanje i parkiranje, vučenje vozila i upotreba svjetala",
     "znanja_i_vjestine": [
-      "Navodi uslove i način propisnog zaustavljanja i parkiranja",
-      "Razlikuje privremeno i trajno parkiranje",
-      "Opisuje način i pravila vučenja vozila",
-      "Poznaje propise o upotrebi svjetala",
-      "Uočava značaj pravilnog osvjetljavanja vozila"
+      "Navodi pravila parkiranja",
+      "Opisuje vučenje",
+      "Poznaje svjetla"
     ],
-    "preporuke_za_nastavu": [
-      "Na prigodnim lokacijama pokazati razliku između propisnog i nepropisnog parkiranja"
-    ],
+    "preporuke_za_nastavu": [],
     "datum": "06.02.2026"
   },
-  {
-  "broj_casa": 15,
-  "oblast": "Pravila saobraćaja",
-  "tema": "Saobraćaj na prelazu puta preko željezničke pruge",
-  "znanja_i_vjestine": [
-    "Opisuje postupke vozača pri nailasku na prelaz puta preko željezničke pruge",
-    "Navodi obaveze vozača pri nailasku na branik ili svjetlosnu signalizaciju",
-    "Uočava opasnosti pri prelasku preko pruge",
-    "Razlikuje obezbijeđene i neobezbijeđene prelaze",
-    "Objašnjava posljedice nepropisnog prelaska preko željezničke pruge"
-  ],
-  "preporuke_za_nastavu": [
-    "Analizirati video snimke realnih situacija na pružnim prelazima",
-    "Diskusija o greškama vozača i mogućim posljedicama"
-  ],
-  "datum": "09.02.2026"
-},
 
   {
-    "broj_casa": 16,
+    "broj_casa": 15,
     "oblast": "Pravila saobraćaja",
-    "tema": "Vježba",
+    "tema": "Saobraćaj na prelazu puta preko željezničke pruge, u tunelu, na auto-putu i putu rezervisanom za motorna vozila",
     "znanja_i_vjestine": [
-      "Navodi uslove i način propisnog zaustavljanja i parkiranja",
-      "Razlikuje privremeno i trajno parkiranje",
-      "Opisuje način i pravila vučenja vozila",
-      "Poznaje propise o upotrebi svjetala",
-      "Uočava značaj pravilnog osvjetljavanja vozila"
-    ],
-    "preporuke_za_nastavu": [
-      "Na prigodnim lokacijama pokazati razliku između propisnog i nepropisnog parkiranja"
-    ],
-    "datum": "09.02.2026"
-  },
-  {
-    "broj_casa": 17,
-    "oblast": "Pravila saobraćaja",
-    "tema": "Saobraćaj na prelazu pruge, u tunelu, autoputu",
-    "znanja_i_vjestine": [
-      "Opisuje postupke vozača na prelazu puta preko željezničke pruge",
-      "Poznaje pravila kretanja kroz tunele",
-      "Navodi posebne propise za vožnju autoputem",
-      "Uočava opasnosti pri kretanju navedenim saobraćajnicama"
+      "Opisuje prelaz",
+      "Navodi zabrane"
     ],
     "preporuke_za_nastavu": [],
     "datum": "09.02.2026"
   },
+
   {
-    "broj_casa": 18,
+    "broj_casa": 16,
     "oblast": "Ostali učesnici u saobraćaju",
-    "tema": "Ostali učesnici u saobraćaju",
+    "tema": "Ostala vozila u saobraćaju",
     "znanja_i_vjestine": [
-      "Navodi prava i obaveze pješaka",
-      "Opisuje pravila kretanja biciklista i motociklista",
-      "Poznaje propise o kretanju vozila za posebne namjene",
-      "Uočava značaj međusobnog uvažavanja učesnika u saobraćaju"
+      "Opisuje tramvaje",
+      "Navodi propise"
     ],
-    "preporuke_za_nastavu": [
-      "Analizirati tipične nezgode sa pješacima i biciklistima"
-    ],
-    "datum": "09.02.2026"
+    "preporuke_za_nastavu": [],
+    "datum": "10.02.2026"
   },
+
   {
-    "broj_casa": 19,
+    "broj_casa": 17,
     "oblast": "Ostali učesnici u saobraćaju",
     "tema": "Vježba",
     "znanja_i_vjestine": [
-      "Navodi prava i obaveze pješaka",
-      "Opisuje pravila kretanja biciklista i motociklista",
-      "Poznaje propise o kretanju vozila za posebne namjene",
-      "Uočava značaj međusobnog uvažavanja učesnika u saobraćaju"
+      "Primjenjuje pravila"
     ],
-    "preporuke_za_nastavu": [
-      "Analizirati tipične nezgode sa pješacima i biciklistima"
-    ],
+    "preporuke_za_nastavu": [],
     "datum": "10.02.2026"
   },
+
+  {
+    "broj_casa": 18,
+    "oblast": "Ostali učesnici u saobraćaju",
+    "tema": "Pješaci u saobraćaju",
+    "znanja_i_vjestine": [
+      "Opisuje kretanje",
+      "Navodi obaveze"
+    ],
+    "preporuke_za_nastavu": [],
+    "datum": "10.02.2026"
+  },
+
+  {
+    "broj_casa": 19,
+    "oblast": "Ostali učesnici u saobraćaju",
+    "tema": "Biciklisti i motociklisti",
+    "znanja_i_vjestine": [
+      "Opisuje pravila",
+      "Navodi opremu"
+    ],
+    "preporuke_za_nastavu": [],
+    "datum": "11.02.2026"
+  },
+
   {
     "broj_casa": 20,
     "oblast": "Prevoz putnika i robe",
     "tema": "Teret na vozilu i prevoz lica vozilima",
     "znanja_i_vjestine": [
-      "Navodi pravila o prevozu lica u motornim vozilima",
-      "Objašnjava ograničenja u vezi sa prevozom djece",
-      "Opisuje način i propise o prevozu tereta",
-      "Uočava opasnosti nepravilno prevezenog tereta"
+      "Navodi pravila",
+      "Opisuje obezbjeđenje tereta"
     ],
-    "preporuke_za_nastavu": [
-      "Prikazati fotografije i video zapise nepravilnog prevoza tereta i lica"
-    ],
-    "datum": "10.02.2026"
+    "preporuke_za_nastavu": [],
+    "datum": "11.02.2026"
   },
+
   {
     "broj_casa": 21,
     "oblast": "Vozilo",
     "tema": "Motori SUS",
     "znanja_i_vjestine": [
-      "Poznaje osnovne dijelove motora sa unutrašnjim sagorijevanjem",
-      "Objašnjava princip rada četvorotaktnog motora",
-      "Razlikuje osnovne tipove motora",
-      "Opisuje značaj redovnog održavanja motora"
+      "Opisuje motor",
+      "Objašnjava rad"
     ],
-    "preporuke_za_nastavu": [
-      "Koristiti makete ili animacije motora za lakše razumijevanje"
-    ],
-    "datum": "10.02.2026"
+    "preporuke_za_nastavu": [],
+    "datum": "11.02.2026"
   },
+
   {
     "broj_casa": 22,
     "oblast": "Vozilo",
     "tema": "Sistem za prenos snage i upravljanje",
     "znanja_i_vjestine": [
-      "Opisuje osnovne dijelove sistema za prenos snage",
-      "Objašnjava ulogu kvačila, mjenjača i diferencijala",
-      "Poznaje vrste sistema upravljanja",
-      "Uočava značaj ispravnosti sistema prenosa snage i upravljanja"
+      "Opisuje sistem"
     ],
     "preporuke_za_nastavu": [],
     "datum": "11.02.2026"
   },
+
   {
     "broj_casa": 23,
     "oblast": "Vozilo",
     "tema": "Sistem kočenja i oslanjanja, svjetlosni uređaji",
     "znanja_i_vjestine": [
-      "Navodi vrste kočnica i njihov značaj",
-      "Opisuje princip rada radne i pomoćne kočnice",
-      "Objašnjava ulogu sistema oslanjanja",
-      "Poznaje vrste i značaj svjetlosnih uređaja na vozilu"
+      "Opisuje kočnice"
     ],
-    "preporuke_za_nastavu": [
-      "Prikazati dijelove kočionog sistema i svjetlosnih uređaja"
-    ],
+    "preporuke_za_nastavu": [],
     "datum": "12.02.2026"
   },
+
   {
     "broj_casa": 24,
     "oblast": "Vozilo",
     "tema": "Uređaji za vidljivost, kontrolno-mjerni uređaji i oprema",
     "znanja_i_vjestine": [
-      "Navodi osnovne uređaje za vidljivost (retrovisori, brisači, prskalice)",
-      "Opisuje značaj kontrolno-mjernih uređaja",
-      "Navodi obaveznu opremu u vozilu",
-      "Uočava značaj pravilne upotrebe opreme"
+      "Navodi uređaje"
     ],
     "preporuke_za_nastavu": [],
     "datum": "12.02.2026"
   },
+
   {
     "broj_casa": 25,
     "oblast": "Vozilo",
     "tema": "Kotrljanje točkova po putu",
     "znanja_i_vjestine": [
-      "Objašnjava značaj pneumatika za bezbjednost",
-      "Navodi osnovne vrste pneumatika",
-      "Opisuje postupke održavanja i kontrole pritiska u gumama",
-      "Uočava posljedice vožnje sa neispravnim pneumaticima"
+      "Opisuje pneumatike"
     ],
     "preporuke_za_nastavu": [],
     "datum": "13.02.2026"
   },
+
   {
     "broj_casa": 26,
     "oblast": "Vozač i vozilo",
     "tema": "Vozilo kao faktor bezbjednosti",
     "znanja_i_vjestine": [
-      "Definiše aktivnu i pasivnu bezbjednost vozila",
-      "Objašnjava katalitičke elemente bezbjednosti",
-      "Uočava uticaj opterećenja",
-      "Opisuje opasnosti pri vožnji motocikla"
+      "Definiše bezbjednost"
     ],
     "preporuke_za_nastavu": [],
     "datum": "13.02.2026"
   },
+
   {
     "broj_casa": 27,
     "oblast": "Vozač",
     "tema": "Psihofizičke osobine vozača",
     "znanja_i_vjestine": [
-      "Opisuje percepciju, pažnju i vrijeme reagovanja vozača",
-      "Uočava razliku između objektivne i subjektivne procjene brzine",
-      "Navodi uticaj vremenskih uslova, tame i umora na percepciju",
-      "Objašnjava značaj vježbe i iskustva"
+      "Opisuje percepciju"
     ],
-    "preporuke_za_nastavu": [
-      "Analizirati realne primjere usporene reakcije vozača"
-    ],
+    "preporuke_za_nastavu": [],
     "datum": "13.02.2026"
   },
+
   {
     "broj_casa": 28,
     "oblast": "Vozač",
     "tema": "Odgovornost i kultura u saobraćaju",
     "znanja_i_vjestine": [
-      "Prepoznaje značaj kulturnog i tolerantnog ponašanja u saobraćaju",
-      "Objašnjava odgovornost vozača prema drugim učesnicima",
-      "Navodi posljedice agresivne i rizične vožnje",
-      "Razvija pozitivan odnos prema poštovanju propisa"
+      "Opisuje kulturu"
     ],
-    "preporuke_za_nastavu": [
-      "Diskusija o primjerima tolerantnog i netolerantnog ponašanja"
-    ],
+    "preporuke_za_nastavu": [],
     "datum": "16.02.2026"
   },
+
   {
     "broj_casa": 29,
     "oblast": "Vozač",
     "tema": "Postupci u vanrednim situacijama",
     "znanja_i_vjestine": [
-      "Navodi postupke u slučaju saobraćajne nezgode",
-      "Zna osnovne mjere prve pomoći povrijeđenima",
-      "Opisuje postupke u slučaju požara na vozilu",
-      "Navodi način obezbjeđenja mjesta nezgode"
+      "Opisuje postupke"
     ],
-    "preporuke_za_nastavu": [
-      "Praktične vježbe iz pružanja prve pomoći i obezbjeđenja vozila"
-    ],
+    "preporuke_za_nastavu": [],
     "datum": "16.02.2026"
   },
+
   {
     "broj_casa": 30,
     "oblast": "Vozač",
     "tema": "Vježba",
     "znanja_i_vjestine": [
-      "Navodi postupke u slučaju saobraćajne nezgode",
-      "Zna osnovne mjere prve pomoći povrijeđenima",
-      "Opisuje postupke u slučaju požara na vozilu",
-      "Navodi način obezbjeđenja mjesta nezgode"
+      "Primjenjuje znanje"
     ],
-    "preporuke_za_nastavu": [
-      "Praktične vježbe iz pružanja prve pomoći i obezbjeđenja vozila"
-    ],
+    "preporuke_za_nastavu": [],
     "datum": "17.02.2026"
   },
+
   {
     "broj_casa": 31,
-    "oblast": "Ekološki aspekti vožnje",
-    "tema": "Ekološka vožnja",
+    "oblast": "Zaštita životne sredine",
+    "tema": "Uticaj drumskog saobraćaja na stanje životne sredine",
     "znanja_i_vjestine": [
-      "Objašnjava uticaj saobraćaja na životnu sredinu",
-      "Navodi mjere za smanjenje zagađenja",
-      "Opisuje principe ekonomične i ekološke vožnje",
-      "Uočava značaj redovnog održavanja vozila"
+      "Opisuje uticaj"
     ],
-    "preporuke_za_nastavu": [
-      "Kroz praktične primjere prikazati ekonomičnu vožnju"
-    ],
+    "preporuke_za_nastavu": [],
     "datum": "17.02.2026"
   },
+
   {
     "broj_casa": 32,
     "oblast": "Ponavljanje i provjera znanja",
     "tema": "Testovi i analiza situacija",
     "znanja_i_vjestine": [
-      "Rješava testove iz oblasti saobraćajnih propisa",
-      "Analizira složene saobraćajne situacije",
-      "Povezuje teorijska znanja sa praktičnim primjerima",
-      "Samostalno uočava greške i ispravlja ih"
+      "Rješava testove"
     ],
-    "preporuke_za_nastavu": [
-      "Pripremiti testove sa kombinovanim pitanjima i analizom slučajeva"
-    ],
+    "preporuke_za_nastavu": [],
     "datum": "17.02.2026"
   },
+
   {
     "broj_casa": 33,
     "oblast": "Saobraćajni propisi",
     "tema": "Posebne mjere i kaznene odredbe",
     "znanja_i_vjestine": [
-      "Navodi razloge za isključivanje vozača iz saobraćaja",
-      "Navodi prekršaje za koje je propisano oduzimanje vozačke dozvole na licu mjesta",
-      "Poznaje proceduru upućivanja vozača na kontrolni ljekarski pregled",
-      "Opisuje načine utvrđivanja prisustva alkohola ili psihoaktivnih supstanci kod vozača",
-      "Poznaje proceduru upućivanja vozila na vanredni tehnički pregled",
-      "Navodi razloge za uklanjanje, odnosno premještanje vozila",
-      "Objašnjava određivanje i evidenciju kaznenih bodova",
-      "Objašnjava uticaj represivnih mjera na bezbjednost saobraćaja"
+      "Opisuje mjere"
     ],
     "preporuke_za_nastavu": [],
     "datum": "18.02.2026"
   },
+
   {
     "broj_casa": 34,
     "oblast": "Saobraćajni propisi",
     "tema": "Vježba",
     "znanja_i_vjestine": [
-      "Navodi razloge za isključivanje vozača iz saobraćaja",
-      "Navodi prekršaje za koje je propisano oduzimanje vozačke dozvole na licu mjesta",
-      "Poznaje proceduru upućivanja vozača na kontrolni ljekarski pregled",
-      "Opisuje načine utvrđivanja prisustva alkohola ili psihoaktivnih supstanci kod vozača",
-      "Poznaje proceduru upućivanja vozila na vanredni tehnički pregled",
-      "Navodi razloge za uklanjanje, odnosno premještanje vozila",
-      "Objašnjava određivanje i evidenciju kaznenih bodova",
-      "Objašnjava uticaj represivnih mjera na bezbjednost saobraćaja"
+      "Primjenjuje znanje"
     ],
     "preporuke_za_nastavu": [],
     "datum": "18.02.2026"
   },
+
   {
     "broj_casa": 35,
     "oblast": "Saobraćajni propisi",
     "tema": "Vježba",
     "znanja_i_vjestine": [
-      "Navodi razloge za isključivanje vozača iz saobraćaja",
-      "Navodi prekršaje za koje je propisano oduzimanje vozačke dozvole na licu mjesta",
-      "Poznaje proceduru upućivanja vozača na kontrolni ljekarski pregled",
-      "Opisuje načine utvrđivanja prisustva alkohola ili psihoaktivnih supstanci kod vozača",
-      "Poznaje proceduru upućivanja vozila na vanredni tehnički pregled",
-      "Navodi razloge za uklanjanje, odnosno premještanje vozila",
-      "Objašnjava određivanje i evidenciju kaznenih bodova",
-      "Objašnjava uticaj represivnih mjera na bezbjednost saobraćaja"
+      "Primjenjuje znanje"
     ],
     "preporuke_za_nastavu": [],
     "datum": "18.02.2026"
   },
+
   {
     "broj_casa": 36,
     "oblast": "Vozač i saobraćaj",
     "tema": "Dužnosti učesnika u saobraćaju u slučaju saobraćajne nezgode",
     "znanja_i_vjestine": [
-      "Poznaje obaveze učesnika u saobraćajnoj nezgodi",
-      "Navodi obaveze policijskog službenika koji vrši uviđaj",
-      "Poznaje osnovna pravila pružanja prve pomoći",
-      "Navodi redosljed pružanja prve pomoći",
-      "Nabraja standardna i priručna sredstva za prvu pomoć",
-      "Nabraja sadržaj kutije za prvu pomoć i objašnjava namjenu pojedinih elemenata"
+      "Opisuje obaveze"
     ],
-    "preporuke_za_nastavu": [
-      "Polaznike upoznati sa sadržajem kutije za prvu pomoć, namjenom i načinom upotrebe pojedinih elemenata",
-      "Na času vježbi demonstrirati postupke pružanja prve pomoći"
-    ],
+    "preporuke_za_nastavu": [],
     "datum": "19.02.2026"
   },
+
   {
     "broj_casa": 37,
     "oblast": "Prva pomoć",
     "tema": "Vrste povreda u saobraćajnim nezgodama",
     "znanja_i_vjestine": [
-      "Navodi vrste povreda u saobraćajnim nezgodama",
-      "Nabraja sigurne i nesigurne znakove smrti",
-      "Umije prepoznati vrstu povrede",
-      "Umije izvršiti provjeru životno važnih funkcija",
-      "Umije postaviti povrijeđenog u pravilan položaj u zavisnosti od povrede"
+      "Opisuje povrede"
     ],
     "preporuke_za_nastavu": [],
     "datum": "19.02.2026"
   },
+
   {
     "broj_casa": 38,
     "oblast": "Prva pomoć",
     "tema": "Postupak prilikom ukazivanja prve pomoći",
     "znanja_i_vjestine": [
-      "Navodi moguće uzroke gušenja i opisuje način pružanja prve pomoći kod gušenja i gubitka svijesti",
-      "Poznaje postupke pružanja prve pomoći kod prestanka disanja i prestanka rada srca",
-      "Poznaje postupke kod krvarenja i povreda pojedinih djelova tijela",
-      "Opisuje postupke sa ranama i opekotinama",
-      "Opisuje način prevoza i postupak sa povrijeđenim u toku prevoza"
+      "Opisuje pomoć"
     ],
     "preporuke_za_nastavu": [],
     "datum": "19.02.2026"
   },
+
   {
     "broj_casa": 39,
-    "oblast": " ",
+    "oblast": "Prva pomoć",
     "tema": "Vježba",
-    "znanja_i_vjestine": [],
+    "znanja_i_vjestine": [
+      "Primjenjuje pomoć"
+    ],
     "preporuke_za_nastavu": [],
     "datum": "20.02.2026"
   },
+
   {
     "broj_casa": 40,
-    "oblast": " ",
+    "oblast": "Prva pomoć",
     "tema": "Vježba",
-    "znanja_i_vjestine": [],
+    "znanja_i_vjestine": [
+      "Primjenjuje pomoć"
+    ],
     "preporuke_za_nastavu": [],
     "datum": "20.02.2026"
   }
