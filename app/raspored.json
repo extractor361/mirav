@@ -245,20 +245,10 @@
     "datum": "10.02.2026"
   },
 
-  {
-    "broj_casa": 21,
-    "oblast": "Ostali učesnici u saobraćaju",
-    "tema": "Biciklisti i motociklisti",
-    "znanja_i_vjestine": [
-      "Opisuje pravila",
-      "Navodi opremu"
-    ],
-    "preporuke_za_nastavu": [],
-    "datum": "11.02.2026"
-  },
+  
 
   {
-    "broj_casa": 22,
+    "broj_casa": 21,
     "oblast": "Vozač i saobraćaj",
     "tema": "Dužnosti učesnika u saobraćaju u slučaju saobraćajne nezgode",
     "znanja_i_vjestine": [
@@ -270,7 +260,7 @@
   },
 
   {
-    "broj_casa": 23,
+    "broj_casa": 22,
     "oblast": "Prva pomoć",
     "tema": "Vrste povreda u saobraćajnim nezgodama",
     "znanja_i_vjestine": [
@@ -282,7 +272,7 @@
   },
 
   {
-    "broj_casa": 24,
+    "broj_casa": 23,
     "oblast": "Prva pomoć",
     "tema": "Postupak prilikom ukazivanja prve pomoći",
     "znanja_i_vjestine": [
@@ -293,7 +283,7 @@
     "datum": "12.02.2026"
   },
   {
-    "broj_casa": 25,
+    "broj_casa": 24,
     "oblast": "Prva pomoć",
     "tema": "Prva pomoć vježba",
     "znanja_i_vjestine": [
@@ -304,7 +294,7 @@
   },
 
   {
-    "broj_casa": 26,
+    "broj_casa": 25,
     "oblast": "Prevoz putnika i robe",
     "tema": "Teret na vozilu i prevoz lica",
     "znanja_i_vjestine": [
@@ -315,7 +305,7 @@
     "datum": "13.02.2026"
   },
   {
-    "broj_casa": 27,
+    "broj_casa": 26,
     "oblast": "Vozilo",
     "tema": "Motori SUS",
     "znanja_i_vjestine": [
@@ -328,7 +318,7 @@
     "datum": "13.02.2026"
   },
   {
-    "broj_casa": 28,
+    "broj_casa": 27,
     "oblast": "Vozilo",
     "tema": "Sistem za prenos snage",
     "znanja_i_vjestine": [
@@ -340,7 +330,7 @@
   },
 
   {
-    "broj_casa": 29,
+    "broj_casa": 28,
     "oblast": "Vozilo",
     "tema": "Sistem za kočenje i sistem oslanjanja",
     "znanja_i_vjestine": [
@@ -351,7 +341,7 @@
     "datum": "16.02.2026"
   },
   {
-    "broj_casa": 30,
+    "broj_casa": 29,
     "oblast": "Vozilo",
     "tema": "Uređaji koji omogućavaju vidljivost",
     "znanja_i_vjestine": [
@@ -363,7 +353,7 @@
   },
 
   {
-    "broj_casa": 31,
+    "broj_casa": 30,
     "oblast": "Vozilo",
     "tema": "Kotrljanje točkova po putu",
     "znanja_i_vjestine": [
@@ -375,7 +365,7 @@
     "datum": "17.02.2026"
   },
   {
-    "broj_casa": 32,
+    "broj_casa": 31,
     "oblast": "Vozač i vozilo",
     "tema": "Vozilo kao faktor bezbjednosti",
     "znanja_i_vjestine": [
@@ -386,7 +376,7 @@
     "datum": "17.02.2026"
   },
   {
-    "broj_casa": 33,
+    "broj_casa": 32,
     "oblast": "Vozač i vozilo",
     "tema": "Vježba",
     "znanja_i_vjestine": [
@@ -397,7 +387,7 @@
   },
 
   {
-    "broj_casa": 34,
+    "broj_casa": 33,
     "oblast": "Vozač",
     "tema": "Put kao faktor bezbjednosti",
     "znanja_i_vjestine": [
@@ -408,7 +398,7 @@
     "datum": "18.02.2026"
   },
   {
-    "broj_casa": 35,
+    "broj_casa": 34,
     "oblast": "Vozač",
     "tema": "Vozač kao faktor bezbjednosti",
     "znanja_i_vjestine": [
@@ -419,7 +409,7 @@
     "datum": "18.02.2026"
   },
   {
-    "broj_casa": 36,
+    "broj_casa": 35,
     "oblast": "Vozač",
     "tema": "Vježba",
     "znanja_i_vjestine": [
@@ -430,7 +420,7 @@
   },
 
   {
-    "broj_casa": 37,
+    "broj_casa": 36,
     "oblast": "Zaštita životne sredine",
     "tema": "Uticaj drumskog saobraćaja na stanje životne sredine",
     "znanja_i_vjestine": [
@@ -441,7 +431,7 @@
     "datum": "19.02.2026"
   },
   {
-    "broj_casa": 38,
+    "broj_casa": 37,
     "oblast": "Saobraćajni propisi",
     "tema": "Posebne mjere i kaznene odredbe",
     "znanja_i_vjestine": [
@@ -452,7 +442,7 @@
     "datum": "19.02.2026"
   },
   {
-    "broj_casa": 39,
+    "broj_casa": 38,
     "oblast": "Saobraćajni propisi",
     "tema": "Vježba",
     "znanja_i_vjestine": [
@@ -463,8 +453,18 @@
   },
 
   {
-    "broj_casa": 40,
+    "broj_casa": 39,
     "oblast": "Saobraćajni propisi",
+    "tema": "Vježba",
+    "znanja_i_vjestine": [
+      "Analiza saobraćajnih slučajeva"
+    ],
+    "preporuke_za_nastavu": [],
+    "datum": "20.02.2026"
+  },
+  {
+    "broj_casa": 40,
+    "oblast": "Vjezba",
     "tema": "Vježba",
     "znanja_i_vjestine": [
       "Analiza saobraćajnih slučajeva"
