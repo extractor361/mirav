@@ -4,9 +4,9 @@ import Link from "next/link"
 import Layout from "@/components/layout/Layout"
 import CounterUp from "@/components/elements/CounterUp"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
-import { Swiper, SwiperSlide } from "swiper/react"
 import Testimonial from '@/components/sections/home1/Testimonial'
 import Team from '@/components/sections/home1/Team'
+import Head from "next/head";
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -47,7 +47,48 @@ const swiperOptions = {
 }
 export default function Course_Details() {
 
-    return (
+    return (<>
+    <Head>
+  <title>B kategorija Podgorica – Auto škola Mirav | Obuka vožnje</title>
+
+  <meta
+    name="description"
+    content="Obuka za B kategoriju u Podgorici u auto školi Mirav. Savremena teorijska nastava, praktična vožnja, iskusni instruktori i sigurna priprema za polaganje."
+  />
+
+  <meta
+    name="keywords"
+    content="B kategorija Podgorica, auto škola Mirav, obuka vožnje Podgorica, vozačka dozvola B kategorije"
+  />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="B kategorija Podgorica – Auto škola Mirav" />
+  <meta
+    property="og:description"
+    content="Kompletna i savremena obuka za B kategoriju u Podgorici – teorija, prak i sigurna priprema za polaganje."
+  />
+  <meta property="og:url" content="https://mirav.me/b-kategorija" />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://mirav.me/assets/images/resources/driving%20(12).jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="B kategorija Podgorica – Auto škola Mirav"
+  />
+  <meta
+    name="twitter:description"
+    content="Savremena obuka za B kategoriju u Podgorici – teorija, prak i iskusni instruktori."
+  />
+  <meta
+    name="twitter:image"
+    content="https://mirav.me/assets/images/resources/driving%20(12).jpg"
+  />
+</Head>
         <div className="page-wrapper boxed_wrapper course-details-page">
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="B kategorija">
                 <section className="intro-style1">
@@ -56,12 +97,11 @@ export default function Course_Details() {
                             <div className="col-xl-4">
                                 <div className="intro-style1-content">
                                     <div className="big-title">
-                                        <h2>Spremni  <br/>za Vožnju?</h2>
+                                        <h1>Obuka za B kategoriju u Podgorici <br/>Auto škola Mirav </h1>
                                     </div>
                                     <div className="text-box">
                                         <p>
-                                            Želimo bezbjedne ulice za Vas i ostale učesnike u saobraćaju, naša misija je naučiti Vas da bezbjedno upravljate vozilom, u skladu sa propisima, pravilima i uslovima na putu. 
-
+U Auto školi Mirav nudimo kompletnu i savremenu obuku za B kategoriju u Podgorici, sa fokusom na sigurnu vožnju, poštovanje saobraćajnih propisa i praktično znanje koje kandidati primjenjuju svakog dana na putu.
                                         </p>
                                     </div>
                                     <div className="list-item">
@@ -638,6 +678,6 @@ export default function Course_Details() {
                 </section>
                 <Testimonial/>
             </Layout>
-        </div>
+        </div></>
     )
 }

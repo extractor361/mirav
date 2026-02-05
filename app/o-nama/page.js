@@ -8,6 +8,8 @@ import Fact from '@/components/sections/home2/Fact'
 import Team from '@/components/sections/home1/Team'
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import Head from "next/head";
+
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
     slidesPerView: 1,
@@ -52,7 +54,30 @@ export default function About_Page() {
             setActiveIndex(index)
         }
 
-    return (
+    return (<>
+     <Head>
+        <title>O nama – Auto škola Mirav Podgorica | Iskusni instruktori</title>
+
+        <meta
+          name="description"
+          content="Saznajte više o auto školi Mirav u Podgorici – naša misija, vizija, licencirani instruktori i preko 3000 obučenih kandidata. Vaša sigurna vožnja počinje ovdje."
+        />
+
+        <meta
+          name="keywords"
+          content="auto škola Mirav, o nama, auto škola Podgorica, instruktori vožnje"
+        />
+
+        {/* OpenGraph */}
+        <meta property="og:title" content="O nama – Auto škola Mirav" />
+        <meta
+          property="og:description"
+          content="Naša misija i vizija, licencirani instruktori i višegodišnje iskustvo auto škole Mirav iz Podgorice."
+        />
+        <meta property="og:url" content="https://mirav.me/o-nama" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="../assets/images/resources/Mirav-2036_compressed.webp" />
+      </Head>
         <div className="page-wrapper boxed_wrapper">
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="O nama">
                 <About/>
@@ -293,6 +318,7 @@ Vozila, putevi i podneblje ne možemo mijenjati u većoj mjeri, ali ono što mo�
                     </div>
                 </section>
             </Layout>
-        </div>
+        </div>    </>
+
     )
 }

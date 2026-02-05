@@ -5,7 +5,7 @@ import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import srLatnLocale from "../locale/srLatn";
 import raspored from "../raspored.json";
-
+import Head from "next/head";
 export default function RasporedKalendar_Page() {
   const [selectedEvent, setSelectedEvent] = useState(null);
 
@@ -22,6 +22,55 @@ export default function RasporedKalendar_Page() {
   }));
 
   return (
+    <><Head>
+  <title>Raspored časova teorije – Auto škola Mirav Podgorica</title>
+
+  <meta
+    name="description"
+    content="Pogledajte raspored teorijskih časova u auto školi Mirav u Podgorici. Kalendar nastave, teme lekcija i priprema za polaganje vozačkog ispita."
+  />
+
+  <meta
+    name="keywords"
+    content="raspored časova vožnje, teorijska nastava Podgorica, auto škola Mirav, kalendar časova, B kategorija teorija"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Raspored časova – Auto škola Mirav Podgorica"
+  />
+  <meta
+    property="og:description"
+    content="Kalendar teorijskih časova i plan nastave u auto školi Mirav u Podgorici."
+  />
+  <meta
+    property="og:url"
+    content="https://mirav.me/raspored-casova"
+  />
+  <meta property="og:type" content="website" />
+
+  {/* OG Image – možeš koristiti neku ilustraciju teorije */}
+  <meta
+    property="og:image"
+    content="https://mirav.me/assets/images/resources/driving%20(12).jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Raspored časova teorije – Auto škola Mirav"
+  />
+  <meta
+    name="twitter:description"
+    content="Plan i raspored teorijskih časova u auto školi Mirav."
+  />
+  <meta
+    name="twitter:image"
+    content="https://mirav.me/assets/images/resources/driving%20(12).jpg"
+  />
+</Head>
     <div className="page-wrapper boxed_wrapper bg-blue-900 min-h-screen">
       <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Raspored časova">
         <section className="pt-12 pb-12">
@@ -31,9 +80,9 @@ export default function RasporedKalendar_Page() {
               style={{ paddingTop: "50px" }}
             >
               <div className="sub-title">
-                <h4>Teorijski program</h4>
+                <h4>Teorijski program nastave</h4>
               </div>
-              <h2>Kalendar časova</h2>
+              <h1>Kalendar časova Auto Škole mirav</h1>
             </div>
 
             {/* Kartica sa detaljima iznad kalendara */}
@@ -96,6 +145,7 @@ export default function RasporedKalendar_Page() {
           </div>
         </section>
       </Layout>
-    </div>
+    </div></>
+
   );
 }

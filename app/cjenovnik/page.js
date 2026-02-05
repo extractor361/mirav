@@ -3,16 +3,60 @@ import React from 'react'
 import Layout from '@/components/layout/Layout'
 
 export default function Cjenovnik_Page() {
-  return (
+  return (<>
+  <Head>
+  <title>Cjenovnik Auto škole Mirav Podgorica – Cijene obuke vožnje</title>
+
+  <meta
+    name="description"
+    content="Pogledajte cjenovnik auto škole Mirav u Podgorici. Cijene obuke za B kategoriju, paketi obuke, dopunski časovi i dodatne usluge. Prijavite se danas."
+  />
+
+  <meta
+    name="keywords"
+    content="cjenovnik auto škole Podgorica, cijene obuke vožnje, auto škola Mirav, B kategorija cijena"
+  />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Cjenovnik – Auto škola Mirav Podgorica" />
+  <meta
+    property="og:description"
+    content="Cijene obuke za B kategoriju u Podgorici – pregled paketa i dodatnih usluga u auto školi Mirav."
+  />
+  <meta property="og:url" content="https://mirav.me/cjenovnik" />
+  <meta property="og:type" content="website" />
+
+  {/* OG Image – koristi jednu od slika sa stranice */}
+  <meta
+    property="og:image"
+    content="https://mirav.me/assets/images/Mirav-2008.jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Cjenovnik Auto škole Mirav Podgorica"
+  />
+  <meta
+    name="twitter:description"
+    content="Pregled cijena obuke vožnje i dodatnih usluga u auto školi Mirav."
+  />
+  <meta
+    name="twitter:image"
+    content="https://mirav.me/assets/images/Mirav-2008.jpg"
+  />
+</Head>
+
     <div className="page-wrapper boxed_wrapper">
       <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Cjenovnik">
         <section className="service-style1 pt-120 pb-90">
           <div className="container">
             <div className="sec-title text-center">
               <div className="sub-title">
-                <h4>CJENOVNIK</h4>
+<h1>Cjenovnik Auto škole Mirav u Podgorici</h1>
               </div>
-              <h2>Naš cilj je da Vam vožnju učinimo lakom</h2>
+              <h2>Pogledajte aktuelne cijene obuke za B kategoriju i dodatne usluge u auto školi Mirav u Podgorici.</h2>
             </div>
 
             <div className="inner-container">
@@ -157,6 +201,6 @@ export default function Cjenovnik_Page() {
           </div>
         </section>
       </Layout>
-    </div>
+    </div></>
   )
 }

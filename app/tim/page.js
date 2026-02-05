@@ -2,6 +2,7 @@
 import React from 'react'
 import Link from "next/link"
 import Layout from "@/components/layout/Layout"
+import Head from "next/head";
 
 const teamMembers = [
   {
@@ -86,6 +87,47 @@ Rođena 1978. u Kolašinu. Inženjer drumskog saobraćaja. Od 2013. vodi auto š
 
 export default function Team_Page() {
   return (
+    <><Head>
+  <title>Naš Tim – Instruktori Auto škole Mirav Podgorica</title>
+
+  <meta
+    name="description"
+    content="Naš tim čine licencirani instruktori vožnje sa dugogodišnjim iskustvom u obuci kandidata u Podgorici, posvećeni vašem uspjehu, sigurnosti i samopouzdanju za volanom."
+  />
+
+  <meta
+    name="keywords"
+    content="instruktori vožnje Podgorica, auto škola Mirav tim, škola vožnje Podgorica, učitelji vožnje"
+  />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Naš Tim – Auto škola Mirav Podgorica" />
+  <meta
+    property="og:description"
+    content="Upoznajte tim instruktora auto škole Mirav – iskustvo, znanje i posvećenost sigurnoj vožnji."
+  />
+  <meta property="og:url" content="https://mirav.me/tim" />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="../assets/images/resources/Mirav-2096_compressed.webp"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Naš Tim – Auto škola Mirav Podgorica"
+  />
+  <meta
+    name="twitter:description"
+    content="Iskusni instruktori auto škole Mirav iz Podgorice."
+  />
+  <meta
+    name="twitter:image"
+    content="../assets/images/resources/Mirav-2096_compressed.webp"
+  />
+</Head>
     <div className="page-wrapper boxed_wrapper">
       <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Naš Tim">
         <section className="team-style1 team-style1--2">
@@ -96,13 +138,11 @@ export default function Team_Page() {
     <div className="sub-title">
       <h4>Naš tim</h4>
     </div>
-    <h2>Iskustvo, posvećenost i podrška na svakom koraku</h2>
+    <h1>Naš tim instruktora – snaga Auto škole Mirav</h1>
   </div>
   <div className="text1 text-center">
     <p style={{marginBottom:40}}>
-      Naš tim je uvijek spreman da pomogne, podijeli znanje i iskustvo, 
-      te vas podrži na svakom koraku vaše vozačke obuke. 
-      Strpljenje, profesionalizam i osmijeh su ono što nas izdvaja.
+      Naš tim čine licencirani instruktori vožnje sa dugogodišnjim iskustvom u obuci kandidata u Podgorici, posvećeni vašem uspjehu, sigurnosti i samopouzdanju za volanom. Strpljenje, profesionalizam i individualni pristup svakom kandidatu vrijednosti su po kojima je Auto škola Mirav prepoznata.
     </p>
   </div>
               {teamMembers.map((member, index) => (
@@ -153,6 +193,6 @@ export default function Team_Page() {
           </div>
         </section>
       </Layout>
-    </div>
+    </div></>
   )
 }
