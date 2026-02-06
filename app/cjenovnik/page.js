@@ -55,7 +55,7 @@ export default function Cjenovnik_Page() {
           <div className="container">
             <div className="sec-title text-center">
               <div className="sub-title">
-<h1>Cjenovnik Auto škole Mirav u Podgorici</h1>
+<h1 style={{color:"white"}}>Cjenovnik Auto škole Mirav u Podgorici</h1>
               </div>
               <h2>Pogledajte aktuelne cijene obuke za B kategoriju i dodatne usluge u auto školi Mirav u Podgorici.</h2>
             </div>
