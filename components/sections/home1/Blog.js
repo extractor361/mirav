@@ -8,7 +8,7 @@ export default function Blog() {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    fetch('https://miravapibackend.online/api/dohvatiNovosti')  // pretpostavljam da je tvoj API dostupan na ovom endpointu
+    fetch('https://miravapibackend.online/api/dohvatiNovosti')  
       .then(res => {
         if (!res.ok) throw new Error('Greška pri dohvatanju novosti')
         return res.json()

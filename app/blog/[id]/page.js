@@ -4,27 +4,33 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import Head from "next/head";
+import { useParams } from "next/navigation";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import parse from "html-react-parser";
 
 const API_URL = "https://miravapibackend.online/api";
 
-export default function BlogSinglePage({ params }) {
+export default function BlogSinglePage() {
+  const params = useParams();
   const id = params?.id;
 
   const [loading, setLoading] = useState(true);
   const [novost, setNovost] = useState(null);
   const [error, setError] = useState(null);
 
+  /* ================= FETCH ================= */
+
   useEffect(() => {
+    console.log("BLOG PARAM ID:", id);
+
     if (!id) return;
 
     setLoading(true);
     setError(null);
     setNovost(null);
 
-    fetch(`https://miravapibackend.online/api/dohvatiNovosti`, {
+    fetch(`${API_URL}/dohvatiNovosti`, {
       headers: { Accept: "application/json" },
     })
       .then((res) => {
@@ -32,20 +38,30 @@ export default function BlogSinglePage({ params }) {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
-        if (!Array.isArray(data)) throw new Error("API nije vratio niz");
+        console.log("API DATA:", data);
+
+        if (!Array.isArray(data)) {
+          throw new Error("API nije vratio niz");
+        }
+
         const found = data.find(
           (item) => String(item.novosti_id) === String(id)
         );
+
+        console.log("FOUND ITEM:", found);
+
         setNovost(found || null);
       })
       .catch((err) => {
+        console.error("FETCH ERROR:", err);
         setError(err.message || "Nepoznata greška");
       })
       .finally(() => {
         setLoading(false);
       });
   }, [id]);
+
+  /* ================= SEO ================= */
 
   const seo = useMemo(() => {
     const title = novost?.naslov
@@ -65,7 +81,8 @@ export default function BlogSinglePage({ params }) {
     return { title, description, image, url };
   }, [novost, id]);
 
-  // ===== LOADING STATE =====
+  /* ================= LOADING ================= */
+
   if (loading) {
     return (
       <>
@@ -86,7 +103,8 @@ export default function BlogSinglePage({ params }) {
     );
   }
 
-  // ===== ERROR / NOT FOUND =====
+  /* ================= ERROR / NOT FOUND ================= */
+
   if (error || !novost) {
     return (
       <>
@@ -126,7 +144,8 @@ export default function BlogSinglePage({ params }) {
     );
   }
 
-  // ===== NORMAL RENDER =====
+  /* ================= NORMAL RENDER ================= */
+
   return (
     <>
       <Head>
@@ -151,7 +170,8 @@ export default function BlogSinglePage({ params }) {
             <div className="container">
               <div className="row">
 
-                {/* MAIN */}
+                {/* ================= MAIN ================= */}
+
                 <div className="col-xl-8 col-lg-7">
                   <div className="blog-page-three-content">
 
@@ -166,7 +186,10 @@ export default function BlogSinglePage({ params }) {
 
                     <div className="text-box1">
                       <h1>{novost.naslov}</h1>
-                      {novost.sadrzaj ? <div>{parse(novost.sadrzaj)}</div> : null}
+
+                      {novost.sadrzaj && (
+                        <div>{parse(novost.sadrzaj)}</div>
+                      )}
                     </div>
 
                     <div className="blog-post-tag2">
@@ -190,14 +213,15 @@ export default function BlogSinglePage({ params }) {
                   </div>
                 </div>
 
-                {/* SIDEBAR */}
+                {/* ================= SIDEBAR ================= */}
+
                 <div className="col-xl-4 col-lg-5">
                   <div className="sidebar-box-style2">
 
                     <div className="sidebar-search-box-one">
-                      <form className="search-form" action="#">
-                        <input placeholder="Pretraga..." type="text" />
-                        <button type="submit">
+                      <form className="search-form">
+                        <input placeholder="Pretraga..." />
+                        <button>
                           <i className="icon-search"></i>
                         </button>
                       </form>
@@ -237,7 +261,7 @@ export default function BlogSinglePage({ params }) {
                           backgroundImage:
                             "url(/assets/images/resources/banner-style1-1.jpg)",
                         }}
-                      ></div>
+                      />
 
                       <div className="banner-style1___inner text-center">
                         <div className="title-box">
@@ -265,7 +289,9 @@ export default function BlogSinglePage({ params }) {
 
                           <div className="btn-box">
                             <Link className="btn-one" href="/kontakt">
-                              <span className="txt">Želim vozačku dozvolu</span>
+                              <span className="txt">
+                                Želim vozačku dozvolu
+                              </span>
                             </Link>
                           </div>
                         </div>
