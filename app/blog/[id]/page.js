@@ -1,65 +1,78 @@
 // app/blog/[id]/page.js
+
 import React from "react";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import parse from "html-react-parser";
 
+export const dynamic = "force-dynamic";
+
 const API_URL = "https://miravapibackend.online/api";
 
+/* ================= FETCH ================= */
+
 async function fetchNovost(id) {
-  const res = await fetch(`${API_URL}/dohvatiNovost/${id}`, {
-    next: { revalidate: 60 },
-  });
+  try {
+    const res = await fetch(`${API_URL}/dohvatiNovost/${id}`, {
+      cache: "no-store",
+    });
 
-  if (!res.ok) {
-    throw new Error("Greška pri dohvatanju novosti");
+    if (!res.ok) return null;
+
+    const data = await res.json();
+
+    // ako backend vrati niz
+    if (Array.isArray(data)) {
+      return data[0] || null;
+    }
+
+    return data;
+  } catch (err) {
+    return null;
   }
-
-  return res.json();
 }
+
+/* ================= PAGE ================= */
 
 export default async function BlogSinglePage({ params }) {
   const { id } = params;
 
-  let novost = null;
+  const novost = await fetchNovost(id);
 
-  try {
-    novost = await fetchNovost(id);
-  } catch (error) {
-    return (
-      <div className="page-wrapper boxed_wrapper">
-        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle2="Blog">
-          <div className="container">
-            <h2>Novost nije pronađena ili došlo je do greške.</h2>
-            <Link href="/blog">Nazad na Blog</Link>
-          </div>
-        </Layout>
-      </div>
-    );
-  }
+  /* ======= NOT FOUND / ERROR ======= */
 
   if (!novost) {
     return (
       <div className="page-wrapper boxed_wrapper">
         <Layout headerStyle={1} footerStyle={1} breadcrumbTitle2="Blog">
-          <div className="container">
-            <h2>Novost ne postoji.</h2>
-            <Link href="/blog">Nazad na Blog</Link>
+          <div className="container text-center pt-80 pb-80">
+            <h1>Novost nije pronađena</h1>
+            <p>Moguće je da je objava obrisana ili privremeno nedostupna.</p>
+
+            <Link href="/blog" className="btn-one mt-20">
+              Nazad na Blog
+            </Link>
           </div>
         </Layout>
       </div>
     );
   }
 
+  /* ================= PAGE CONTENT ================= */
+
   return (
     <div className="page-wrapper boxed_wrapper course-details-page">
-      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle2={novost.naslov || "Blog"}>
-
+      <Layout
+        headerStyle={1}
+        footerStyle={1}
+        breadcrumbTitle2={novost.naslov || "Blog"}
+      >
         <section className="blog-page-three">
           <div className="container">
             <div className="row">
 
-              {/* MAIN CONTENT */}
+              {/* ================= MAIN CONTENT ================= */}
+
               <div className="col-xl-8 col-lg-7">
                 <div className="blog-page-three-content">
 
@@ -73,7 +86,7 @@ export default async function BlogSinglePage({ params }) {
                   )}
 
                   <div className="text-box1">
-                    <h2>{novost.naslov}</h2>
+                    <h1>{novost.naslov}</h1>
 
                     {novost.sadrzaj && (
                       <div>{parse(novost.sadrzaj)}</div>
@@ -101,7 +114,8 @@ export default async function BlogSinglePage({ params }) {
                 </div>
               </div>
 
-              {/* SIDEBAR */}
+              {/* ================= SIDEBAR ================= */}
+
               <div className="col-xl-4 col-lg-5">
                 <div className="sidebar-box-style2">
 
@@ -193,7 +207,6 @@ export default async function BlogSinglePage({ params }) {
             </div>
           </div>
         </section>
-
       </Layout>
     </div>
   );
