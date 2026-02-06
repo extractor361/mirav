@@ -7,18 +7,12 @@ export default function Cjenovnik_Page() {
   return (<>
   <Head>
   <title>Cjenovnik Auto škole Mirav Podgorica – Cijene obuke vožnje</title>
-
   <meta
     name="description"
-    content="Pogledajte cjenovnik auto škole Mirav u Podgorici. Cijene obuke za B kategoriju, paketi obuke, dopunski časovi i dodatne usluge. Prijavite se danas."
-  />
-
+    content="Pogledajte cjenovnik auto škole Mirav u Podgorici. Cijene obuke za B kategoriju, paketi obuke, dopunski časovi i dodatne usluge. Auto Škola Crna Gora"/>
   <meta
     name="keywords"
-    content="cjenovnik auto škole Podgorica, cijene obuke vožnje, auto škola Mirav, B kategorija cijena"
-  />
-
-  {/* Open Graph */}
+    content="cjenovnik auto škole Podgorica, cijene obuke vožnje, auto škola Mirav, B kategorija cijena"/>
   <meta property="og:title" content="Cjenovnik – Auto škola Mirav Podgorica" />
   <meta
     property="og:description"
@@ -26,27 +20,21 @@ export default function Cjenovnik_Page() {
   />
   <meta property="og:url" content="https://mirav.me/cjenovnik" />
   <meta property="og:type" content="website" />
-
-  {/* OG Image – koristi jednu od slika sa stranice */}
   <meta
     property="og:image"
-    content="https://mirav.me/assets/images/Mirav-2008.jpg"
-  />
-
-  {/* Twitter */}
+    content="https://mirav.me/assets/images/Mirav-2008.jpg"/>
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
     content="Cjenovnik Auto škole Mirav Podgorica"
-  />
+/>
   <meta
     name="twitter:description"
     content="Pregled cijena obuke vožnje i dodatnih usluga u auto školi Mirav."
-  />
+/>
   <meta
     name="twitter:image"
-    content="https://mirav.me/assets/images/Mirav-2008.jpg"
-  />
+    content="https://mirav.me/assets/images/Mirav-2008.jpg"/>
 </Head>
 
     <div className="page-wrapper boxed_wrapper">

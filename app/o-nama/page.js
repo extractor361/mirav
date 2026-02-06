@@ -56,7 +56,7 @@ export default function About_Page() {
 
     return (<>
      <Head>
-        <title>O nama – Auto škola Mirav Podgorica | Iskusni instruktori</title>
+        <title>Auto škola Mirav Podgorica, Crna Gora | Iskusni instruktori</title>
 
         <meta
           name="description"
