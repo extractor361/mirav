@@ -63,7 +63,7 @@ export default function Gallery_Page_Two() {
           
           {/* H1 */}
           <div className="container pt-40 pb-20 text-center">
-            <h1>Galerija Auto škole Mirav – Nastava, vožnja i polaganje</h1>
+            <h1 style={{marginTop:"40px",marginBottom:"40px"}}>Galerija Auto škole Mirav – Nastava, vožnja i polaganje</h1>
           </div>
 
           <PortfolioFilter2 />

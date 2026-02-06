@@ -72,7 +72,7 @@ export default function Blog_Page_Two() {
               {/* H1 */}
               <div className="row">
                 <div className="col-xl-12 text-center mb-40">
-                  <h1>Blog Auto škole Mirav – Savjeti za vozače</h1>
+                  <h1 style={{marginBottom:"40px"}}>Blog Auto škole Mirav – Savjeti za vozače</h1>
                 </div>
               </div>
 
