@@ -1,80 +1,108 @@
 // app/blog/[id]/page.js
 
-import React from "react";
+"use client";
+
+import React, { useEffect, useMemo, useState } from "react";
 import Head from "next/head";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import parse from "html-react-parser";
 
-export const dynamic = "force-dynamic";
-export const runtime = "nodejs";
-
 const API_URL = "https://miravapibackend.online/api";
 
-/* ================= FETCH ALL + FILTER ================= */
+export default function BlogSinglePage({ params }) {
+  const id = params?.id;
 
-async function fetchNovost(id) {
-  try {
-    const res = await fetch(`${API_URL}/dohvatiNovosti`, {
-      cache: "no-store",
-      headers: {
-        Accept: "application/json",
-      },
-    });
+  const [loading, setLoading] = useState(true);
+  const [novost, setNovost] = useState(null);
+  const [error, setError] = useState(null);
 
-    if (!res.ok) return null;
+  useEffect(() => {
+    if (!id) return;
 
-    const data = await res.json();
+    setLoading(true);
+    setError(null);
+    setNovost(null);
 
-    if (!Array.isArray(data)) return null;
+    fetch(`${API_URL}/dohvatiNovosti`, {
+      headers: { Accept: "application/json" },
+    })
+      .then((res) => {
+        if (!res.ok) throw new Error("Greška pri dohvatu liste novosti");
+        return res.json();
+      })
+      .then((data) => {
+        if (!Array.isArray(data)) throw new Error("API nije vratio niz");
+        const found = data.find(
+          (item) => String(item.novosti_id) === String(id)
+        );
+        setNovost(found || null);
+      })
+      .catch((err) => {
+        setError(err.message || "Nepoznata greška");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, [id]);
 
-    return data.find(
-      (item) => String(item.novosti_id) === String(id)
-    );
-  } catch (err) {
-    console.error("SERVER FETCH ERROR:", err);
-    return null;
-  }
-}
+  const seo = useMemo(() => {
+    const title = novost?.naslov
+      ? `${novost.naslov} | Auto škola Mirav`
+      : "Blog | Auto škola Mirav";
 
-/* ================= PAGE ================= */
+    const description = novost?.naslov
+      ? novost.naslov
+      : "Savjeti i novosti iz Auto škole Mirav u Podgorici.";
 
-export default async function BlogSinglePage({ params }) {
-  const { id } = params;
+    const image = novost?.slika
+      ? `https://miravapibackend.online/slike/${novost.slika}`
+      : "https://mirav.me/assets/images/resources/driving%20(12).jpg";
 
-  const novost = await fetchNovost(id);
+    const url = `https://mirav.me/blog/${id}`;
 
-  const title = novost
-    ? `${novost.naslov} | Auto škola Mirav`
-    : "Novost nije pronađena | Auto škola Mirav";
+    return { title, description, image, url };
+  }, [novost, id]);
 
-  const description = novost
-    ? novost.naslov
-    : "Blog Auto škole Mirav – savjeti za vozače i teorijsku nastavu.";
-
-  const image = novost?.slika
-    ? `https://miravapibackend.online/slike/${novost.slika}`
-    : "https://mirav.me/assets/images/resources/driving%20(12).jpg";
-
-  /* ================= NOT FOUND ================= */
-
-  if (!novost) {
+  // ===== LOADING STATE =====
+  if (loading) {
     return (
       <>
         <Head>
-          <title>{title}</title>
+          <title>{seo.title}</title>
+          <meta name="description" content={seo.description} />
+        </Head>
 
-          <meta name="description" content={description} />
+        <div className="page-wrapper boxed_wrapper">
+          <Layout headerStyle={1} footerStyle={1} breadcrumbTitle2="Blog">
+            <div className="container text-center pt-80 pb-80">
+              <h1>Učitavanje objave...</h1>
+              <p>Sačekajte trenutak.</p>
+            </div>
+          </Layout>
+        </div>
+      </>
+    );
+  }
 
-          <meta property="og:title" content={title} />
-          <meta property="og:description" content={description} />
-          <meta property="og:type" content="article" />
-          <meta property="og:image" content={image} />
+  // ===== ERROR / NOT FOUND =====
+  if (error || !novost) {
+    return (
+      <>
+        <Head>
+          <title>{seo.title}</title>
+          <meta name="description" content={seo.description} />
+
+          <meta property="og:title" content={seo.title} />
+          <meta property="og:description" content={seo.description} />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content={seo.image} />
+          <meta property="og:url" content={seo.url} />
 
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content={title} />
-          <meta name="twitter:description" content={description} />
-          <meta name="twitter:image" content={image} />
+          <meta name="twitter:title" content={seo.title} />
+          <meta name="twitter:description" content={seo.description} />
+          <meta name="twitter:image" content={seo.image} />
         </Head>
 
         <div className="page-wrapper boxed_wrapper">
@@ -82,8 +110,9 @@ export default async function BlogSinglePage({ params }) {
             <div className="container text-center pt-80 pb-80">
               <h1>Novost nije pronađena</h1>
               <p>
-                Moguće je da je objava obrisana ili privremeno
-                nedostupna.
+                {error
+                  ? `Greška: ${error}`
+                  : "Moguće je da je objava obrisana ili privremeno nedostupna."}
               </p>
 
               <Link href="/blog" className="btn-one mt-20">
@@ -96,46 +125,39 @@ export default async function BlogSinglePage({ params }) {
     );
   }
 
-  /* ================= PAGE CONTENT ================= */
-
+  // ===== NORMAL RENDER =====
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
 
-        <meta name="description" content={description} />
-
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
+        <meta property="og:title" content={seo.title} />
+        <meta property="og:description" content={seo.description} />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content={image} />
-        <meta property="og:url" content={`https://mirav.me/blog/${id}`} />
+        <meta property="og:image" content={seo.image} />
+        <meta property="og:url" content={seo.url} />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={image} />
+        <meta name="twitter:title" content={seo.title} />
+        <meta name="twitter:description" content={seo.description} />
+        <meta name="twitter:image" content={seo.image} />
       </Head>
 
       <div className="page-wrapper boxed_wrapper course-details-page">
-        <Layout
-          headerStyle={1}
-          footerStyle={1}
-          breadcrumbTitle2={novost.naslov}
-        >
+        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle2={novost.naslov}>
           <section className="blog-page-three">
             <div className="container">
               <div className="row">
 
-                {/* ================= MAIN ================= */}
-
+                {/* MAIN */}
                 <div className="col-xl-8 col-lg-7">
                   <div className="blog-page-three-content">
 
                     {novost.slika && (
                       <div className="img-box">
                         <img
-                          src={image}
+                          src={`https://miravapibackend.online/slike/${novost.slika}`}
                           alt={novost.naslov}
                         />
                       </div>
@@ -143,10 +165,7 @@ export default async function BlogSinglePage({ params }) {
 
                     <div className="text-box1">
                       <h1>{novost.naslov}</h1>
-
-                      {novost.sadrzaj && (
-                        <div>{parse(novost.sadrzaj)}</div>
-                      )}
+                      {novost.sadrzaj ? <div>{parse(novost.sadrzaj)}</div> : null}
                     </div>
 
                     <div className="blog-post-tag2">
@@ -163,23 +182,21 @@ export default async function BlogSinglePage({ params }) {
 
                     <div className="back-to-blog-post-btn">
                       <Link href="/blog">
-                        <span className="icon-menu"></span>
-                        Nazad na objave
+                        <span className="icon-menu"></span> Nazad na objave
                       </Link>
                     </div>
 
                   </div>
                 </div>
 
-                {/* ================= SIDEBAR ================= */}
-
+                {/* SIDEBAR */}
                 <div className="col-xl-4 col-lg-5">
                   <div className="sidebar-box-style2">
 
                     <div className="sidebar-search-box-one">
-                      <form className="search-form">
-                        <input placeholder="Pretraga..." />
-                        <button>
+                      <form className="search-form" action="#">
+                        <input placeholder="Pretraga..." type="text" />
+                        <button type="submit">
                           <i className="icon-search"></i>
                         </button>
                       </form>
@@ -219,7 +236,7 @@ export default async function BlogSinglePage({ params }) {
                           backgroundImage:
                             "url(/assets/images/resources/banner-style1-1.jpg)",
                         }}
-                      />
+                      ></div>
 
                       <div className="banner-style1___inner text-center">
                         <div className="title-box">
@@ -242,20 +259,16 @@ export default async function BlogSinglePage({ params }) {
                           </h4>
 
                           <p>
-                            Imate pitanja? Vozite ih nama!
-                            Kontaktirajte naše stručnjake.
+                            Imate pitanja? Vozite ih nama! Kontaktirajte naše stručnjake.
                           </p>
 
                           <div className="btn-box">
                             <Link className="btn-one" href="/kontakt">
-                              <span className="txt">
-                                Želim vozačku dozvolu
-                              </span>
+                              <span className="txt">Želim vozačku dozvolu</span>
                             </Link>
                           </div>
                         </div>
                       </div>
-
                     </div>
 
                   </div>
