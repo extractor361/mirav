@@ -24,7 +24,7 @@ export default function BlogSinglePage({ params }) {
     setError(null);
     setNovost(null);
 
-    fetch(`${API_URL}/dohvatiNovosti`, {
+    fetch(`https://miravapibackend.online/api/dohvatiNovosti`, {
       headers: { Accept: "application/json" },
     })
       .then((res) => {

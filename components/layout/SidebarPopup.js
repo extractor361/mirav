@@ -16,7 +16,7 @@ export default function SidebarPopup({ isPopup, handlePopup }) {
                                 <div className="content-inner">
                                     <div className="logo">
                                         <Link href="/">
-                                            <img src="assets/images/resources/mirav_horizontal_tamno plavi.png" alt="" />
+                                            <img src="../assets/images/resources/mirav_horizontal_tamno plavi.png" alt="" />
                                         </Link>
                                     </div>
                                     <div className="content-box">
