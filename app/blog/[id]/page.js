@@ -9,11 +9,11 @@ export const dynamic = "force-dynamic";
 
 const API_URL = "https://miravapibackend.online/api";
 
-/* ================= FETCH ================= */
+/* ================= FETCH ALL + FILTER ================= */
 
 async function fetchNovost(id) {
   try {
-    const res = await fetch(`${API_URL}/dohvatiNovost/${id}`, {
+    const res = await fetch(`${API_URL}/dohvatiNovosti`, {
       cache: "no-store",
     });
 
@@ -21,13 +21,13 @@ async function fetchNovost(id) {
 
     const data = await res.json();
 
-    // ako backend vrati niz
-    if (Array.isArray(data)) {
-      return data[0] || null;
-    }
+    if (!Array.isArray(data)) return null;
 
-    return data;
+    return data.find(
+      (item) => String(item.novosti_id) === String(id)
+    );
   } catch (err) {
+    console.error("Fetch error:", err);
     return null;
   }
 }
@@ -39,7 +39,7 @@ export default async function BlogSinglePage({ params }) {
 
   const novost = await fetchNovost(id);
 
-  /* ======= NOT FOUND / ERROR ======= */
+  /* ================= NOT FOUND ================= */
 
   if (!novost) {
     return (
@@ -47,7 +47,10 @@ export default async function BlogSinglePage({ params }) {
         <Layout headerStyle={1} footerStyle={1} breadcrumbTitle2="Blog">
           <div className="container text-center pt-80 pb-80">
             <h1>Novost nije pronađena</h1>
-            <p>Moguće je da je objava obrisana ili privremeno nedostupna.</p>
+            <p>
+              Moguće je da je objava obrisana ili privremeno
+              nedostupna.
+            </p>
 
             <Link href="/blog" className="btn-one mt-20">
               Nazad na Blog
@@ -71,7 +74,7 @@ export default async function BlogSinglePage({ params }) {
           <div className="container">
             <div className="row">
 
-              {/* ================= MAIN CONTENT ================= */}
+              {/* ================= MAIN ================= */}
 
               <div className="col-xl-8 col-lg-7">
                 <div className="blog-page-three-content">
@@ -80,7 +83,7 @@ export default async function BlogSinglePage({ params }) {
                     <div className="img-box">
                       <img
                         src={`https://miravapibackend.online/slike/${novost.slika}`}
-                        alt={novost.naslov || "Blog slika"}
+                        alt={novost.naslov}
                       />
                     </div>
                   )}
@@ -107,7 +110,8 @@ export default async function BlogSinglePage({ params }) {
 
                   <div className="back-to-blog-post-btn">
                     <Link href="/blog">
-                      <span className="icon-menu"></span> Nazad na objave
+                      <span className="icon-menu"></span>
+                      Nazad na objave
                     </Link>
                   </div>
 
@@ -120,9 +124,9 @@ export default async function BlogSinglePage({ params }) {
                 <div className="sidebar-box-style2">
 
                   <div className="sidebar-search-box-one">
-                    <form className="search-form" action="#">
-                      <input placeholder="Pretraga..." type="text" />
-                      <button type="submit">
+                    <form className="search-form">
+                      <input placeholder="Pretraga..." />
+                      <button>
                         <i className="icon-search"></i>
                       </button>
                     </form>
@@ -162,7 +166,7 @@ export default async function BlogSinglePage({ params }) {
                         backgroundImage:
                           "url(/assets/images/resources/banner-style1-1.jpg)",
                       }}
-                    ></div>
+                    />
 
                     <div className="banner-style1___inner text-center">
                       <div className="title-box">
@@ -185,9 +189,8 @@ export default async function BlogSinglePage({ params }) {
                         </h4>
 
                         <p>
-                          Imate pitanja? Vozite ih nama! Kontaktirajte naše
-                          stručnjake i započnite svoje putovanje ka sigurnoj
-                          vožnji.
+                          Imate pitanja? Vozite ih nama!
+                          Kontaktirajte naše stručnjake.
                         </p>
 
                         <div className="btn-box">
@@ -199,6 +202,7 @@ export default async function BlogSinglePage({ params }) {
                         </div>
                       </div>
                     </div>
+
                   </div>
 
                 </div>
