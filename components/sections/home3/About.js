@@ -35,7 +35,7 @@ export default function About() {
                                     <div className="sub-title">
                                         <h4>O nama</h4>
                                     </div>
-                                    <h2>Iskustvo, kvalitet i povjerenje u edukaciji vozača</h2>
+                                    <h1>Iskustvo, kvalitet i povjerenje u edukaciji vozača</h1>
                                 </div>
                                 <div className="text1">
                                     <p>
