@@ -32,6 +32,7 @@ export default function BlogSinglePage({ params }) {
         return res.json();
       })
       .then((data) => {
+        console.log(data);
         if (!Array.isArray(data)) throw new Error("API nije vratio niz");
         const found = data.find(
           (item) => String(item.novosti_id) === String(id)
