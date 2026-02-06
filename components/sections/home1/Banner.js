@@ -85,7 +85,7 @@ const [isMobile, setIsMobile] = useState(false);
                                         <div className="main-slider-content">
                                             <div className="main-slider-content__inner">
                                                 <div className="big-title">
-                                                    <h1>
+                                                    <h1 style={{color:"white"}}>
                                                         Auto <br/> Škola Mirav<br/> Više Od Vožnje.
                                                     </h1>
                                                 </div>
