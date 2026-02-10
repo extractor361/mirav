@@ -4,8 +4,7 @@ import "swiper/css/pagination";
 import 'swiper/css/free-mode';
 
 export const metadata = {
-    title: 'Auto Škola Mirav',
-    description: 'Veb platforma auto škole Mirav',
+
     icons: {
         icon: '/favicon.ico', // favicon iz public foldera
     }
