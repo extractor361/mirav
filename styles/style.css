@@ -411,7 +411,7 @@ select:focus {
     right: 0;
     opacity: 0;
     visibility: hidden;
-    cursor: url(../images/icon/cross-out.png), pointer;
+    cursor: url(../assets/images/icon/cross-out.png), pointer;
     z-index: 99999999;
 
     transition: -webkit-transform 0.4s ease;
