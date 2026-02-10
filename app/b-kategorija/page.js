@@ -6,6 +6,7 @@ import CounterUp from "@/components/elements/CounterUp"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import Testimonial from '@/components/sections/home1/Testimonial'
 import Team from '@/components/sections/home1/Team'
+import Head from "next/head";
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
