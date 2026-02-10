@@ -4,12 +4,7 @@ import "swiper/css/pagination";
 import 'swiper/css/free-mode';
 import "/assets/css/style.css";
 import "/assets/css/responsive.css";
-export const metadata = {
 
-    icons: {
-        icon: '/favicon.ico', // favicon iz public foldera
-    }
-}
 
 export default function RootLayout({ children }) {
      return (
