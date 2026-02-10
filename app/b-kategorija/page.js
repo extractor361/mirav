@@ -6,40 +6,7 @@ import CounterUp from "@/components/elements/CounterUp"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import Testimonial from '@/components/sections/home1/Testimonial'
 import Team from '@/components/sections/home1/Team'
-export const metadata = {
-  title: "B kategorija Podgorica – Auto škola Mirav | Obuka vožnje",
 
-  description:
-    "Obuka za B kategoriju u Podgorici u auto školi Mirav. Savremena teorijska nastava, praktična vožnja, iskusni instruktori i sigurna priprema za polaganje.",
-
-  keywords: [
-    "B kategorija Podgorica",
-    "auto škola Mirav",
-    "obuka vožnje",
-    "vozačka dozvola",
-  ],
-
-  openGraph: {
-    title: "B kategorija Podgorica – Auto škola Mirav",
-    description:
-      "Kompletna i savremena obuka za B kategoriju u Podgorici.",
-    url: "https://mirav.me/b-kategorija",
-    siteName: "Auto škola Mirav",
-    images: [
-      {
-        url:
-          "https://mirav.me/assets/images/resources/driving%20(12).jpg",
-        width: 1200,
-        height: 630,
-      },
-    ],
-    type: "website",
-  },
-
-  alternates: {
-    canonical: "https://mirav.me/b-kategorija",
-  },
-};
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
     slidesPerView: 1,
@@ -80,7 +47,36 @@ const swiperOptions = {
 export default function Course_Details() {
 
     return (<>
-    
+    <Head>
+  <title>B kategorija Podgorica – Auto škola Mirav | Obuka vožnje</title>
+  <meta
+    name="description"
+    content="Obuka za B kategoriju u Podgorici u auto školi Mirav. Savremena teorijska nastava, praktična vožnja, iskusni instruktori i sigurna priprema za polaganje."/>
+  <meta
+    name="keywords"
+    content="B kategorija Podgorica, auto škola Mirav, obuka vožnje Podgorica, vozačka dozvola B kategorije"/>
+  <meta property="og:title" content="B kategorija Podgorica – Auto škola Mirav" />
+  <meta
+    property="og:description"
+    content="Kompletna i savremena obuka za B kategoriju u Podgorici – teorija, praktična i 
+    sigurna priprema za polaganje."/>
+  <meta property="og:url" content="https://mirav.me/b-kategorija" />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://mirav.me/assets/images/resources/driving%20(12).jpg"
+  />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="B kategorija Podgorica – Auto škola Mirav"/>
+  <meta
+    name="twitter:description"
+    content="Savremena obuka za B kategoriju u Podgorici – teorija, praktični i iskusni instruktori."/>
+  <meta
+    name="twitter:image"
+    content="https://mirav.me/assets/images/resources/driving%20(12).jpg"/>
+</Head>
         <div className="page-wrapper boxed_wrapper course-details-page">
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="B kategorija">
                 <section className="intro-style1">
