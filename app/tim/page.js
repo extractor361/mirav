@@ -2,7 +2,6 @@
 import React from 'react'
 import Link from "next/link"
 import Layout from "@/components/layout/Layout"
-import Head from "next/head";
 
 const teamMembers = [
   {
@@ -22,6 +21,18 @@ Rođena 1978. u Kolašinu. Inženjer drumskog saobraćaja. Od 2013. vodi auto š
     role: "Asistent u nastavi",
     image: "assets/images/resources/tim2.jpeg",
     description: `Pomaže kandidatima u teorijskoj nastavi. Student saobraćajnog fakulteta, prati nove trendove i propise.`,
+    social: {
+      facebook: "https://www.facebook.com/",
+      twitter: "https://x.com/i/flow/login",
+      instagram: "https://www.instagram.com/accounts/login/?hl=en"
+    }
+  },
+   {
+    name: "dr Mirela Kalić",
+    role: "Asistent u nastavi",
+    image: "assets/images/resources/tim111.jpeg",
+    description: `Rođena je u Rožajama, gdje je završila osnovnu i srednju školu. Diplomirala je na Medicinskom fakultetu u Podgorici 2011. godine, a od 2021. godine je specijalista radiologije.
+Tokom usavršavanja završila je CT i UZ školu u Beogradu, kao i više kurseva iz dopler i ultrazvučne dijagnostike dojke. Članica je Udruženja radiologa Crne Gore i zaposlena u Domu zdravlja Danilovgrad.`,
     social: {
       facebook: "https://www.facebook.com/",
       twitter: "https://x.com/i/flow/login",

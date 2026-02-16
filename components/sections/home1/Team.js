@@ -193,13 +193,12 @@ Ivana je strpljiva i posvećena instruktorka koja se lako povezuje sa kandidatim
                                                 <img src="assets/images/shapes/-v1-shape1.png" alt="shape"/>
                                             </div>
                                             <div className="single-team-style1-title">
-                                                <h3><Link href="/">Mirela   <br/>Kalić</Link></h3>
+                                                <h3><Link href="/">dr Mirela   <br/>Kalić</Link></h3>
                                                 <span></span>
                                             </div>
                                             <div className="single-team-style1-border"></div>
                                             <div className="single-team-style1-text">
-                                                <p>Rođena je u Rožajama, gdje je završila osnovnu i srednju školu. Diplomirala je na Medicinskom fakultetu u Podgorici 2011. godine, a od 2021. godine je specijalista radiologije.
-Tokom usavršavanja završila je CT i UZ školu u Beogradu, kao i više kurseva iz dopler i ultrazvučne dijagnostike dojke. Članica je Udruženja radiologa Crne Gore i zaposlena u Domu zdravlja Danilovgrad.</p>
+                                                <p>Rođena je u Rožajama, gdje je završila osnovnu i srednju školu. Diplomirala je na Medicinskom fakultetu u Podgorici 2011. godine, a od 2021. godine je specijalista radiologije.</p>
                                             </div>
                                             <div className="single-team-style1-bottom">
                                                 <ul className="single-team-style1-social-link clearfix">
