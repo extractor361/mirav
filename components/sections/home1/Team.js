@@ -185,6 +185,51 @@ Ivana je strpljiva i posvećena instruktorka koja se lako povezuje sa kandidatim
                                         </div>
                                     </div>
                                 </SwiperSlide>
+
+<SwiperSlide>
+                                    <div className="single-team-style1">
+                                        <div className="single-team-style1-inner">
+                                            <div className="single-team-style1-shape">
+                                                <img src="assets/images/shapes/-v1-shape1.png" alt="shape"/>
+                                            </div>
+                                            <div className="single-team-style1-title">
+                                                <h3><Link href="/">Mirela   <br/>Kalić</Link></h3>
+                                                <span></span>
+                                            </div>
+                                            <div className="single-team-style1-border"></div>
+                                            <div className="single-team-style1-text">
+                                                <p>Rođena je u Rožajama, gdje je završila osnovnu i srednju školu. Diplomirala je na Medicinskom fakultetu u Podgorici 2011. godine, a od 2021. godine je specijalista radiologije.
+Tokom usavršavanja završila je CT i UZ školu u Beogradu, kao i više kurseva iz dopler i ultrazvučne dijagnostike dojke. Članica je Udruženja radiologa Crne Gore i zaposlena u Domu zdravlja Danilovgrad.</p>
+                                            </div>
+                                            <div className="single-team-style1-bottom">
+                                                <ul className="single-team-style1-social-link clearfix">
+                                                    <li>
+                                                        <Link href="https://www.facebook.com/">
+                                                            <span className=" icon-facebook"></span>
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="https://x.com/i/flow/login">
+                                                            <span className="icon-twitter"></span>
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="https://www.instagram.com/accounts/login/?hl=en">
+                                                            <span className="icon-instagram-logo"></span>
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                                <div className="single-team-style1-btn">
+                                                    <Link href="/"><i className="icon-next"></i> Pogledaj Profil</Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="single-team-style1-img">
+                                            <img src="assets/images/resources/tim111.jpeg" alt="Awesome Image"/>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
                                 <SwiperSlide>
                                     <div className="single-team-style1">
                                         <div className="single-team-style1-inner">
