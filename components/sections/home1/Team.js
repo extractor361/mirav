@@ -194,7 +194,7 @@ Ivana je strpljiva i posvećena instruktorka koja se lako povezuje sa kandidatim
                                             </div>
                                             <div className="single-team-style1-title">
                                                 <h3><Link href="/">dr Mirela   <br/>Kalić</Link></h3>
-                                                <span></span>
+                                                <span>Predavač za prvu pomoć</span>
                                             </div>
                                             <div className="single-team-style1-border"></div>
                                             <div className="single-team-style1-text">
