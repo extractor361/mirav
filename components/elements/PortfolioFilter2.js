@@ -77,7 +77,177 @@ export default function PortfolioFilter2() {
                                 </div>
                             </div>
                         </div>
-                        
+                        {/* Ucionica 1 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica1.jpg" alt="Ucionica 1"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 2 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica2.jpg" alt="Ucionica 2"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 3 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica3.jpg" alt="Ucionica 3"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 4 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica4.jpg" alt="Ucionica 4"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 5 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica5.jpg" alt="Ucionica 5"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 6 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica6.jpg" alt="Ucionica 6"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 7 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica7.jpg" alt="Ucionica 7"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 8 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica8.jpg" alt="Ucionica 8"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 9 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica9.jpg" alt="Ucionica 9"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 10 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica10.jpg" alt="Ucionica 10"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 11 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica11.jpg" alt="Ucionica 11"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 12 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica12.jpg" alt="Ucionica 12"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 13 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica13.jpg" alt="Ucionica 13"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 14 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica14.jpg" alt="Ucionica 14"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 15 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica15.jpg" alt="Ucionica 15"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 16 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica16.jpg" alt="Ucionica 16"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 17 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica17.jpg" alt="Ucionica 17"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 18 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica18.jpg" alt="Ucionica 18"/>
+        </div>
+    </div>
+</div>
+
+{/* Ucionica 20 */}
+<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
+    <div className="single-project-style1">
+        <div className="single-project-style1__img">
+            <img src="assets/images/resources/ucionica20.jpg" alt="Ucionica 20"/>
+        </div>
+    </div>
+</div>
+
                         <div className="col-xl-4 col-lg-6 col-md-6 filter-item  classroom">
                             <div className="single-project-style1">
                                 <div className="single-project-style1__img">
