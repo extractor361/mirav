@@ -81,7 +81,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica1.jpg" alt="Ucionica 1"/>
+            <img src="assets/images/resources/ucionica1.png" alt="Ucionica 1"/>
         </div>
     </div>
 </div>
@@ -90,7 +90,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica2.jpg" alt="Ucionica 2"/>
+            <img src="assets/images/resources/ucionica2.png" alt="Ucionica 2"/>
         </div>
     </div>
 </div>
@@ -99,7 +99,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica3.jpg" alt="Ucionica 3"/>
+            <img src="assets/images/resources/ucionica3.png" alt="Ucionica 3"/>
         </div>
     </div>
 </div>
@@ -108,7 +108,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica4.jpg" alt="Ucionica 4"/>
+            <img src="assets/images/resources/ucionica4.png" alt="Ucionica 4"/>
         </div>
     </div>
 </div>
@@ -117,7 +117,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica5.jpg" alt="Ucionica 5"/>
+            <img src="assets/images/resources/ucionica5.png" alt="Ucionica 5"/>
         </div>
     </div>
 </div>
@@ -126,7 +126,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica6.jpg" alt="Ucionica 6"/>
+            <img src="assets/images/resources/ucionica6.png" alt="Ucionica 6"/>
         </div>
     </div>
 </div>
@@ -135,7 +135,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica7.jpg" alt="Ucionica 7"/>
+            <img src="assets/images/resources/ucionica7.png" alt="Ucionica 7"/>
         </div>
     </div>
 </div>
@@ -144,7 +144,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica8.jpg" alt="Ucionica 8"/>
+            <img src="assets/images/resources/ucionica8.png" alt="Ucionica 8"/>
         </div>
     </div>
 </div>
@@ -153,7 +153,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica9.jpg" alt="Ucionica 9"/>
+            <img src="assets/images/resources/ucionica9.png" alt="Ucionica 9"/>
         </div>
     </div>
 </div>
@@ -162,7 +162,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica10.jpg" alt="Ucionica 10"/>
+            <img src="assets/images/resources/ucionica10.png" alt="Ucionica 10"/>
         </div>
     </div>
 </div>
@@ -171,7 +171,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica11.jpg" alt="Ucionica 11"/>
+            <img src="assets/images/resources/ucionica11.png" alt="Ucionica 11"/>
         </div>
     </div>
 </div>
@@ -180,7 +180,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica12.jpg" alt="Ucionica 12"/>
+            <img src="assets/images/resources/ucionica12.png" alt="Ucionica 12"/>
         </div>
     </div>
 </div>
@@ -189,7 +189,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica13.jpg" alt="Ucionica 13"/>
+            <img src="assets/images/resources/ucionica13.png" alt="Ucionica 13"/>
         </div>
     </div>
 </div>
@@ -198,7 +198,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica14.jpg" alt="Ucionica 14"/>
+            <img src="assets/images/resources/ucionica14.png" alt="Ucionica 14"/>
         </div>
     </div>
 </div>
@@ -207,7 +207,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica15.jpg" alt="Ucionica 15"/>
+            <img src="assets/images/resources/ucionica15.png" alt="Ucionica 15"/>
         </div>
     </div>
 </div>
@@ -216,7 +216,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica16.jpg" alt="Ucionica 16"/>
+            <img src="assets/images/resources/ucionica16.png" alt="Ucionica 16"/>
         </div>
     </div>
 </div>
@@ -225,7 +225,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica17.jpg" alt="Ucionica 17"/>
+            <img src="assets/images/resources/ucionica17.png" alt="Ucionica 17"/>
         </div>
     </div>
 </div>
@@ -234,7 +234,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica18.jpg" alt="Ucionica 18"/>
+            <img src="assets/images/resources/ucionica18.png" alt="Ucionica 18"/>
         </div>
     </div>
 </div>
@@ -243,7 +243,7 @@ export default function PortfolioFilter2() {
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
         <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica20.jpg" alt="Ucionica 20"/>
+            <img src="assets/images/resources/ucionica20.png" alt="Ucionica 20"/>
         </div>
     </div>
 </div>
