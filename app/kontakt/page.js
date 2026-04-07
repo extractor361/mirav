@@ -1,8 +1,8 @@
 'use client'
 import React, { useState } from 'react'
 import Head from 'next/head'
-import Link from "next/link"
-import Layout from "@/components/layout/Layout"
+import Link from 'next/link'
+import Layout from '@/components/layout/Layout'
 import Location from '@/components/sections/home2/Location'
 
 export default function Contact_Page() {
@@ -13,14 +13,15 @@ export default function Contact_Page() {
         subject: '',
         message: ''
     })
+
     const [statusMessage, setStatusMessage] = useState('')
     const [loading, setLoading] = useState(false)
 
     const handleChange = (e) => {
-        setFormData({
-            ...formData,
+        setFormData((prev) => ({
+            ...prev,
             [e.target.name]: e.target.value
-        })
+        }))
     }
 
     const handleSubmit = async (e) => {
@@ -29,13 +30,15 @@ export default function Contact_Page() {
         setStatusMessage('')
 
         try {
-            const res = await fetch('https://miravapibackend.online/api/kontaktForma', {
+            const res = await fetch('/api/kontakt-forma', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(formData)
             })
+
+            const data = await res.json()
 
             if (res.ok) {
                 setStatusMessage('✅ Poruka je uspješno poslata!')
@@ -47,9 +50,10 @@ export default function Contact_Page() {
                     message: ''
                 })
             } else {
-                setStatusMessage('❌ Došlo je do greške prilikom slanja.')
+                setStatusMessage(data?.message || '❌ Došlo je do greške prilikom slanja.')
             }
         } catch (error) {
+            console.error('Greška pri slanju forme:', error)
             setStatusMessage('❌ Server nije dostupan. Pokušajte ponovo.')
         } finally {
             setLoading(false)
@@ -97,7 +101,6 @@ export default function Contact_Page() {
 
             <div className="page-wrapper boxed_wrapper course-details-page">
                 <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Kontaktiraj Nas">
-
                     <section className="contact-info-style3">
                         <div className="container">
                             <div className="sec-title text-center">
@@ -121,7 +124,7 @@ export default function Contact_Page() {
                                             <div className="phone-email">
                                                 <p>
                                                     <span>Kontakt telefon:</span>
-                                                    <Link href="tel:+382068444101"> +382 068 444 101 </Link>
+                                                    <Link href="tel:+38268444101"> +382 068 444 101 </Link>
                                                 </p>
                                                 <p>
                                                     <span>Email:</span>
@@ -129,7 +132,10 @@ export default function Contact_Page() {
                                                 </p>
                                             </div>
                                             <div className="btn-box">
-                                                <Link href="tel:6612000456"><i className=" icon-next"></i>Pošaljite upit</Link>
+                                                <Link href="#main">
+                                                    <i className="icon-next"></i>
+                                                    Pošaljite upit
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -151,7 +157,11 @@ export default function Contact_Page() {
                                                 </p>
                                             </div>
                                             <div className="btn-box btn-box--2">
-                                                <Link href="https://www.google.com/maps">
+                                                <Link
+                                                    href="https://www.google.com/maps"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
                                                     <i className="icon-next"></i>
                                                     Google Mapa
                                                 </Link>
@@ -166,15 +176,18 @@ export default function Contact_Page() {
                                             <span className="icon-time"></span>
                                         </div>
                                         <div className="text">
-                                            <h4>Radni Sati</h4>
+                                            <h4>Radni sati</h4>
                                         </div>
                                         <div className="content-box">
                                             <div className="phone-email">
                                                 <p><span>Pon - Pet:</span> 08:00 do 15:00</p>
-                                                <p><span>Subotom i nedeljom:</span> Ne radimo </p>
+                                                <p><span>Subotom i nedjeljom:</span> Ne radimo</p>
                                             </div>
                                             <div className="btn-box">
-                                                <Link href="/kontakt"><i className="icon-next"></i>Zakazivanje</Link>
+                                                <Link href="/kontakt">
+                                                    <i className="icon-next"></i>
+                                                    Zakazivanje
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -186,14 +199,19 @@ export default function Contact_Page() {
                                             <span className="icon-faq"></span>
                                         </div>
                                         <div className="text">
-                                            <h4>Faq</h4>
+                                            <h4>FAQ</h4>
                                         </div>
                                         <div className="content-box">
                                             <div className="phone-email">
-                                                <p>Brzo pronađite rješenja u našoj često postavljanoj temi za korisničku podršku.</p>
+                                                <p>
+                                                    Brzo pronađite rješenja u našoj često postavljanoj temi za korisničku podršku.
+                                                </p>
                                             </div>
                                             <div className="btn-box btn-box--2">
-                                                <Link href="/faq"><i className="icon-next"></i>Pročitaj više </Link>
+                                                <Link href="/faq">
+                                                    <i className="icon-next"></i>
+                                                    Pročitaj više
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -205,9 +223,21 @@ export default function Contact_Page() {
                                     <h3>Društvene mreže</h3>
                                 </div>
                                 <ul className="clearfix">
-                                    <li><Link href="https://www.facebook.com/as.mirav/"><span className="icon-facebook"></span></Link></li>
-                                    <li><Link href="https://www.instagram.com/auto_skola_mirav_/?hl=en"><span className="icon-instagram-logo"></span></Link></li>
-                                    <li><Link href="https://wa.me/38268444101"><span className="icon-whatsapp"></span></Link></li>
+                                    <li>
+                                        <Link href="https://www.facebook.com/as.mirav/" target="_blank" rel="noopener noreferrer">
+                                            <span className="icon-facebook"></span>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://www.instagram.com/auto_skola_mirav_/?hl=en" target="_blank" rel="noopener noreferrer">
+                                            <span className="icon-instagram-logo"></span>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://wa.me/38268444101" target="_blank" rel="noopener noreferrer">
+                                            <span className="icon-whatsapp"></span>
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -215,7 +245,7 @@ export default function Contact_Page() {
 
                     <Location />
 
-                    <section id='main' className="main-contact-form">
+                    <section id="main" className="main-contact-form">
                         <div className="container">
                             <div className="sec-title withtext text-center">
                                 <div className="sub-title">
@@ -237,7 +267,15 @@ export default function Contact_Page() {
                                                         <label htmlFor="ime">Ime</label>
                                                     </div>
                                                     <div className="input-box">
-                                                        <input type="text" name="ime" id="ime" placeholder="Unesite vaše ime" value={formData.ime} onChange={handleChange} required />
+                                                        <input
+                                                            type="text"
+                                                            name="ime"
+                                                            id="ime"
+                                                            placeholder="Unesite vaše ime"
+                                                            value={formData.ime}
+                                                            onChange={handleChange}
+                                                            required
+                                                        />
                                                     </div>
                                                 </div>
 
@@ -246,7 +284,14 @@ export default function Contact_Page() {
                                                         <label htmlFor="kontakt">Telefon</label>
                                                     </div>
                                                     <div className="input-box">
-                                                        <input type="text" name="kontakt" id="kontakt" placeholder="Unesite kontakt telefon" value={formData.kontakt} onChange={handleChange} />
+                                                        <input
+                                                            type="text"
+                                                            name="kontakt"
+                                                            id="kontakt"
+                                                            placeholder="Unesite kontakt telefon"
+                                                            value={formData.kontakt}
+                                                            onChange={handleChange}
+                                                        />
                                                     </div>
                                                 </div>
 
@@ -255,7 +300,15 @@ export default function Contact_Page() {
                                                         <label htmlFor="email">Email</label>
                                                     </div>
                                                     <div className="input-box">
-                                                        <input type="email" name="email" id="email" placeholder="Email adresa" value={formData.email} onChange={handleChange} required />
+                                                        <input
+                                                            type="email"
+                                                            name="email"
+                                                            id="email"
+                                                            placeholder="Email adresa"
+                                                            value={formData.email}
+                                                            onChange={handleChange}
+                                                            required
+                                                        />
                                                     </div>
                                                 </div>
 
@@ -264,7 +317,14 @@ export default function Contact_Page() {
                                                         <label htmlFor="subject">Predmet</label>
                                                     </div>
                                                     <div className="input-box">
-                                                        <input type="text" name="subject" id="subject" placeholder="Unesite predmet" value={formData.subject} onChange={handleChange} />
+                                                        <input
+                                                            type="text"
+                                                            name="subject"
+                                                            id="subject"
+                                                            placeholder="Unesite predmet"
+                                                            value={formData.subject}
+                                                            onChange={handleChange}
+                                                        />
                                                     </div>
                                                 </div>
                                             </div>
@@ -275,18 +335,29 @@ export default function Contact_Page() {
                                                         <label htmlFor="message">Poruka</label>
                                                     </div>
                                                     <div className="input-box">
-                                                        <textarea name="message" id="message" placeholder="Pišite ovdje..." value={formData.message} onChange={handleChange} required></textarea>
+                                                        <textarea
+                                                            name="message"
+                                                            id="message"
+                                                            placeholder="Pišite ovdje..."
+                                                            value={formData.message}
+                                                            onChange={handleChange}
+                                                            required
+                                                        ></textarea>
                                                     </div>
                                                 </div>
 
                                                 <div className="button-box">
                                                     <button className="btn-one" type="submit" disabled={loading}>
-                                                        <span className="txt">{loading ? 'Slanje...' : 'Pošaljite vaš upit'}</span>
+                                                        <span className="txt">
+                                                            {loading ? 'Slanje...' : 'Pošaljite vaš upit'}
+                                                        </span>
                                                     </button>
                                                 </div>
 
                                                 {statusMessage && (
-                                                    <p style={{ marginTop: '10px', fontWeight: 'bold' }}>{statusMessage}</p>
+                                                    <p style={{ marginTop: '10px', fontWeight: 'bold' }}>
+                                                        {statusMessage}
+                                                    </p>
                                                 )}
                                             </div>
                                         </div>
@@ -295,7 +366,6 @@ export default function Contact_Page() {
                             </div>
                         </div>
                     </section>
-
                 </Layout>
             </div>
         </>
