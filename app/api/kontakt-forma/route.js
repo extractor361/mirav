@@ -22,7 +22,7 @@ export async function POST(req) {
 
         await transporter.sendMail({
             from: `"Auto škola Mirav" <selastan@gmail.com>`,
-            to: 'info@digital-artefakt.me', // gdje stižu poruke
+            to: 'autoskola.mirav@gmail.com', // gdje stižu poruke
             replyTo: email,
             subject: subject?.trim()
                 ? `"Upit sa kontakt forme - Mirav.me": ${subject}`
