@@ -21,11 +21,11 @@ export async function POST(req) {
         })
 
         await transporter.sendMail({
-            from: `"Mirav Kontakt"`,
+            from: `"Auto škola Mirav" <selastan@gmail.com>`,
             to: 'info@digital-artefakt.me', // gdje stižu poruke
             replyTo: email,
             subject: subject?.trim()
-                ? `Kontakt forma: ${subject}`
+                ? `"Upit sa kontakt forme - Mirav.me": ${subject}`
                 : 'Nova poruka sa kontakt forme',
             html: `
                 <h2>Nova poruka</h2>
