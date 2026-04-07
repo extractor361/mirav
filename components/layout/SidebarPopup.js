@@ -43,7 +43,7 @@ Svaka neprijatnost se može izbjeći, ali u određenim okolnostima i zbog zahtje
                                             <li>
                                                 <div className="inner">
                                                     <div className="text">
-                                                        <p><Link href="mailto:info@example.com">office@mirav.me</Link></p>
+                                                        <p><Link href="mailto:autoskola.mirav@gmail.com">autoskola.mirav@gmail.com</Link></p>
                                                     </div>
                                                 </div>
                                             </li>

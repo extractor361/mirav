@@ -43,7 +43,7 @@ export default function Footer1() {
                                 </div>
                                 <div className="title-box">
                                     <h4>Kontakt</h4>
-                                    <p><Link href="mailto:getsupport@drivemaster.com">info@mirav.me</Link></p>
+                                    <p><Link href="mailto:autoskola.mirav@gmail.com">autoskola.mirav@gmail.com</Link></p>
                                     <p><Link href="tel:6612000456">+382 068 444 101</Link></p>
                                 </div>
                             </li>

@@ -128,7 +128,7 @@ export default function Contact_Page() {
                                                 </p>
                                                 <p>
                                                     <span>Email:</span>
-                                                    <Link href="mailto:office@mirav.me"> office@mirav.me</Link>
+                                                    <Link href="mailto:autoskola.mirav@gmail.com">autoskola.mirav@gmail.com</Link>
                                                 </p>
                                             </div>
                                             <div className="btn-box">
