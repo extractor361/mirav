@@ -59,24 +59,7 @@ export default function PortfolioFilter2() {
 
                     <div className="row filter-layout masonary-layout">
                         
-                        <div className="col-xl-4 col-lg-6 col-md-6 filter-item training">
-                            <div className="single-project-style1">
-                                <div className="single-project-style1__img">
-                                    <img src="assets/images/resources/prakticnavoznja.jpg" alt="Awesome Image"/>
-                                    <div className="single-project-style1__img-overlay-content">
-                                        <div className="category">
-                                            <h6>Kategorija: Polaganje</h6>
-                                        </div>
-                                        <div className="title">
-                                            <h3><Link href="#">Marko dobija <br/>svoju vozačku dozvolu!</Link></h3>
-                                        </div>
-                                    </div>
-                                    <div className="single-project-style1__img-overlay-icon">
-                                      
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         {/* Ucionica 1 */}
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
     <div className="single-project-style1">
@@ -204,22 +187,10 @@ export default function PortfolioFilter2() {
 </div>
 
 {/* Ucionica 15 */}
-<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
-    <div className="single-project-style1">
-        <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica15.png" alt="Ucionica 15"/>
-        </div>
-    </div>
-</div>
+
 
 {/* Ucionica 16 */}
-<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
-    <div className="single-project-style1">
-        <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica16.png" alt="Ucionica 16"/>
-        </div>
-    </div>
-</div>
+
 
 {/* Ucionica 17 */}
 <div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
@@ -231,22 +202,9 @@ export default function PortfolioFilter2() {
 </div>
 
 {/* Ucionica 18 */}
-<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
-    <div className="single-project-style1">
-        <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica18.png" alt="Ucionica 18"/>
-        </div>
-    </div>
-</div>
+
 
 {/* Ucionica 20 */}
-<div className="col-xl-4 col-lg-6 col-md-6 filter-item classroom">
-    <div className="single-project-style1">
-        <div className="single-project-style1__img">
-            <img src="assets/images/resources/ucionica20.png" alt="Ucionica 20"/>
-        </div>
-    </div>
-</div>
 
                         <div className="col-xl-4 col-lg-6 col-md-6 filter-item  classroom">
                             <div className="single-project-style1">
