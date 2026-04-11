@@ -286,7 +286,7 @@ export default function RasporedKalendar_Page() {
                     {selectedEvent.extendedProps.oblast || "Nije uneseno"}
                   </p>
 
-                  <p>
+                  {/*<p>
                     <strong>Znanja i vještine:</strong>
                     <br />
                     {selectedEvent.extendedProps.znanja?.length ? (
@@ -299,7 +299,7 @@ export default function RasporedKalendar_Page() {
                     ) : (
                       <span>Nema unesenih podataka</span>
                     )}
-                  </p>
+                  </p>*/}
 
                   {/* 
                   <p>
