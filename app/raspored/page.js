@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import FullCalendar from "@fullcalendar/react";
@@ -7,6 +8,175 @@ import srLatnLocale from "../locale/srLatn";
 import raspored from "../raspored.json";
 import Head from "next/head";
 
+const getOblastFromTema = (tema = "") => {
+  const t = tema.toLowerCase();
+
+  if (
+    t.includes("zakona o bezbjednosti saobraćaja") ||
+    t.includes("uslovi za učestvovanje") ||
+    t.includes("posebne mjere i kaznene odredbe")
+  ) {
+    return "Saobraćajni propisi";
+  }
+
+  if (
+    t.includes("životnu sredinu") ||
+    t.includes("zivotnu sredinu")
+  ) {
+    return "Zaštita životne sredine";
+  }
+
+  if (
+    t.includes("prve pomoći") ||
+    t.includes("prva pomoć") ||
+    t.includes("prva pomoc") ||
+    t.includes("trijaža") ||
+    t.includes("trijaza")
+  ) {
+    return "Prva pomoć";
+  }
+
+  if (
+    t.includes("opšta pravila") ||
+    t.includes("opsta pravila") ||
+    t.includes("radnje vozilom") ||
+    t.includes("prilagođavanje brzine") ||
+    t.includes("prilagodavanje brzine") ||
+    t.includes("prvenstvu prolaza") ||
+    t.includes("raskrsnici") ||
+    t.includes("pješaka") ||
+    t.includes("pjesaka") ||
+    t.includes("zvučne i svjetlosne signalizacije") ||
+    t.includes("zvucne i svjetlosne signalizacije") ||
+    t.includes("vozila pod pratnjom") ||
+    t.includes("sa prvenstvom prolaza")
+  ) {
+    return "Pravila saobraćaja";
+  }
+
+  if (
+    t.includes("signalizacija") ||
+    t.includes("znakovi opasnosti") ||
+    t.includes("znakovi izričitih naredbi") ||
+    t.includes("znakovi izricitih naredbi") ||
+    t.includes("znakovi obavještenja") ||
+    t.includes("znakovi obavjestenja") ||
+    t.includes("dopunske table") ||
+    t.includes("oznake na kolovozu") ||
+    t.includes("svjetlosni saobraćajni znakovi") ||
+    t.includes("tehničko regulisanje") ||
+    t.includes("tehnicko regulisanje") ||
+    t.includes("znaci koje daju ovlašćena lica") ||
+    t.includes("znaci koje daju ovlascena lica")
+  ) {
+    return "Saobraćajna signalizacija";
+  }
+
+  if (
+    t.includes("faktori bezbjednosti drumskog saobraćaja") ||
+    t.includes("vozač kao faktor") ||
+    t.includes("vozac kao faktor") ||
+    t.includes("ponašanja vozača") ||
+    t.includes("ponasanja vozaca") ||
+    t.includes("elementi faktora put") ||
+    t.includes("elementi aktivne i pasivne bezbjednosti vozila") ||
+    t.includes("elementi faktora okolina")
+  ) {
+    return "Faktori bezbjednosti saobraćaja";
+  }
+
+  if (t.includes("vježba") || t.includes("vjezba")) {
+    return "Vježba";
+  }
+
+  return "Teorijska nastava";
+};
+
+const getDefaultZnanjaFromTema = (tema = "") => {
+  const t = tema.toLowerCase();
+
+  if (
+    t.includes("zakona o bezbjednosti saobraćaja") ||
+    t.includes("uslovi za učestvovanje") ||
+    t.includes("posebne mjere i kaznene odredbe")
+  ) {
+    return [
+      "Razumije osnovne saobraćajne propise",
+      "Prepoznaje zakonske obaveze učesnika u saobraćaju",
+      "Primjenjuje teorijska znanja u saobraćajnim situacijama",
+    ];
+  }
+
+  if (
+    t.includes("prva pomoć") ||
+    t.includes("prva pomoc") ||
+    t.includes("trijaža") ||
+    t.includes("trijaza")
+  ) {
+    return [
+      "Prepoznaje situacije u kojima je potrebna prva pomoć",
+      "Razumije osnovne korake pravilnog postupanja",
+      "Primjenjuje osnovna znanja iz prve pomoći",
+    ];
+  }
+
+  if (
+    t.includes("signalizacija") ||
+    t.includes("znakovi") ||
+    t.includes("svjetlosni") ||
+    t.includes("kolovozu")
+  ) {
+    return [
+      "Prepoznaje značenje saobraćajnih znakova i signalizacije",
+      "Razlikuje vrste znakova i oznaka",
+      "Pravilno postupa prema signalizaciji u saobraćaju",
+    ];
+  }
+
+  if (
+    t.includes("pravila") ||
+    t.includes("prvenstvu prolaza") ||
+    t.includes("raskrsnici") ||
+    t.includes("pješaka") ||
+    t.includes("pjesaka") ||
+    t.includes("brzine") ||
+    t.includes("radnje vozilom")
+  ) {
+    return [
+      "Razumije pravila ponašanja u saobraćaju",
+      "Prepoznaje pravilno postupanje u tipičnim situacijama",
+      "Primjenjuje teorijska znanja na primjerima iz prakse",
+    ];
+  }
+
+  if (
+    t.includes("faktori bezbjednosti") ||
+    t.includes("vozač kao faktor") ||
+    t.includes("vozac kao faktor") ||
+    t.includes("vozila") ||
+    t.includes("okolina") ||
+    t.includes("put")
+  ) {
+    return [
+      "Prepoznaje faktore koji utiču na bezbjednost saobraćaja",
+      "Razumije uticaj vozača, puta, vozila i okoline",
+      "Povezuje teorijska znanja sa stvarnim uslovima u saobraćaju",
+    ];
+  }
+
+  if (t.includes("vježba") || t.includes("vjezba")) {
+    return [
+      "Utvrđuje prethodno usvojena znanja",
+      "Primjenjuje teorijska znanja kroz primjere i zadatke",
+    ];
+  }
+
+  return [
+    "Usvaja osnovna teorijska znanja iz nastavne jedinice",
+    "Razumije ključne pojmove obrađene na času",
+  ];
+};
+
 export default function RasporedKalendar_Page() {
   const [selectedEvent, setSelectedEvent] = useState(null);
 
@@ -14,10 +184,18 @@ export default function RasporedKalendar_Page() {
     title: `${cas.broj_casa}. čas`,
     start: cas.datum ? cas.datum.split(".").reverse().join("-") : null,
     extendedProps: {
+      broj_casa: cas.broj_casa,
       tema: cas.tema,
-      oblast: cas.oblast,
-      znanja: cas.znanja_i_vjestine,
-      preporuke: cas.preporuke_za_nastavu,
+      datum: cas.datum,
+      vrijeme: cas.vrijeme,
+      oblast: cas.oblast || getOblastFromTema(cas.tema),
+      znanja: Array.isArray(cas.znanja_i_vjestine) && cas.znanja_i_vjestine.length
+        ? cas.znanja_i_vjestine
+        : getDefaultZnanjaFromTema(cas.tema),
+      preporuke:
+        Array.isArray(cas.preporuke_za_nastavu) && cas.preporuke_za_nastavu.length
+          ? cas.preporuke_za_nastavu
+          : [],
     },
   }));
 
@@ -85,6 +263,7 @@ export default function RasporedKalendar_Page() {
                   <button
                     className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
                     onClick={() => setSelectedEvent(null)}
+                    aria-label="Zatvori detalje časa"
                   >
                     ✕
                   </button>
@@ -94,7 +273,17 @@ export default function RasporedKalendar_Page() {
                   </h3>
 
                   <p>
-                    <strong>Oblast:</strong> {selectedEvent.extendedProps.oblast}
+                    <strong>Datum:</strong> {selectedEvent.extendedProps.datum}
+                  </p>
+
+                  <p>
+                    <strong>Vrijeme:</strong>{" "}
+                    {selectedEvent.extendedProps.vrijeme || "Nije uneseno"}
+                  </p>
+
+                  <p>
+                    <strong>Oblast:</strong>{" "}
+                    {selectedEvent.extendedProps.oblast || "Nije uneseno"}
                   </p>
 
                   <p>
@@ -103,7 +292,7 @@ export default function RasporedKalendar_Page() {
                     {selectedEvent.extendedProps.znanja?.length ? (
                       selectedEvent.extendedProps.znanja.map((item, index) => (
                         <span key={index}>
-                          {item}
+                          • {item}
                           <br />
                         </span>
                       ))
@@ -114,12 +303,12 @@ export default function RasporedKalendar_Page() {
 
                   {/* 
                   <p>
-                    <strong>Preporuke:</strong>
+                    <strong>Preporuke za nastavu:</strong>
                     <br />
                     {selectedEvent.extendedProps.preporuke?.length ? (
                       selectedEvent.extendedProps.preporuke.map((item, index) => (
                         <span key={index}>
-                          {item}
+                          • {item}
                           <br />
                         </span>
                       ))
